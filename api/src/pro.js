@@ -39,7 +39,8 @@ export async function proFor(env, install) {
 export async function checkout(env, install, lang) {
   if (!proReady(env)) return { error: "unavailable", status: 503 };
   const site = env.SITE || "https://twinsub.poeticalengine.com";
-  const dir = { en: "", zh: "zh/", ja: "ja/", ko: "ko/", fr: "fr/", de: "de/", es: "es/", hi: "hi/", id: "id/" }[String(lang || "").slice(0, 2)] ?? "";
+  const l = String(lang || "").replace("_", "-").toLowerCase();
+  const dir = /^zh-(tw|hk|mo|hant)/.test(l) ? "zh-tw/" : { en: "", zh: "zh/", ja: "ja/", ko: "ko/", fr: "fr/", de: "de/", es: "es/", hi: "hi/", id: "id/" }[l.slice(0, 2)] ?? "";
   const res = await fetch(apiBase(env) + "/checkouts", {
     method: "POST",
     headers: { Authorization: "Bearer " + apiKey(env), "Content-Type": "application/json" },

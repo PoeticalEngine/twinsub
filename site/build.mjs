@@ -15,14 +15,16 @@ const ORIGIN = config.origin;
 
 const LOCALES = [
   { key: "en", dir: "", lang: "en", hreflang: "en" },
-  { key: "zh_CN", dir: "zh", lang: "zh-CN", hreflang: "zh-Hans" },
-  { key: "ja", dir: "ja", lang: "ja", hreflang: "ja" },
   { key: "ko", dir: "ko", lang: "ko", hreflang: "ko" },
   { key: "fr", dir: "fr", lang: "fr", hreflang: "fr" },
   { key: "de", dir: "de", lang: "de", hreflang: "de" },
   { key: "es", dir: "es", lang: "es", hreflang: "es" },
   { key: "hi", dir: "hi", lang: "hi", hreflang: "hi" },
   { key: "id", dir: "id", lang: "id", hreflang: "id" },
+  // Chinese and Japanese close the language list (the user's call, 2026-10-29).
+  { key: "ja", dir: "ja", lang: "ja", hreflang: "ja" },
+  { key: "zh_CN", dir: "zh", lang: "zh-CN", hreflang: "zh-Hans" },
+  { key: "zh_TW", dir: "zh-tw", lang: "zh-TW", hreflang: "zh-Hant" },
 ];
 for (const l of LOCALES) {
   l.c = JSON.parse(fs.readFileSync(path.join(here, "content", `${l.key}.json`), "utf8"));
@@ -55,6 +57,10 @@ const CSS = `
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","PingFang SC","Hiragino Sans","Noto Sans",Arial,sans-serif}
+html:lang(ja) body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI",Meiryo,"Noto Sans JP",sans-serif}
+html:lang(ko) body{font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif}
+html:lang(zh-CN) body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif}
+html:lang(zh-TW) body{font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei","Noto Sans TC",sans-serif}
 a{color:inherit}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}

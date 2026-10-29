@@ -27,6 +27,10 @@ function languageName(code) {
   try { return new Intl.DisplayNames(["en"], { type: "language" }).of(code) || code; } catch { return code; }
 }
 
+// Traditional Chinese readers are mostly in Taiwan, and mainland wording (视频, 软件) in traditional characters reads as machine-converted.
+const answerLanguage = code => /^zh-(hant|tw|hk|mo)/i.test(code || "")
+  ? "Traditional Chinese, worded the way Taiwan writes it (影片 not 視頻, 軟體 not 軟件, 網路 not 網絡)" : languageName(code);
+
 // body: { video: {id, title, channel}, kind, source, target, lines: [{start, text}],
 //         focus: {line, text, side: "orig" | "tr", translation} }
 // side "tr" means the viewer marked text in their machine translation of the focus line, given whole as translation.
@@ -49,7 +53,7 @@ export function buildRequest(body) {
   const auto = body.kind === "asr";
 
   const parts = [
-    `Answer language: ${languageName(target)}.`,
+    `Answer language: ${answerLanguage(target)}.`,
     `Video: ${clip(body.video?.title, 200) || "(untitled)"}${body.video?.channel ? ` — channel: ${clip(body.video.channel, 100)}` : ""}`,
     `Subtitles (${auto ? "auto-generated, may contain mistakes" : "written by the uploader"}${source ? `, language: ${languageName(source)}` : ""}):`,
     ...lines.map((l, i) => !l.text ? null : `[${stamp(l.start)}] ${l.text}${i === focusLine ? "   ← the viewer paused around here" : ""}`),
@@ -57,7 +61,7 @@ export function buildRequest(body) {
     !focusText ? `The viewer marked the whole line at ${stamp(lines[focusLine].start)}.`
       : inTranslation ? `The viewer reads this machine translation of the line at ${stamp(lines[focusLine].start)}: "${translation}"\nIn it they marked: "${focusText}". Explain the original words this stands for.`
       : `The viewer marked: "${focusText}" (in the line at ${stamp(lines[focusLine].start)})`,
-    `Write the whole answer in ${languageName(target)}, whatever language the subtitles or the translation are in.`,
+    `Write the whole answer in ${answerLanguage(target)}, whatever language the subtitles or the translation are in.`,
   ];
   const cacheKey = ["v2", clip(body.video?.id, 20), target, lines[focusLine].text, inTranslation ? "tr" : "orig", focusText].join("␟");
   return { user: parts.filter(p => p !== null).join("\n"), target, cacheKey };

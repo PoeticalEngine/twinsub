@@ -2,7 +2,7 @@
 
 Name and short description come from `_locales/*/messages.json` (extName, extDescription).
 Category: Education → Language learning (fallback: Productivity → Tools). Pricing: Free.
-Locales: en, zh_CN, ja, ko, fr, de, es, hi, id. Per-locale description, screenshots copy and promo text live in `store/copy/<locale>.json` (the descriptions below are the en and zh copies).
+Locales: en, ko, fr, de, es (Latin American wording), hi, id, ja, zh_CN, zh_TW (Taiwan wording, not converted from zh_CN). Per-locale description, screenshots copy and promo text live in `store/copy/<locale>.json` (the descriptions below are the en and zh copies).
 Screenshots: `store/screenshots/<locale>/1-5.png` (1280×800).
 Package: `npm run build` → `dist/twinsub-<version>.zip`.
 Small promo tile: `store/promo/small-440x280-<locale>.png`. Marquee: `store/promo/marquee-1400x560-<locale>.png`.

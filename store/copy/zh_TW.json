@@ -1,0 +1,156 @@
+{
+ "font": "\"PingFang TC\", -apple-system, \"Helvetica Neue\", \"Microsoft JhengHei\", sans-serif",
+ "messages": {
+  "extName": "Twinsub：YouTube™ 雙語字幕",
+  "extDescription": "YouTube 雙語字幕：每句原文配上你的語言。免費、不限次數、不用登入，翻譯在你自己的電腦上完成。",
+  "buttonOn": "Twinsub 雙語字幕：已開啟（按一下關閉）",
+  "buttonOff": "Twinsub 雙語字幕：已關閉（按一下開啟）",
+  "noApi": "Twinsub 在你的電腦上翻譯，需要電腦版 Chrome 138 以上版本。",
+  "unsupported": "Chrome 目前還不支援從$1到$2的裝置端翻譯，先顯示原文字幕。",
+  "needsDownload": "按一下下載$1 → $2翻譯套件（只要一次，幾秒鐘）",
+  "downloading": "正在下載$1 → $2翻譯套件… $3%",
+  "noCaptions": "這部影片沒有字幕，Twinsub 沒有可以翻譯的內容。",
+  "failed": "翻譯中斷：$1",
+  "popupEnabled": "在 YouTube 上顯示雙語字幕",
+  "popupTarget": "翻譯成",
+  "popupTargetAuto": "跟隨瀏覽器語言（$1）",
+  "popupOrder": "上下順序",
+  "popupOrderOriginal": "原文在上",
+  "popupOrderTranslation": "譯文在上",
+  "popupShowOriginal": "顯示原文",
+  "popupShowTranslation": "顯示譯文",
+  "popupSize": "字體大小",
+  "popupPosition": "離底部的距離",
+  "popupHow": "打開任何有字幕的 YouTube 影片，Twinsub 會自動開啟字幕並加上譯文；播放器下方控制列裡兩條橫線的按鈕可以關掉它。",
+  "popupPrivacy": "字幕由 Chrome 內建翻譯在你的電腦上翻譯。只有你按「解釋」時，選取的字句和前後幾句字幕才會傳到我們的伺服器來產生解釋。不用帳號。",
+  "popupPrivacyLink": "隱私權說明",
+  "askTip": "沒聽懂？（$1）",
+  "panelTitle": "沒聽懂？",
+  "panelHint": "在譯文上選取看不懂的地方，可以選好幾處；也可以直接解釋整句。",
+  "panelHintNoTr": "選取看不懂的地方，可以選好幾處；也可以直接解釋整句。",
+  "explainThis": "解釋這段",
+  "explainLine": "解釋整句",
+  "justNow": "剛剛這句",
+  "footerHint": "選好了按「解釋」",
+  "remaining": "今天免費還剩 $1 次",
+  "aiNote": "解釋由 AI 產生，可能有誤",
+  "secGist": "這句在說什麼",
+  "secBackground": "背景",
+  "secLanguage": "語言",
+  "secAsr": "可能聽錯了",
+  "quotaTitle": "今天的 $1 次免費解釋用完了",
+  "quotaBody": "明天會恢復。選取過的地方都還在。",
+  "errFailed": "沒能取得解釋。",
+  "errBusy": "現在使用的人太多了，過一分鐘再試試。",
+  "retry": "再試一次",
+  "thinking": "思考中…",
+  "close": "關閉",
+  "remainingPro": "本月還剩 $1 次解釋",
+  "quotaTitlePro": "本月的 $1 次解釋已經用完",
+  "quotaBodyPro": "下個月 1 號恢復。",
+  "quotaUpgrade": "升級 Pro：每月 1000 次，US$$4.99",
+  "quotaRestoreHint": "已經是 Pro？在 Twinsub 選單（擴充功能圖示）裡輸入你的 Pro 序號。",
+  "proPitch": "每月 1000 次解釋，不再是每天 5 次。每月 US$$4.99，隨時可以取消。",
+  "proUpgrade": "升級 Pro",
+  "proHave": "已經有 Pro？輸入 Pro 序號",
+  "proApply": "套用",
+  "proBadCode": "這個 Pro 序號無效或已過期。請再確認一次，或寫信到 hello@poeticalengine.com。",
+  "proTooMany": "這個 Pro 序號已經在 5 台電腦上使用。",
+  "proActive": "本月還剩 $1 次解釋",
+  "proCodeLabel": "你的 Pro 序號，可以在其他電腦上使用：",
+  "proCopy": "複製",
+  "proCopied": "已複製",
+  "proManage": "管理訂閱",
+  "proEnds": "Pro 將在 $1 到期，不會再續訂。",
+  "proThanks": "Pro 已開通，謝謝支持！"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub · YouTube 雙語字幕",
+   "title": "每一句，都看得懂。",
+   "sub": "原文字幕在上，中文緊跟在下。",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "開始的最佳時機是昨天，其次就是現在。",
+   "chips": [
+    "免費不限次數",
+    "不用登入",
+    "在你的電腦上翻譯"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "學外語",
+   "title": "在喜歡的影片裡，順便學外語。",
+   "sub": "聽原音、看原文、對照中文，一次搞定。",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "今天要不要稍微繞個路？",
+   "callouts": [
+    "聽原音",
+    "看原文",
+    "懂意思"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "裝置端翻譯",
+   "title": "不延遲，不限次數。",
+   "sub": "每一句都在你自己的電腦上翻譯，話還沒說完，譯文就出來了。",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "這一幕我一定要再看一次。",
+   "stat": [
+    "毫秒級",
+    "每句翻譯，不經過任何伺服器"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "設定",
+   "title": "字幕，照你的習慣來。",
+   "sub": "上下順序、字體大小、高度都能調，也可以只看一行。",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "只有用心才能看清楚。",
+   "popup": true,
+   "bullets": [
+    "支援 39 種語言",
+    "原文或譯文在上",
+    "字體大小和高度可調",
+    "播放器裡一鍵開關"
+   ]
+  },
+  {
+   "scene": "night",
+   "eyebrow": "隱私",
+   "title": "你看了什麼，只有你知道。",
+   "sub": "不用帳號，沒有伺服器，不做追蹤。Twinsub 只讀取播放器已經下載好的字幕。",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "明天火車站見。",
+   "privacy": [
+    [
+     "不用帳號",
+     "完全不用註冊"
+    ],
+    [
+     "沒有伺服器",
+     "翻譯在 Chrome 裡完成"
+    ],
+    [
+     "不做追蹤",
+     "不統計、不記錄觀看紀錄"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "YouTube 雙語字幕",
+  "tag": "免費 · 不用登入"
+ },
+ "marquee": {
+  "title": "每一句，都看得懂。",
+  "sub": "YouTube 雙語字幕。免費、不限次數，翻譯在你的電腦上完成。",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "開始的最佳時機是昨天，其次就是現在。"
+ },
+ "description": "在 YouTube 上看任何影片，每一句都看得懂。\n\nTwinsub 同時幫影片配上兩行字幕：上面是原文，下面緊跟著同一句的中文。聽著原音、看著原文，哪一句都不會錯過。\n\n免費、不限次數、不用登入\n不用註冊帳號，不用填 API 金鑰，也不會看了 15 分鐘就跳出「試用期已結束」。裝好、打開影片，就這麼簡單。\n\n翻譯就在你的電腦上完成\nTwinsub 用的是 Chrome 內建的翻譯，每一句都在你的電腦上翻譯，幾毫秒就好。不用等伺服器，你看了什麼也不會傳到任何地方。\n\n學外語的好幫手\n原文在上、譯文在下，也可以對調。看西班牙文 Vlog、日本動畫片段、韓綜、法國美食、英文公開課，在本來就喜歡的影片裡學語言。\n\n上傳者字幕、自動產生的字幕都能用\nTwinsub 支援上傳者提供的字幕和 YouTube 自動產生的字幕，會幫你開啟字幕，跟隨你在 YouTube 字幕選單裡選的語言，換到下一部影片也照樣有效。\n\n照你的習慣來\n• 可以翻譯成 39 種語言：中文（繁體、簡體）、日文、韓文、英文、西班牙文、法文、德文、葡萄牙文、俄文、阿拉伯文、越南文等\n• 原文在上或譯文在上\n• 字體大小、離底部的距離都能調\n• 可以只看譯文，或只看原文\n• 播放器控制列一個按鈕，隨時開關\n\n怎麼用\n1. 安裝 Twinsub。\n2. 打開任何有字幕的 YouTube 影片。\n3. 第一次用某個語言組合時，按一下黃色提示，Chrome 幾秒鐘就會下載好翻譯套件。\n4. 開始看。\n\n需要電腦版 Chrome 138 以上版本（Windows、Mac、Linux、ChromeOS）。Twinsub 與 YouTube、Google 沒有關聯，也未獲得其背書。"
+}

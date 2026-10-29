@@ -1,22 +1,22 @@
 {
  "meta": {
   "title": "Twinsub: subtítulos bilingües para YouTube, gratis",
-  "description": "Mira YouTube con el subtítulo original y tu idioma justo debajo. Gratis, ilimitado, traducido en tu ordenador. Marca una línea que no entiendas y la IA te la explica."
+  "description": "Mira YouTube con el subtítulo original y tu idioma justo debajo. Gratis, ilimitado, traducido en tu computadora. Marca una línea que no entiendas y la IA te la explica."
  },
  "cta": "Añadir a Chrome, es gratis",
  "soon": "Pronto en Chrome Web Store",
  "hero": {
   "h1": "Subtítulos bilingües para YouTube.",
   "sub": "La línea original, y tu idioma justo debajo. Si una línea sigue sin cuadrarte, márcala: significado, contexto y chiste, explicados.",
-  "note": "Chrome 138+ en ordenador · Gratis · Sin cuenta"
+  "note": "Chrome 138+ en computadora · Gratis · Sin cuenta"
  },
- "featuresTitle": "Hecho para ver vídeos en otro idioma",
+ "featuresTitle": "Hecho para ver videos en otro idioma",
  "explain": {
   "eyebrow": "¿No lo pillaste?",
   "title": "Márcalo. Entiéndelo.",
   "sub": "La traducción automática traduce palabras, no siempre el sentido. Pausa, marca en la traducción lo que no entiendas y Twinsub explica lo que dice el original: la expresión, el término técnico, la referencia cultural, el meme.",
   "steps": [
-   "Pulsa ? junto a los subtítulos, o E. El vídeo se pausa.",
+   "Pulsa ? junto a los subtítulos, o E. El video se pausa.",
    "Marca la parte confusa de la traducción.",
    "Toca Explicar. La respuesta aparece bajo la línea, en español."
   ],
@@ -35,7 +35,7 @@
   "title": "Cómo empezar",
   "steps": [
    "Añade Twinsub a Chrome.",
-   "Abre cualquier vídeo de YouTube con subtítulos, manuales o automáticos.",
+   "Abre cualquier video de YouTube con subtítulos, manuales o automáticos.",
    "La primera vez con un par de idiomas, haz clic en el aviso amarillo. Chrome descarga el paquete de traducción en unos segundos."
   ]
  },
@@ -52,7 +52,7 @@
    ],
    [
     "¿Cómo se traduce?",
-    "Con el traductor integrado en Chrome (Chrome 138 o posterior). Cada línea se traduce en tu ordenador en milisegundos, sin esperar a un servidor."
+    "Con el traductor integrado en Chrome (Chrome 138 o posterior). Cada línea se traduce en tu computadora en milisegundos, sin esperar a un servidor."
    ],
    [
     "¿Funciona con subtítulos automáticos?",
@@ -63,7 +63,7 @@
     "39: español, inglés, chino (simplificado y tradicional), japonés, coreano, francés, alemán, portugués, italiano, ruso, árabe, hindi, indonesio, vietnamita, tailandés, turco y más."
    ],
    [
-    "¿Qué sale de mi ordenador?",
+    "¿Qué sale de mi computadora?",
     "Para los subtítulos, nada. Cuando tocas Explicar, lo que marcaste y unas líneas alrededor van a nuestro servidor, que pide la respuesta a Claude, un modelo de IA de Anthropic. Consulta la política de privacidad."
    ],
    [
@@ -82,7 +82,7 @@
  "pro": {
   "title": "Gracias por hacerte Pro",
   "ok": "Twinsub Pro se activa en unos segundos. Vuelve a YouTube y sigue viendo.",
-  "code": "Tu código Pro está en el menú de Twinsub (el icono de la extensión). Introdúcelo en tus otros ordenadores, hasta 5.",
+  "code": "Tu código Pro está en el menú de Twinsub (el icono de la extensión). Introdúcelo en tus otras computadoras, hasta 5.",
   "fail": "El pago no se completó y no se cobró nada. Puedes volver a intentarlo desde el menú de Twinsub.",
   "back": "Volver a YouTube"
  }

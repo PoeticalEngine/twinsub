@@ -32,8 +32,12 @@ See [PRIVACY.md](PRIVACY.md), also published at https://twinsub.poeticalengine.c
 
 YouTube is a trademark of Google LLC. Twinsub is not affiliated with or endorsed by YouTube or Google.
 
-© 2026 Poetical Engine LLC
+© 2026 Poetical Engine LLC. All rights reserved.
+
+## Source code
+
+The source is published so anyone can check what Twinsub does with their data, for example that subtitles are translated on the device and that only an Explain request reaches our server. It is not open source: there is no license to copy, modify or redistribute it. Questions or security reports: hello@poeticalengine.com.
 
 ## Website
 
-`site/` builds the landing site at https://twinsub.poeticalengine.com (9 languages, llms.txt, sitemap). `node site/build.mjs` writes `site/dist`; deploy with wrangler from `site/`. Set `cws` in `site/config.json` once the store listing is live.
+`site/` builds the landing site at https://twinsub.poeticalengine.com (10 languages, llms.txt, sitemap). `node site/build.mjs` writes `site/dist`; deploy with wrangler from `site/`. Set `cws` in `site/config.json` once the store listing is live.

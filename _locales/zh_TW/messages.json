@@ -1,0 +1,188 @@
+{
+ "extName": {
+  "message": "Twinsub：YouTube™ 雙語字幕"
+ },
+ "extDescription": {
+  "message": "YouTube 雙語字幕：每句原文配上你的語言。免費、不限次數、不用登入，翻譯在你自己的電腦上完成。"
+ },
+ "buttonOn": {
+  "message": "Twinsub 雙語字幕：已開啟（按一下關閉）"
+ },
+ "buttonOff": {
+  "message": "Twinsub 雙語字幕：已關閉（按一下開啟）"
+ },
+ "noApi": {
+  "message": "Twinsub 在你的電腦上翻譯，需要電腦版 Chrome 138 以上版本。"
+ },
+ "unsupported": {
+  "message": "Chrome 目前還不支援從$1到$2的裝置端翻譯，先顯示原文字幕。"
+ },
+ "needsDownload": {
+  "message": "按一下下載$1 → $2翻譯套件（只要一次，幾秒鐘）"
+ },
+ "downloading": {
+  "message": "正在下載$1 → $2翻譯套件… $3%"
+ },
+ "noCaptions": {
+  "message": "這部影片沒有字幕，Twinsub 沒有可以翻譯的內容。"
+ },
+ "failed": {
+  "message": "翻譯中斷：$1"
+ },
+ "popupEnabled": {
+  "message": "在 YouTube 上顯示雙語字幕"
+ },
+ "popupTarget": {
+  "message": "翻譯成"
+ },
+ "popupTargetAuto": {
+  "message": "跟隨瀏覽器語言（$1）"
+ },
+ "popupOrder": {
+  "message": "上下順序"
+ },
+ "popupOrderOriginal": {
+  "message": "原文在上"
+ },
+ "popupOrderTranslation": {
+  "message": "譯文在上"
+ },
+ "popupShowOriginal": {
+  "message": "顯示原文"
+ },
+ "popupShowTranslation": {
+  "message": "顯示譯文"
+ },
+ "popupSize": {
+  "message": "字體大小"
+ },
+ "popupPosition": {
+  "message": "離底部的距離"
+ },
+ "popupHow": {
+  "message": "打開任何有字幕的 YouTube 影片，Twinsub 會自動開啟字幕並加上譯文；播放器下方控制列裡兩條橫線的按鈕可以關掉它。"
+ },
+ "popupPrivacy": {
+  "message": "字幕由 Chrome 內建翻譯在你的電腦上翻譯。只有你按「解釋」時，選取的字句和前後幾句字幕才會傳到我們的伺服器來產生解釋。不用帳號。"
+ },
+ "popupPrivacyLink": {
+  "message": "隱私權說明"
+ },
+ "askTip": {
+  "message": "沒聽懂？（$1）"
+ },
+ "panelTitle": {
+  "message": "沒聽懂？"
+ },
+ "panelHint": {
+  "message": "在譯文上選取看不懂的地方，可以選好幾處；也可以直接解釋整句。"
+ },
+ "panelHintNoTr": {
+  "message": "選取看不懂的地方，可以選好幾處；也可以直接解釋整句。"
+ },
+ "explainThis": {
+  "message": "解釋這段"
+ },
+ "explainLine": {
+  "message": "解釋整句"
+ },
+ "justNow": {
+  "message": "剛剛這句"
+ },
+ "footerHint": {
+  "message": "選好了按「解釋」"
+ },
+ "remaining": {
+  "message": "今天免費還剩 $1 次"
+ },
+ "aiNote": {
+  "message": "解釋由 AI 產生，可能有誤"
+ },
+ "secGist": {
+  "message": "這句在說什麼"
+ },
+ "secBackground": {
+  "message": "背景"
+ },
+ "secLanguage": {
+  "message": "語言"
+ },
+ "secAsr": {
+  "message": "可能聽錯了"
+ },
+ "quotaTitle": {
+  "message": "今天的 $1 次免費解釋用完了"
+ },
+ "quotaBody": {
+  "message": "明天會恢復。選取過的地方都還在。"
+ },
+ "errFailed": {
+  "message": "沒能取得解釋。"
+ },
+ "errBusy": {
+  "message": "現在使用的人太多了，過一分鐘再試試。"
+ },
+ "retry": {
+  "message": "再試一次"
+ },
+ "thinking": {
+  "message": "思考中…"
+ },
+ "close": {
+  "message": "關閉"
+ },
+ "remainingPro": {
+  "message": "本月還剩 $1 次解釋"
+ },
+ "quotaTitlePro": {
+  "message": "本月的 $1 次解釋已經用完"
+ },
+ "quotaBodyPro": {
+  "message": "下個月 1 號恢復。"
+ },
+ "quotaUpgrade": {
+  "message": "升級 Pro：每月 1000 次，US$$4.99"
+ },
+ "quotaRestoreHint": {
+  "message": "已經是 Pro？在 Twinsub 選單（擴充功能圖示）裡輸入你的 Pro 序號。"
+ },
+ "proPitch": {
+  "message": "每月 1000 次解釋，不再是每天 5 次。每月 US$$4.99，隨時可以取消。"
+ },
+ "proUpgrade": {
+  "message": "升級 Pro"
+ },
+ "proHave": {
+  "message": "已經有 Pro？輸入 Pro 序號"
+ },
+ "proApply": {
+  "message": "套用"
+ },
+ "proBadCode": {
+  "message": "這個 Pro 序號無效或已過期。請再確認一次，或寫信到 hello@poeticalengine.com。"
+ },
+ "proTooMany": {
+  "message": "這個 Pro 序號已經在 5 台電腦上使用。"
+ },
+ "proActive": {
+  "message": "本月還剩 $1 次解釋"
+ },
+ "proCodeLabel": {
+  "message": "你的 Pro 序號，可以在其他電腦上使用："
+ },
+ "proCopy": {
+  "message": "複製"
+ },
+ "proCopied": {
+  "message": "已複製"
+ },
+ "proManage": {
+  "message": "管理訂閱"
+ },
+ "proEnds": {
+  "message": "Pro 將在 $1 到期，不會再續訂。"
+ },
+ "proThanks": {
+  "message": "Pro 已開通，謝謝支持！"
+ }
+}
