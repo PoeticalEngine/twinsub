@@ -24,7 +24,7 @@
   "mark": "el Uber de pasear perros",
   "gist": "Una app que conecta al momento a dueños de perros con paseadores, como Uber conecta pasajeros y conductores. Dicho con algo de autoironía.",
   "background": "«El Uber de X» fue la frase de manual de las startups en los 2010. Se usó tanto que hoy suena a burla de uno mismo.",
-  "quota": "5 explicaciones gratis al día. Pro: 1.000 al mes por 4,99 $. Los subtítulos bilingües siempre son gratis.",
+  "quota": "5 explicaciones gratis al día. Pro: 1.000 al mes por US$4.99. Lifetime: un solo pago de US$14.90, con tu propia clave de API. Los subtítulos dobles siempre son gratis.",
   "labels": {
    "gist": "Qué dice",
    "background": "Contexto"
@@ -48,7 +48,11 @@
    ],
    [
     "¿Hay un plan de pago?",
-    "Twinsub Pro te da 1.000 explicaciones al mes en vez de 5 al día, por 4,99 $ al mes. Cancela cuando quieras desde el menú de Twinsub. Los subtítulos bilingües siguen siendo gratis e ilimitados en cualquier caso."
+    "Dos. Twinsub Pro te da 1.000 explicaciones al mes en lugar de 5 al día, por US$4.99 al mes; cancela cuando quieras desde el menú de Twinsub. Twinsub Lifetime es un solo pago de US$14.90 para usar tu propia clave de API de IA, para siempre. En cualquier caso, los subtítulos dobles siguen siendo gratis e ilimitados."
+   ],
+   [
+    "¿Puedo usar mi propia clave de API?",
+    "Sí, con Twinsub Lifetime (un solo pago de US$14.90) o mientras tengas Pro. Elige OpenAI, Anthropic (Claude), Google Gemini, DeepSeek, OpenRouter, Mistral, Groq, xAI, Qwen, Kimi, GLM, Doubao, SiliconFlow o un Ollama local, o ingresa cualquier URL base compatible con los formatos OpenAI Chat Completions, OpenAI Responses o Claude Messages. Tu clave se cifra y se guarda solo en tu computadora, y las explicaciones van directo de Chrome a ese proveedor, nunca por nuestro servidor."
    ],
    [
     "¿Cómo se traduce?",
@@ -64,7 +68,7 @@
    ],
    [
     "¿Qué sale de mi computadora?",
-    "Para los subtítulos, nada. Cuando tocas Explicar, lo que marcaste y unas líneas alrededor van a nuestro servidor, que pide la respuesta a Claude, un modelo de IA de Anthropic. Consulta la política de privacidad."
+    "Para los subtítulos, nada. Cuando tocas Explicar, lo que marcaste y unas líneas alrededor van a nuestro servidor, que pide la respuesta a un modelo de IA alojado en Estados Unidos. Consulta la política de privacidad."
    ],
    [
     "¿En qué navegadores funciona?",
@@ -82,8 +86,45 @@
  "pro": {
   "title": "Gracias por hacerte Pro",
   "ok": "Twinsub Pro se activa en unos segundos. Vuelve a YouTube y sigue viendo.",
-  "code": "Tu código Pro está en el menú de Twinsub (el icono de la extensión). Introdúcelo en tus otras computadoras, hasta 5.",
+  "code": "Tu código Pro está en el menú de Twinsub (el ícono de la extensión). Ingrésalo en tus otras computadoras, hasta 5.",
   "fail": "El pago no se completó y no se cobró nada. Puedes volver a intentarlo desde el menú de Twinsub.",
-  "back": "Volver a YouTube"
+  "back": "Volver a YouTube",
+  "lifetimeTitle": "Gracias por comprar Lifetime",
+  "lifetimeOk": "Tu propia clave de API se desbloquea en unos segundos. Abre el menú de Twinsub y luego Configuración de IA para agregar tu proveedor y tu clave.",
+  "lifetimeCode": "Tu código Lifetime está en la configuración de IA. Ingrésalo en tus otras computadoras, hasta 5."
+ },
+ "plans": {
+  "title": "Empieza gratis. Dos formas de tener más.",
+  "free": {
+   "name": "Gratis",
+   "price": "US$0",
+   "points": [
+    "Subtítulos dobles ilimitados",
+    "5 explicaciones con IA al día",
+    "Sin cuenta ni inicio de sesión"
+   ]
+  },
+  "pro": {
+   "name": "Pro",
+   "price": "US$4.99",
+   "per": "/ mes",
+   "points": [
+    "1.000 explicaciones al mes",
+    "Escritas por IA, nada que configurar",
+    "Cancela cuando quieras"
+   ]
+  },
+  "life": {
+   "name": "Lifetime",
+   "price": "US$14.90",
+   "per": "un solo pago",
+   "badge": "El más privado",
+   "points": [
+    "Tu propia clave de API: OpenAI, Claude, Gemini, DeepSeek o cualquier endpoint compatible",
+    "Las explicaciones van directo de Chrome a tu proveedor, nunca por nuestro servidor",
+    "Sin límites de Twinsub; pagas a tu proveedor lo que uses",
+    "Hasta 5 computadoras, sin suscripción"
+   ]
+  }
  }
 }

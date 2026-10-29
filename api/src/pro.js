@@ -1,5 +1,7 @@
 // Twinsub Pro: a monthly Dodo Payments subscription with no account. The checkout carries the install id and a fresh Pro code in
 // its metadata; the subscription webhook stores the code and links that install. The code can be entered on other computers.
+// Twinsub Lifetime works the same way with a one-time payment: it unlocks explanations through the viewer's own API key,
+// which run entirely in the extension, so here it is only a license row.
 // Webhooks are business-wide (Grassy Knees events arrive here too), so anything without our product or app tag is ignored.
 
 const mode = env => env.DODO_MODE === "live" ? "live" : "test";
@@ -7,7 +9,9 @@ const apiBase = env => mode(env) === "live" ? "https://live.dodopayments.com" : 
 const apiKey = env => mode(env) === "live" ? env.DODO_LIVE_API_KEY : env.DODO_API_KEY;
 const webhookSecret = env => mode(env) === "live" ? env.DODO_LIVE_WEBHOOK_SECRET : env.DODO_WEBHOOK_SECRET;
 const product = env => mode(env) === "live" ? env.DODO_PRODUCT_LIVE : env.DODO_PRODUCT_TEST;
+const lifetimeProduct = env => mode(env) === "live" ? env.DODO_LIFETIME_LIVE : env.DODO_LIFETIME_TEST;
 export const proReady = env => !!(apiKey(env) && product(env));
+export const lifetimeReady = env => !!(apiKey(env) && lifetimeProduct(env));
 export const proLimit = env => Number(env.PRO_PER_MONTH) || 1000;
 export const month = () => "m" + new Date().toISOString().slice(0, 7);
 
@@ -36,8 +40,14 @@ export async function proFor(env, install) {
   return isPro(row) ? row : null;
 }
 
-export async function checkout(env, install, lang) {
-  if (!proReady(env)) return { error: "unavailable", status: 503 };
+// A paid, unrefunded lifetime license from the current mode, or null.
+export async function licenseFor(env, install) {
+  return await env.DB.prepare("SELECT l.* FROM license_installs i JOIN licenses l ON l.code = i.code WHERE i.install = ? AND l.mode = ? AND l.status = 'paid'").bind(install, mode(env)).first() || null;
+}
+
+export async function checkout(env, install, lang, plan) {
+  const lifetime = plan === "lifetime";
+  if (!(lifetime ? lifetimeReady(env) : proReady(env))) return { error: "unavailable", status: 503 };
   const site = env.SITE || "https://twinsub.poeticalengine.com";
   const l = String(lang || "").replace("_", "-").toLowerCase();
   const dir = /^zh-(tw|hk|mo|hant)/.test(l) ? "zh-tw/" : { en: "", zh: "zh/", ja: "ja/", ko: "ko/", fr: "fr/", de: "de/", es: "es/", hi: "hi/", id: "id/" }[l.slice(0, 2)] ?? "";
@@ -45,9 +55,9 @@ export async function checkout(env, install, lang) {
     method: "POST",
     headers: { Authorization: "Bearer " + apiKey(env), "Content-Type": "application/json" },
     body: JSON.stringify({
-      product_cart: [{ product_id: product(env), quantity: 1 }],
-      metadata: { app: "twinsub", install, code: newCode() },
-      return_url: `${site}/${dir}pro/`,
+      product_cart: [{ product_id: lifetime ? lifetimeProduct(env) : product(env), quantity: 1 }],
+      metadata: { app: "twinsub", install, code: newCode(), plan: lifetime ? "lifetime" : "pro" },
+      return_url: `${site}/${dir}pro/${lifetime ? "?plan=lifetime" : ""}`,
     }),
     signal: AbortSignal.timeout(10000),
   }).catch(() => null);
@@ -71,16 +81,19 @@ export async function portal(env, row) {
 
 // A code may be used on up to 5 computers; entering it again on one already linked is fine.
 export const MAX_INSTALLS = 5;
+// The same codes work for Pro and Lifetime; the code says which it is.
 export async function restore(env, install, rawCode) {
   const db = env.DB;
   const code = normalizeCode(rawCode);
   if (!code) return { error: "bad code", status: 400 };
-  const row = await env.DB.prepare("SELECT * FROM subs WHERE code = ? AND mode = ?").bind(code, mode(env)).first();
-  if (!isPro(row)) return { error: "bad code", status: 404 };
-  const { n } = await db.prepare("SELECT COUNT(*) AS n FROM installs WHERE code = ? AND install != ?").bind(code, install).first();
+  const sub = await db.prepare("SELECT * FROM subs WHERE code = ? AND mode = ?").bind(code, mode(env)).first();
+  const license = isPro(sub) ? null : await db.prepare("SELECT * FROM licenses WHERE code = ? AND mode = ? AND status = 'paid'").bind(code, mode(env)).first();
+  if (!isPro(sub) && !license) return { error: "bad code", status: 404 };
+  const table = license ? "license_installs" : "installs";
+  const { n } = await db.prepare(`SELECT COUNT(*) AS n FROM ${table} WHERE code = ? AND install != ?`).bind(code, install).first();
   if (n >= MAX_INSTALLS) return { error: "too many", status: 409 };
-  await db.prepare("INSERT INTO installs (install, code, linked_at) VALUES (?, ?, ?) ON CONFLICT (install) DO UPDATE SET code = excluded.code, linked_at = excluded.linked_at").bind(install, code, Date.now()).run();
-  return { ok: true };
+  await db.prepare(`INSERT INTO ${table} (install, code, linked_at) VALUES (?, ?, ?) ON CONFLICT (install) DO UPDATE SET code = excluded.code, linked_at = excluded.linked_at`).bind(install, code, Date.now()).run();
+  return { ok: true, plan: license ? "lifetime" : "pro" };
 }
 
 // ---- webhook (Standard Webhooks: HMAC-SHA256 over "id.timestamp.body", base64, key = the whsec_ secret base64-decoded) ----
@@ -103,7 +116,31 @@ export async function verify(env, body, id, timestamp, signature, now = Date.now
   });
 }
 
+// Lifetime: payment.succeeded stores the license and links the install that paid; a refund takes it back.
+async function handleLifetime(env, event) {
+  const d = event.data || {}, meta = d.metadata || {}, db = env.DB;
+  if (event.type === "refund.succeeded") {
+    if (!d.payment_id) return "ignored";
+    const r = await db.prepare("UPDATE licenses SET status = 'refunded', updated_at = ? WHERE payment_id = ?").bind(Date.now(), d.payment_id).run();
+    return r.meta?.changes ? "refunded" : "ignored";
+  }
+  const ours = [env.DODO_LIFETIME_TEST, env.DODO_LIFETIME_LIVE].filter(Boolean);
+  // Subscription renewals are payments too; only the one-time checkout for our lifetime product counts here.
+  if (meta.app !== "twinsub" || meta.plan !== "lifetime" || d.subscription_id || !d.payment_id) return "ignored";
+  if (Array.isArray(d.product_cart) && d.product_cart.length && !d.product_cart.some(p => ours.includes(p.product_id))) return "ignored";
+  const code = normalizeCode(meta.code);
+  if (!code) return "ignored";
+  const r = await db.prepare(`INSERT INTO licenses (code, payment_id, customer_id, email, status, mode, updated_at) VALUES (?, ?, ?, ?, 'paid', ?, ?)
+      ON CONFLICT (payment_id) DO NOTHING`).bind(code, d.payment_id, d.customer?.customer_id || null, d.customer?.email || null, mode(env), Date.now()).run();
+  if (r.meta?.changes && /^[A-Za-z0-9-]{16,64}$/.test(meta.install || "")) {
+    await db.prepare("INSERT INTO license_installs (install, code, linked_at) VALUES (?, ?, ?) ON CONFLICT (install) DO UPDATE SET code = excluded.code, linked_at = excluded.linked_at").bind(meta.install, code, Date.now()).run();
+  }
+  console.log(JSON.stringify({ lifetime: event.type, mode: mode(env) }));
+  return "stored";
+}
+
 export async function handle(env, event) {
+  if (event?.type === "payment.succeeded" || event?.type === "refund.succeeded") return handleLifetime(env, event);
   if (!String(event?.type || "").startsWith("subscription.")) return "ignored";
   const d = event.data || {}, meta = d.metadata || {};
   const ours = [env.DODO_PRODUCT_TEST, env.DODO_PRODUCT_LIVE].filter(Boolean);

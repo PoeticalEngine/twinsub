@@ -38,3 +38,18 @@ test("events for other products or apps are ignored", async () => {
   assert.equal(await handle(env, { type: "subscription.active", data: { subscription_id: "s", product_id: "pdt_other", metadata: { app: "twinsub" } } }), "ignored");
   assert.equal(await handle(env, { type: "subscription.active", data: { subscription_id: "s", product_id: "pdt_twinsub", metadata: {} } }), "ignored");
 });
+
+test("only the one-time Lifetime checkout counts as a Lifetime payment", async () => {
+  const env = { DODO_LIFETIME_TEST: "pdt_life", DB: null };
+  const meta = { app: "twinsub", plan: "lifetime", install: "x".repeat(20), code: newCode() };
+  // A Pro renewal is a payment too, and carries a subscription id.
+  assert.equal(await handle(env, { type: "payment.succeeded", data: { payment_id: "p", subscription_id: "s", metadata: meta } }), "ignored");
+  assert.equal(await handle(env, { type: "payment.succeeded", data: { payment_id: "p", metadata: { ...meta, plan: "pro" } } }), "ignored");
+  assert.equal(await handle(env, { type: "payment.succeeded", data: { payment_id: "p", metadata: meta, product_cart: [{ product_id: "pdt_other" }] } }), "ignored");
+  assert.equal(await handle(env, { type: "payment.succeeded", data: { payment_id: "p", metadata: { ...meta, code: "nope" } } }), "ignored");
+  const runs = [];
+  const db = { prepare: sql => ({ bind: (...a) => ({ run: async () => { runs.push([sql.trim().split(/\s+/).slice(0, 3).join(" "), a]); return { meta: { changes: 1 } }; } }) }) };
+  assert.equal(await handle({ ...env, DB: db }, { type: "payment.succeeded", data: { payment_id: "p", metadata: meta, product_cart: [{ product_id: "pdt_life" }], customer: { email: "a@b.c" } } }), "stored");
+  assert.deepEqual(runs.map(r => r[0]), ["INSERT INTO licenses", "INSERT INTO license_installs"]);
+  assert.equal(await handle({ ...env, DB: db }, { type: "refund.succeeded", data: { payment_id: "p" } }), "refunded");
+});

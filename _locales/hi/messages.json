@@ -144,7 +144,7 @@
   "message": "Pro लें: हर महीने 1,000, $$4.99 में"
  },
  "quotaRestoreHint": {
-  "message": "पहले से Pro हैं? Twinsub मेनू (एक्सटेंशन आइकन) में अपना कोड डालें।"
+  "message": "पहले से Pro या Lifetime है? Twinsub मेनू (एक्सटेंशन आइकन) में अपना कोड डालें।"
  },
  "proPitch": {
   "message": "रोज़ 5 की जगह हर महीने 1,000 व्याख्याएँ। $$4.99 प्रति माह, कभी भी रद्द करें।"
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro चालू है। धन्यवाद!"
+ },
+ "byokFooter": {
+  "message": "आपकी अपनी key · $1"
+ },
+ "quotaOwnKey": {
+  "message": "या एक बार $$14.90: अपनी API key, हमारे सर्वर से कुछ नहीं गुज़रता"
+ },
+ "byokLocked": {
+  "message": "आपकी अपनी API key चालू है, लेकिन इस कंप्यूटर पर अनलॉक नहीं है। Lifetime लें या AI सेटिंग्स में अपना कोड डालें।"
+ },
+ "byokSetup": {
+  "message": "आपकी अपनी API key चालू है, लेकिन अभी सेट नहीं हुई है।"
+ },
+ "byokOpenSettings": {
+  "message": "AI सेटिंग्स खोलें"
+ },
+ "byokKeyBad": {
+  "message": "$1 ने आपकी API key नहीं मानी। AI सेटिंग्स में जाँचें।"
+ },
+ "byokRate": {
+  "message": "$1 के मुताबिक़ आपकी सीमा पूरी हो गई है या क्रेडिट ख़त्म हो गया है।"
+ },
+ "byokErr": {
+  "message": "$1 से एरर आया।"
+ },
+ "popupAi": {
+  "message": "AI सेटिंग्स · अपनी API key इस्तेमाल करें"
+ },
+ "popupByokOn": {
+  "message": "व्याख्याएँ आपकी अपनी key ($1) से बन रही हैं।"
+ },
+ "proOrLifetime": {
+  "message": "या एक बार भुगतान ($$14.90): अपनी API key, व्याख्याएँ हमारे सर्वर से कभी नहीं गुज़रतीं"
+ },
+ "optTitle": {
+  "message": "Twinsub AI सेटिंग्स"
+ },
+ "optWho": {
+  "message": "व्याख्या कौन लिखेगा"
+ },
+ "optHosted": {
+  "message": "Twinsub: रोज़ 5 मुफ़्त, या Pro के साथ हर महीने 1,000"
+ },
+ "optOwn": {
+  "message": "मेरी अपनी API key, सीधे मेरे प्रोवाइडर को"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub Lifetime"
+ },
+ "optLt1": {
+  "message": "अपनी key, अपनी पसंद का AI: OpenAI, Claude, Gemini, DeepSeek और भी, या कोई भी compatible endpoint।"
+ },
+ "optLt2": {
+  "message": "ज़्यादा निजी: व्याख्या का अनुरोध Chrome से सीधे आपके प्रोवाइडर को जाता है। आप क्या देखते और पूछते हैं, Twinsub का सर्वर कभी नहीं देखता।"
+ },
+ "optLt3": {
+  "message": "Twinsub की कोई सीमा नहीं: जितना आपका प्रोवाइडर दे।"
+ },
+ "optLt4": {
+  "message": "एक बार $$14.90। ज़्यादा से ज़्यादा 5 कंप्यूटर, कोई सदस्यता नहीं।"
+ },
+ "optLifetimePitch": {
+  "message": "जितना इस्तेमाल करें उसका भुगतान अपने AI प्रोवाइडर को करें। दोहरे सबटाइटल मुफ़्त ही रहेंगे।"
+ },
+ "optBuy": {
+  "message": "Lifetime लें"
+ },
+ "optHaveCode": {
+  "message": "पहले ही ख़रीद लिया? अपना कोड डालें"
+ },
+ "optUnlocked": {
+  "message": "इस कंप्यूटर पर आपकी अपनी API key अनलॉक है।"
+ },
+ "optUnlockedPro": {
+  "message": "आपकी Pro सदस्यता चलने तक शामिल है।"
+ },
+ "optLifetimeCode": {
+  "message": "आपका Lifetime कोड, दूसरे कंप्यूटरों के लिए:"
+ },
+ "optThanks": {
+  "message": "अनलॉक हो गया। धन्यवाद!"
+ },
+ "optProvider": {
+  "message": "प्रोवाइडर"
+ },
+ "optBaseUrl": {
+  "message": "Base URL"
+ },
+ "optFormat": {
+  "message": "API फ़ॉर्मैट"
+ },
+ "optFmtChat": {
+  "message": "OpenAI-compatible (Chat Completions)"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "API key"
+ },
+ "optKeySaved": {
+  "message": "सेव है ($1)। इसे रखने के लिए खाली छोड़ें।"
+ },
+ "optKeyNone": {
+  "message": "लोकल सर्वर के लिए ज़रूरी नहीं।"
+ },
+ "optGetKey": {
+  "message": "key पाएँ"
+ },
+ "optModel": {
+  "message": "मॉडल"
+ },
+ "optLoadModels": {
+  "message": "मॉडल लोड करें"
+ },
+ "optModelsLoaded": {
+  "message": "$1 मॉडल लोड हुए। मॉडल वाले खाने में एक चुनें।"
+ },
+ "optSave": {
+  "message": "सेव करें"
+ },
+ "optSaved": {
+  "message": "सेव हो गया।"
+ },
+ "optTest": {
+  "message": "टेस्ट करें"
+ },
+ "optTesting": {
+  "message": "टेस्ट हो रहा है…"
+ },
+ "optTestOk": {
+  "message": "काम कर रहा है। मॉडल ने कहा: $1"
+ },
+ "optTestFail": {
+  "message": "काम नहीं हुआ: $1"
+ },
+ "optRemoveKey": {
+  "message": "सेव की हुई key हटाएँ"
+ },
+ "optKeyRemoved": {
+  "message": "key हटा दी गई।"
+ },
+ "optPermDenied": {
+  "message": "$1 तक पहुँचने की अनुमति के बिना Twinsub इस प्रोवाइडर को कॉल नहीं कर सकता।"
+ },
+ "optNeedUrl": {
+  "message": "https:// से शुरू होने वाला पूरा Base URL डालें।"
+ },
+ "optNeedModel": {
+  "message": "मॉडल डालें।"
+ },
+ "optPrivacy": {
+  "message": "आपकी key एन्क्रिप्ट होकर सिर्फ़ इसी कंप्यूटर पर रहती है: न सिंक होती है, न Twinsub को भेजी जाती है। अपनी key के साथ व्याख्या का अनुरोध Chrome से सीधे आपके चुने प्रोवाइडर को जाता है, उसकी शर्तों के तहत, और Twinsub के सर्वर से कभी नहीं गुज़रता।"
  }
 }

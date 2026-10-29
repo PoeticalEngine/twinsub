@@ -141,19 +141,19 @@
   "message": "Vuelven el día 1 del mes que viene."
  },
  "quotaUpgrade": {
-  "message": "Hazte Pro: 1.000 al mes por 4,99 $"
+  "message": "Hazte Pro: 1.000 al mes por US$$4.99"
  },
  "quotaRestoreHint": {
-  "message": "¿Ya eres Pro? Introduce tu código en el menú de Twinsub (el icono de la extensión)."
+  "message": "¿Ya tienes Pro o Lifetime? Ingresa tu código en el menú de Twinsub (el ícono de la extensión)."
  },
  "proPitch": {
-  "message": "1.000 explicaciones al mes en vez de 5 al día. 4,99 $ al mes, cancela cuando quieras."
+  "message": "1.000 explicaciones al mes en vez de 5 al día. US$$4.99 al mes, cancela cuando quieras."
  },
  "proUpgrade": {
   "message": "Hazte Pro"
  },
  "proHave": {
-  "message": "¿Ya eres Pro? Introduce tu código"
+  "message": "¿Ya eres Pro? Ingresa tu código"
  },
  "proApply": {
   "message": "Usar"
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro activado. ¡Gracias!"
+ },
+ "byokFooter": {
+  "message": "Tu propia clave · $1"
+ },
+ "quotaOwnKey": {
+  "message": "O US$$14.90 una sola vez: tu propia clave de API, nada pasa por nuestro servidor"
+ },
+ "byokLocked": {
+  "message": "Tu propia clave de API está activada, pero no está desbloqueada en esta computadora. Compra Lifetime o ingresa tu código en la configuración de IA."
+ },
+ "byokSetup": {
+  "message": "Tu propia clave de API está activada, pero todavía no está configurada."
+ },
+ "byokOpenSettings": {
+  "message": "Abrir la configuración de IA"
+ },
+ "byokKeyBad": {
+  "message": "$1 rechazó tu clave de API. Revísala en la configuración de IA."
+ },
+ "byokRate": {
+  "message": "$1 indica que llegaste a tu límite o te quedaste sin crédito."
+ },
+ "byokErr": {
+  "message": "$1 devolvió un error."
+ },
+ "popupAi": {
+  "message": "Configuración de IA · usar tu propia clave de API"
+ },
+ "popupByokOn": {
+  "message": "Las explicaciones usan tu propia clave ($1)."
+ },
+ "proOrLifetime": {
+  "message": "O paga una sola vez (US$$14.90): tu propia clave de API, las explicaciones nunca pasan por nuestro servidor"
+ },
+ "optTitle": {
+  "message": "Configuración de IA de Twinsub"
+ },
+ "optWho": {
+  "message": "Quién escribe las explicaciones"
+ },
+ "optHosted": {
+  "message": "Twinsub: 5 gratis al día, o 1.000 al mes con Pro"
+ },
+ "optOwn": {
+  "message": "Mi propia clave de API, enviada directo a mi proveedor"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub Lifetime"
+ },
+ "optLt1": {
+  "message": "Tu clave, la IA que elijas: OpenAI, Claude, Gemini, DeepSeek y más, o cualquier endpoint compatible."
+ },
+ "optLt2": {
+  "message": "Más privado: las explicaciones van directo de Chrome a tu proveedor. El servidor de Twinsub nunca ve lo que miras ni lo que preguntas."
+ },
+ "optLt3": {
+  "message": "Sin límites de Twinsub: todo lo que tu proveedor permita."
+ },
+ "optLt4": {
+  "message": "Un solo pago de US$$14.90. Hasta 5 computadoras, sin suscripción."
+ },
+ "optLifetimePitch": {
+  "message": "Lo que uses lo pagas a tu proveedor de IA. Los subtítulos dobles siguen siendo gratis."
+ },
+ "optBuy": {
+  "message": "Comprar Lifetime"
+ },
+ "optHaveCode": {
+  "message": "¿Ya lo compraste? Ingresa tu código"
+ },
+ "optUnlocked": {
+  "message": "Tu propia clave de API está desbloqueada en esta computadora."
+ },
+ "optUnlockedPro": {
+  "message": "Incluido en tu suscripción Pro mientras esté activa."
+ },
+ "optLifetimeCode": {
+  "message": "Tu código Lifetime, para tus otras computadoras:"
+ },
+ "optThanks": {
+  "message": "Desbloqueado. ¡Gracias!"
+ },
+ "optProvider": {
+  "message": "Proveedor"
+ },
+ "optBaseUrl": {
+  "message": "URL base"
+ },
+ "optFormat": {
+  "message": "Formato de API"
+ },
+ "optFmtChat": {
+  "message": "Compatible con OpenAI (Chat Completions)"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "Clave de API"
+ },
+ "optKeySaved": {
+  "message": "Guardada ($1). Déjalo vacío para conservarla."
+ },
+ "optKeyNone": {
+  "message": "No hace falta para un servidor local."
+ },
+ "optGetKey": {
+  "message": "Obtener una clave"
+ },
+ "optModel": {
+  "message": "Modelo"
+ },
+ "optLoadModels": {
+  "message": "Cargar modelos"
+ },
+ "optModelsLoaded": {
+  "message": "Se cargaron $1 modelos. Elige uno en el campo Modelo."
+ },
+ "optSave": {
+  "message": "Guardar"
+ },
+ "optSaved": {
+  "message": "Guardado."
+ },
+ "optTest": {
+  "message": "Probar"
+ },
+ "optTesting": {
+  "message": "Probando…"
+ },
+ "optTestOk": {
+  "message": "Funciona. El modelo respondió: $1"
+ },
+ "optTestFail": {
+  "message": "No funcionó: $1"
+ },
+ "optRemoveKey": {
+  "message": "Borrar la clave guardada"
+ },
+ "optKeyRemoved": {
+  "message": "Clave borrada."
+ },
+ "optPermDenied": {
+  "message": "Sin permiso para conectarse a $1, Twinsub no puede usar este proveedor."
+ },
+ "optNeedUrl": {
+  "message": "Ingresa una URL base completa que empiece con https://"
+ },
+ "optNeedModel": {
+  "message": "Ingresa un modelo."
+ },
+ "optPrivacy": {
+  "message": "Tu clave se cifra y se guarda solo en esta computadora: nunca se sincroniza ni se envía a Twinsub. Con tu propia clave, las explicaciones van directo de Chrome al proveedor que elegiste, bajo sus términos, y nunca pasan por el servidor de Twinsub."
  }
 }

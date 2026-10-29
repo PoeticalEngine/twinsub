@@ -144,7 +144,7 @@
   "message": "Get Pro: 1,000 a month for $$4.99"
  },
  "quotaRestoreHint": {
-  "message": "Already have Pro? Enter your code in the Twinsub menu (the extension icon)."
+  "message": "Already have Pro or Lifetime? Enter your code in the Twinsub menu (the extension icon)."
  },
  "proPitch": {
   "message": "1,000 explanations a month instead of 5 a day. $$4.99 a month, cancel anytime."
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro is on. Thank you!"
+ },
+ "byokFooter": {
+  "message": "Your own key · $1"
+ },
+ "quotaOwnKey": {
+  "message": "Or $$14.90 once: your own API key, nothing through our server"
+ },
+ "byokLocked": {
+  "message": "Your own API key is turned on, but it isn't unlocked on this computer. Get Lifetime or enter your code in the AI settings."
+ },
+ "byokSetup": {
+  "message": "Your own API key is turned on but not set up yet."
+ },
+ "byokOpenSettings": {
+  "message": "Open AI settings"
+ },
+ "byokKeyBad": {
+  "message": "$1 turned down your API key. Check it in the AI settings."
+ },
+ "byokRate": {
+  "message": "$1 says you've hit your rate limit or run out of credit."
+ },
+ "byokErr": {
+  "message": "$1 returned an error."
+ },
+ "popupAi": {
+  "message": "AI settings · use your own API key"
+ },
+ "popupByokOn": {
+  "message": "Explanations use your own key ($1)."
+ },
+ "proOrLifetime": {
+  "message": "Or pay once ($$14.90): your own API key, explanations never pass through our server"
+ },
+ "optTitle": {
+  "message": "Twinsub AI settings"
+ },
+ "optWho": {
+  "message": "Who writes the explanations"
+ },
+ "optHosted": {
+  "message": "Twinsub: 5 free a day, or 1,000 a month with Pro"
+ },
+ "optOwn": {
+  "message": "My own API key, sent straight to my provider"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub Lifetime"
+ },
+ "optLt1": {
+  "message": "Your own key, your choice of AI: OpenAI, Claude, Gemini, DeepSeek and more, or any compatible endpoint."
+ },
+ "optLt2": {
+  "message": "More private: explanations go straight from Chrome to your provider. Twinsub's server never sees what you watch or ask."
+ },
+ "optLt3": {
+  "message": "No Twinsub limits: explain as much as your provider allows."
+ },
+ "optLt4": {
+  "message": "Pay once, $$14.90. Up to 5 computers, no subscription."
+ },
+ "optLifetimePitch": {
+  "message": "You pay your AI provider for what you use. Dual subtitles stay free."
+ },
+ "optBuy": {
+  "message": "Get Lifetime"
+ },
+ "optHaveCode": {
+  "message": "Already bought it? Enter your code"
+ },
+ "optUnlocked": {
+  "message": "Your own API key is unlocked on this computer."
+ },
+ "optUnlockedPro": {
+  "message": "Included with your Pro subscription while it lasts."
+ },
+ "optLifetimeCode": {
+  "message": "Your Lifetime code, for your other computers:"
+ },
+ "optThanks": {
+  "message": "Unlocked. Thank you!"
+ },
+ "optProvider": {
+  "message": "Provider"
+ },
+ "optBaseUrl": {
+  "message": "Base URL"
+ },
+ "optFormat": {
+  "message": "API format"
+ },
+ "optFmtChat": {
+  "message": "OpenAI-compatible (Chat Completions)"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "API key"
+ },
+ "optKeySaved": {
+  "message": "Saved ($1). Leave this empty to keep it."
+ },
+ "optKeyNone": {
+  "message": "Not needed for a local server."
+ },
+ "optGetKey": {
+  "message": "Get a key"
+ },
+ "optModel": {
+  "message": "Model"
+ },
+ "optLoadModels": {
+  "message": "Load models"
+ },
+ "optModelsLoaded": {
+  "message": "$1 models loaded. Pick one in the Model field."
+ },
+ "optSave": {
+  "message": "Save"
+ },
+ "optSaved": {
+  "message": "Saved."
+ },
+ "optTest": {
+  "message": "Test"
+ },
+ "optTesting": {
+  "message": "Testing…"
+ },
+ "optTestOk": {
+  "message": "It works. The model said: $1"
+ },
+ "optTestFail": {
+  "message": "That didn't work: $1"
+ },
+ "optRemoveKey": {
+  "message": "Remove saved key"
+ },
+ "optKeyRemoved": {
+  "message": "Key removed."
+ },
+ "optPermDenied": {
+  "message": "Without permission to reach $1, Twinsub can't call this provider."
+ },
+ "optNeedUrl": {
+  "message": "Enter a full base URL, starting with https://"
+ },
+ "optNeedModel": {
+  "message": "Enter a model."
+ },
+ "optPrivacy": {
+  "message": "Your key is encrypted and kept only on this computer: it is never synced and never sent to Twinsub. With your own key, explanations go straight from Chrome to the provider you chose, under that provider's terms, and never pass through Twinsub's server."
  }
 }

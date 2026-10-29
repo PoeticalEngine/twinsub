@@ -24,7 +24,7 @@
   "mark": "das Uber fürs Gassigehen",
   "gist": "Eine App, die Hundebesitzer und Gassigeher auf Abruf zusammenbringt, so wie Uber Fahrgäste und Fahrer. Mit etwas Selbstironie gesagt.",
   "background": "„Das Uber für X“ war in den 2010ern der Standard-Pitch von Start-ups. So abgenutzt, dass es heute wie ein Witz über sich selbst klingt.",
-  "quota": "5 kostenlose Erklärungen pro Tag. Pro: 1.000 im Monat für 4,99 $. Zweisprachige Untertitel sind immer kostenlos.",
+  "quota": "5 Erklärungen am Tag gratis. Pro: 1.000 im Monat für 4,99 $. Lifetime: einmal 14,90 $, mit deinem eigenen API-Schlüssel. Doppel-Untertitel sind immer gratis.",
   "labels": {
    "gist": "Was gemeint ist",
    "background": "Hintergrund"
@@ -48,7 +48,11 @@
    ],
    [
     "Gibt es ein Bezahlangebot?",
-    "Twinsub Pro bietet 1.000 Erklärungen im Monat statt 5 am Tag, für 4,99 $ im Monat. Jederzeit im Twinsub-Menü kündbar. Zweisprachige Untertitel bleiben in jedem Fall kostenlos und unbegrenzt."
+    "Zwei. Twinsub Pro gibt dir 1.000 Erklärungen im Monat statt 5 am Tag, für 4,99 $ im Monat; jederzeit im Twinsub-Menü kündbar. Twinsub Lifetime kostet einmal 14,90 $ und schaltet deinen eigenen KI-API-Schlüssel dauerhaft frei. Die Doppel-Untertitel bleiben in jedem Fall gratis und unbegrenzt."
+   ],
+   [
+    "Kann ich meinen eigenen API-Schlüssel nutzen?",
+    "Ja, mit Twinsub Lifetime (einmal 14,90 $) oder solange du Pro hast. Wähl OpenAI, Anthropic (Claude), Google Gemini, DeepSeek, OpenRouter, Mistral, Groq, xAI, Qwen, Kimi, GLM, Doubao, SiliconFlow oder ein lokales Ollama, oder gib eine beliebige Basis-URL ein, die das Format OpenAI Chat Completions, OpenAI Responses oder Claude Messages spricht. Dein Schlüssel wird verschlüsselt nur auf deinem Computer gespeichert, und Erklärungen gehen direkt von Chrome an diesen Anbieter, nie über unseren Server."
    ],
    [
     "Wie wird übersetzt?",
@@ -64,7 +68,7 @@
    ],
    [
     "Was verlässt meinen Computer?",
-    "Bei den Untertiteln nichts. Wenn du auf Erklären tippst, gehen die markierten Wörter und ein paar Zeilen drumherum an unseren Server, der Claude, ein KI-Modell von Anthropic, um die Antwort bittet. Siehe Datenschutzerklärung."
+    "Bei den Untertiteln nichts. Wenn du auf Erklären tippst, gehen die markierten Wörter und ein paar Zeilen drumherum an unseren Server, der ein in den USA gehostetes KI-Modell um die Antwort bittet. Siehe Datenschutzerklärung."
    ],
    [
     "Welche Browser?",
@@ -84,6 +88,43 @@
   "ok": "Twinsub Pro ist in wenigen Sekunden aktiv. Geh zurück zu YouTube und schau weiter.",
   "code": "Deinen Pro-Code findest du im Twinsub-Menü (Erweiterungssymbol). Gib ihn auf deinen anderen Computern ein, bis zu 5.",
   "fail": "Die Zahlung ist nicht durchgegangen, es wurde nichts abgebucht. Du kannst es im Twinsub-Menü erneut versuchen.",
-  "back": "Zurück zu YouTube"
+  "back": "Zurück zu YouTube",
+  "lifetimeTitle": "Danke für Lifetime",
+  "lifetimeOk": "Dein eigener API-Schlüssel ist in wenigen Sekunden freigeschaltet. Öffne im Twinsub-Menü die KI-Einstellungen und trag Anbieter und Schlüssel ein.",
+  "lifetimeCode": "Dein Lifetime-Code steht in den KI-Einstellungen. Gib ihn auf deinen anderen Computern ein, bis zu 5."
+ },
+ "plans": {
+  "title": "Gratis starten. Zwei Wege zu mehr.",
+  "free": {
+   "name": "Gratis",
+   "price": "0 $",
+   "points": [
+    "Doppel-Untertitel unbegrenzt",
+    "5 KI-Erklärungen am Tag",
+    "Kein Konto, keine Anmeldung"
+   ]
+  },
+  "pro": {
+   "name": "Pro",
+   "price": "4,99 $",
+   "per": "/ Monat",
+   "points": [
+    "1.000 Erklärungen im Monat",
+    "Von KI geschrieben, nichts einzurichten",
+    "Jederzeit kündbar"
+   ]
+  },
+  "life": {
+   "name": "Lifetime",
+   "price": "14,90 $",
+   "per": "einmalig",
+   "badge": "Am privatesten",
+   "points": [
+    "Eigener API-Schlüssel: OpenAI, Claude, Gemini, DeepSeek oder jeder kompatible Endpunkt",
+    "Erklärungen gehen direkt von Chrome an deinen Anbieter, nie über unseren Server",
+    "Keine Twinsub-Limits; du zahlst deinen Anbieter",
+    "Bis zu 5 Computer, kein Abo"
+   ]
+  }
  }
 }

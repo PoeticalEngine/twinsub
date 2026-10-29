@@ -38,8 +38,15 @@ function showPro(q) {
   $("myCode").textContent = q.code;
   if (!q.renews && q.until) { $("proEnds").hidden = false; $("proEnds").textContent = msg("proEnds", new Date(q.until).toLocaleDateString()); }
 }
-const refresh = () => chrome.runtime.sendMessage({ type: "quota" }).then(showPro, () => {});
+const refresh = () => chrome.runtime.sendMessage({ type: "account" }).then(showPro, () => {});
 refresh();
+// AI settings: Lifetime and the viewer's own API key live on the options page.
+for (const a of document.querySelectorAll("a.settings")) a.addEventListener("click", e => { e.preventDefault(); chrome.runtime.openOptionsPage(); window.close(); });
+chrome.runtime.sendMessage({ type: "byok-get" }).then(b => {
+  if (!b?.enabled || !b.unlocked) return;
+  $("byokOn").hidden = false;
+  $("byokOn").textContent = msg("popupByokOn", b.model);
+}, () => {});
 $("upgrade").addEventListener("click", () => chrome.runtime.sendMessage({ type: "checkout" }).then(r => { if (r?.ok) window.close(); }));
 $("manage").addEventListener("click", e => { e.preventDefault(); chrome.runtime.sendMessage({ type: "portal" }); });
 $("copy").addEventListener("click", () => navigator.clipboard.writeText($("myCode").textContent).then(() => { $("copy").textContent = msg("proCopied"); }));
@@ -48,7 +55,7 @@ $("restore").addEventListener("submit", e => {
   chrome.runtime.sendMessage({ type: "restore", code: $("code").value }).then(r => {
     const m = $("codeMsg");
     m.hidden = false;
-    m.textContent = r?.ok ? msg("proThanks") : msg(r?.error === "too many" ? "proTooMany" : "proBadCode");
+    m.textContent = r?.ok ? msg(r.plan === "lifetime" ? "optThanks" : "proThanks") : msg(r?.error === "too many" ? "proTooMany" : "proBadCode");
     if (r?.ok) refresh();
   });
 });

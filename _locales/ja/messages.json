@@ -144,7 +144,7 @@
   "message": "Pro にする：月 1,000 回 $$4.99"
  },
  "quotaRestoreHint": {
-  "message": "Pro をお持ちなら、Twinsub メニュー（拡張機能アイコン）でコードを入力してください。"
+  "message": "Pro か買い切り版をお持ちなら、Twinsub メニュー（拡張機能アイコン）でコードを入力してください。"
  },
  "proPitch": {
   "message": "1 日 5 回ではなく、月 1,000 回の解説。月 $$4.99、いつでも解約できます。"
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro が有効になりました。ありがとうございます！"
+ },
+ "byokFooter": {
+  "message": "自分の API キー · $1"
+ },
+ "quotaOwnKey": {
+  "message": "または買い切り $$14.90：自分の API キーで、当社サーバーを経由しません"
+ },
+ "byokLocked": {
+  "message": "自分の API キーがオンですが、このパソコンではまだ有効になっていません。買い切り版を購入するか、AI 設定でコードを入力してください。"
+ },
+ "byokSetup": {
+  "message": "自分の API キーがオンですが、まだ設定されていません。"
+ },
+ "byokOpenSettings": {
+  "message": "AI 設定を開く"
+ },
+ "byokKeyBad": {
+  "message": "$1 に API キーを拒否されました。AI 設定で確認してください。"
+ },
+ "byokRate": {
+  "message": "$1 のレート制限に達したか、クレジットが残っていません。"
+ },
+ "byokErr": {
+  "message": "$1 がエラーを返しました。"
+ },
+ "popupAi": {
+  "message": "AI 設定 · 自分の API キーを使う"
+ },
+ "popupByokOn": {
+  "message": "解説は自分のキー（$1）で生成されます。"
+ },
+ "proOrLifetime": {
+  "message": "または買い切り（$$14.90）：自分の API キーで、解説は当社サーバーを一切経由しません"
+ },
+ "optTitle": {
+  "message": "Twinsub AI 設定"
+ },
+ "optWho": {
+  "message": "解説を書くのは"
+ },
+ "optHosted": {
+  "message": "Twinsub：1 日 5 回まで無料、Pro なら月 1,000 回"
+ },
+ "optOwn": {
+  "message": "自分の API キー（プロバイダに直接送信）"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub 買い切り版"
+ },
+ "optLt1": {
+  "message": "自分のキーで、AI も自由に：OpenAI、Claude、Gemini、DeepSeek など、互換エンドポイントも使えます。"
+ },
+ "optLt2": {
+  "message": "よりプライベート：解説は Chrome からプロバイダに直接送られ、何を見て何を尋ねたかを Twinsub のサーバーが知ることはありません。"
+ },
+ "optLt3": {
+  "message": "Twinsub の回数制限なし：プロバイダが許す限り使えます。"
+ },
+ "optLt4": {
+  "message": "一度だけ $$14.90。最大 5 台、サブスクなし。"
+ },
+ "optLifetimePitch": {
+  "message": "利用料は AI プロバイダに直接お支払いください。二重字幕はずっと無料です。"
+ },
+ "optBuy": {
+  "message": "買い切り版を購入"
+ },
+ "optHaveCode": {
+  "message": "購入済みならコードを入力"
+ },
+ "optUnlocked": {
+  "message": "このパソコンでは自分の API キーが使えます。"
+ },
+ "optUnlockedPro": {
+  "message": "Pro の契約期間中は含まれています。"
+ },
+ "optLifetimeCode": {
+  "message": "買い切り版のコード（ほかのパソコン用）："
+ },
+ "optThanks": {
+  "message": "有効になりました。ありがとうございます！"
+ },
+ "optProvider": {
+  "message": "プロバイダ"
+ },
+ "optBaseUrl": {
+  "message": "ベース URL"
+ },
+ "optFormat": {
+  "message": "API 形式"
+ },
+ "optFmtChat": {
+  "message": "OpenAI 互換（Chat Completions）"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "API キー"
+ },
+ "optKeySaved": {
+  "message": "保存済み（$1）。空欄のままなら変更されません。"
+ },
+ "optKeyNone": {
+  "message": "ローカルサーバーなら不要です。"
+ },
+ "optGetKey": {
+  "message": "キーを取得"
+ },
+ "optModel": {
+  "message": "モデル"
+ },
+ "optLoadModels": {
+  "message": "モデル一覧を取得"
+ },
+ "optModelsLoaded": {
+  "message": "$1 件のモデルを取得しました。「モデル」欄で選んでください。"
+ },
+ "optSave": {
+  "message": "保存"
+ },
+ "optSaved": {
+  "message": "保存しました。"
+ },
+ "optTest": {
+  "message": "テスト"
+ },
+ "optTesting": {
+  "message": "テスト中…"
+ },
+ "optTestOk": {
+  "message": "使えます。モデルの返答：$1"
+ },
+ "optTestFail": {
+  "message": "うまくいきませんでした：$1"
+ },
+ "optRemoveKey": {
+  "message": "保存したキーを削除"
+ },
+ "optKeyRemoved": {
+  "message": "キーを削除しました。"
+ },
+ "optPermDenied": {
+  "message": "$1 への接続が許可されていないため、Twinsub はこのプロバイダを呼び出せません。"
+ },
+ "optNeedUrl": {
+  "message": "https:// から始まるベース URL を入力してください。"
+ },
+ "optNeedModel": {
+  "message": "モデルを入力してください。"
+ },
+ "optPrivacy": {
+  "message": "キーは暗号化して、このパソコンにだけ保存されます。同期されることも、Twinsub に送られることもありません。自分のキーを使うと、解説は Chrome から選んだプロバイダに直接送られ（そのプロバイダの規約が適用されます）、Twinsub のサーバーは一切経由しません。"
  }
 }

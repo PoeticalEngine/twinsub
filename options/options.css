@@ -1,0 +1,39 @@
+:root { --bg: #fff; --panel: #f6f6f7; --fg: #1a1a1a; --muted: #666; --line: #dcdcdf; --accent: #9a7400; --accent-bg: #ffe27a; --bad: #b42318; }
+@media (prefers-color-scheme: dark) { :root { --bg: #161617; --panel: #1f1f21; --fg: #f1f1f1; --muted: #a3a3aa; --line: #3a3a3e; --accent: #ffe27a; --accent-bg: #6b5a14; --bad: #ff8a80; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 620px; margin: 0 auto; padding: 28px 16px 48px; }
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+h1 { margin: 0; font-size: 22px; }
+h2 { margin: 0 0 8px; font-size: 15px; }
+section, form#cfg { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.choice { display: flex; align-items: center; gap: 8px; padding: 4px 0; cursor: pointer; }
+.field { display: grid; gap: 4px; margin-bottom: 12px; }
+.field > span:first-child { font-weight: 600; }
+input, select, button { font: inherit; color: var(--fg); }
+input:not([type=radio]), select { width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+input[type=radio] { accent-color: var(--accent); }
+select:disabled { opacity: .7; }
+.inline { display: flex; gap: 8px; align-items: center; }
+.inline input { flex: 1; min-width: 0; }
+button { padding: 7px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); cursor: pointer; white-space: nowrap; }
+button.primary { border: 0; background: var(--accent-bg); font-weight: 600; }
+button.link { border: 0; background: none; color: var(--muted); text-decoration: underline; padding: 7px 0; margin-left: auto; }
+button:disabled { opacity: .6; cursor: default; }
+.actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+a { color: var(--accent); }
+#getKey { font-weight: 400; font-size: 13px; margin-left: 6px; }
+code { font: 600 14px ui-monospace, monospace; user-select: all; }
+summary { cursor: pointer; color: var(--muted); margin-top: 8px; }
+details form { margin-top: 8px; }
+.muted { color: var(--muted); }
+small.muted { font-size: 12px; }
+.ok { margin: 0 0 4px; font-weight: 600; }
+p { margin: 0 0 8px; }
+.msg { margin: 10px 0 0; min-height: 1.5em; overflow-wrap: anywhere; }
+.msg.bad { color: var(--bad); }
+.privacy { font-size: 13px; }
+#license p:last-child { margin-bottom: 0; }
+.points { margin: 0 0 12px; padding-left: 20px; }
+.points li { margin: 4px 0; }
+.points li:nth-child(2) { font-weight: 600; }

@@ -103,6 +103,17 @@ section{padding:56px 0}
 .answer b{display:block;color:var(--accent);font-size:13px;font-weight:600;margin-top:10px}
 .answer p{margin:2px 0 0;font-size:15px}
 .how ol{font-size:17px}
+.plans .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.plans .card{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+.plans .card.best{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.plans h3{margin:0;font-size:18px}
+.plans .price{font-size:30px;font-weight:800;margin:6px 0 10px}
+.plans .price span{font-size:15px;font-weight:400;color:var(--mute)}
+.plans ul{margin:0;padding-left:18px;color:var(--mute)}
+.plans li{margin:6px 0}
+.plans .best li:nth-child(2){color:var(--fg);font-weight:600}
+.plans .badge{position:absolute;top:-11px;right:16px;background:var(--accent);color:#111;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px}
+@media (max-width:760px){.plans .cards{grid-template-columns:1fr}}
 .faq details{border-bottom:1px solid var(--line);padding:16px 0}
 .faq summary{cursor:pointer;font-weight:600;font-size:18px}
 .faq details p{color:var(--mute);margin:10px 0 0}
@@ -207,6 +218,9 @@ ${feats}
 <div class="tr">${hl}</div><div class="orig">${esc(e.orig)}</div>
 <div class="answer"><b>${esc(e.labels.gist)}</b><p>${esc(e.gist)}</p><b>${esc(e.labels.background)}</b><p>${esc(e.background)}</p></div></div>
 </section>
+<section class="wrap plans" id="plans"><h2>${esc(c.plans.title)}</h2><div class="cards">
+${["free", "pro", "life"].map(k => { const p = c.plans[k]; return `<div class="card${k === "life" ? " best" : ""}">${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ""}<h3>${esc(p.name)}</h3><p class="price">${esc(p.price)}${p.per ? ` <span>${esc(p.per)}</span>` : ""}</p><ul>${p.points.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`; }).join("\n")}
+</div></section>
 <section class="wrap how"><h2>${esc(c.how.title)}</h2><ol>${c.how.steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol></section>
 <section class="wrap faq"><h2>${esc(c.faq.title)}</h2>
 ${c.faq.items.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("\n")}
@@ -245,18 +259,20 @@ function privacy() {
 
 function terms() {
   const l = LOCALES[0];
-  return head({ l, title: "Twinsub terms of use", description: "What is free, how Twinsub Pro works, and what explanations send to our server.", url: `${ORIGIN}/terms/`, og: `${ORIGIN}/img/en/og.jpg` })
+  return head({ l, title: "Twinsub terms of use", description: "What is free, how Twinsub Pro and Lifetime work, and what explanations send where.", url: `${ORIGIN}/terms/`, og: `${ORIGIN}/img/en/og.jpg` })
     + chrome(l, l) + `<main class="wrap doc">${markdown(termsMd)}</main>` + footer(l);
 }
 
-// Where Dodo sends the subscriber after checkout (it adds ?status=); not indexed.
+// Where Dodo sends the buyer after checkout (it adds ?status=; Lifetime checkouts add ?plan=lifetime); not indexed.
 function proPage(l) {
   const p = l.c.pro;
   return head({ l, title: `${p.title} · Twinsub`, description: p.ok, url: `${l.url}pro/`, og: `${ORIGIN}/img/${l.key}/og.jpg` })
     .replace("<head>", '<head>\n<meta name="robots" content="noindex">')
     + chrome(l, l) + `<main class="wrap hero"><h1 id="t">${esc(p.title)}</h1><p class="sub" id="m">${esc(p.ok)}</p><p class="sub" id="c">${esc(p.code)}</p>
 <a class="cta" href="https://www.youtube.com/">${esc(p.back)}</a></main>
-<script>if(/^(failed|cancelled)$/.test(new URLSearchParams(location.search).get("status")||"")){document.getElementById("t").textContent="Twinsub Pro";document.getElementById("m").textContent=${JSON.stringify(p.fail).replace(/</g, "\\u003c")};document.getElementById("c").remove();}</script>`
+<script>(()=>{const q=new URLSearchParams(location.search),t=${JSON.stringify({ fail: p.fail, title: p.lifetimeTitle, ok: p.lifetimeOk, code: p.lifetimeCode }).replace(/</g, "\\u003c")},$=id=>document.getElementById(id);
+if(/^(failed|cancelled)$/.test(q.get("status")||"")){$("t").textContent="Twinsub";$("m").textContent=t.fail;$("c").remove();}
+else if(q.get("plan")==="lifetime"){$("t").textContent=t.title;$("m").textContent=t.ok;$("c").textContent=t.code;}})()</script>`
     + footer(l);
 }
 
@@ -290,7 +306,7 @@ Key facts:
 - Works on: youtube.com in Chrome 138 or newer on Windows, macOS, Linux and ChromeOS.
 - Subtitles: hand-made and auto-generated tracks; auto-generated captions are regrouped into whole sentences before translating.
 - Target languages: 39, including English, Chinese (Simplified and Traditional), Japanese, Korean, Spanish, French, German, Portuguese, Russian, Arabic, Hindi, Indonesian and Vietnamese.
-- Privacy: subtitle translation never leaves the computer. Only when the viewer taps Explain are the marked words and nearby subtitle lines sent to the Twinsub server, which asks Anthropic's Claude for the answer.
+- Privacy: subtitle translation never leaves the computer. Only when the viewer taps Explain are the marked words and nearby subtitle lines sent to the Twinsub server, which asks an AI model hosted in the United States for the answer.
 - Publisher: Poetical Engine LLC (hello@poeticalengine.com). Source code: ${config.github}
 - Status: version ${manifest.version}${config.cws ? `, on the Chrome Web Store: ${config.cws}` : ", Chrome Web Store listing coming soon"}.
 - Not affiliated with YouTube or Google.
@@ -332,6 +348,10 @@ Example. Original line: "${e.orig}" The viewer marks "${e.mark}" in the translat
 - ${e.labels.background}: ${e.background}
 
 ${e.quota}
+
+## Plans
+
+${["free", "pro", "life"].map(k => { const p = c.plans[k]; return `### ${p.name}: ${p.price}${p.per ? " " + p.per : ""}\n\n${p.points.map(x => "- " + x).join("\n")}`; }).join("\n\n")}
 
 ## FAQ
 

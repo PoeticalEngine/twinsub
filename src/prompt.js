@@ -1,4 +1,5 @@
-// Builds the explanation request from what the extension sends. Kept apart from the Worker so tests can run it in Node.
+// Builds the explanation request from what the content script sends. Shared by the API Worker (which imports it from here)
+// and the extension's service worker, which uses it to call the viewer's own provider directly. Tests run it in Node.
 
 export const SYSTEM = `You explain a moment in a YouTube video to a viewer who paused it because they didn't understand something.
 You get the video's title and channel, a few consecutive subtitle lines in the video's own language, and the part the viewer marked.

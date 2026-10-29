@@ -24,7 +24,7 @@
   "mark": "the Uber for dog walking",
   "gist": "An app that matches dog owners with walkers on demand, the way Uber matches riders with drivers. Said with a bit of self-mockery.",
   "background": "\"The Uber for X\" was a stock startup pitch in the 2010s. It got used so much that saying it now sounds like a joke about yourself.",
-  "quota": "5 free explanations a day. Pro: 1,000 a month for $4.99. Dual subtitles are always free.",
+  "quota": "5 free explanations a day. Pro: 1,000 a month for $4.99. Lifetime: $14.90 once, with your own API key. Dual subtitles are always free.",
   "labels": {
    "gist": "What it says",
    "background": "Background"
@@ -48,7 +48,11 @@
    ],
    [
     "Is there a paid plan?",
-    "Twinsub Pro gives you 1,000 explanations a month instead of 5 a day, for $4.99 a month. Cancel anytime from the Twinsub menu. Dual subtitles stay free and unlimited either way."
+    "Two. Twinsub Pro gives you 1,000 explanations a month instead of 5 a day, for $4.99 a month; cancel anytime from the Twinsub menu. Twinsub Lifetime is a one-time $14.90 that lets you use your own AI API key, for good. Dual subtitles stay free and unlimited either way."
+   ],
+   [
+    "Can I use my own API key?",
+    "Yes, with Twinsub Lifetime ($14.90 once) or while you have Pro. Pick OpenAI, Anthropic (Claude), Google Gemini, DeepSeek, OpenRouter, Mistral, Groq, xAI, Qwen, Kimi, GLM, Doubao, SiliconFlow or a local Ollama, or enter any base URL that speaks the OpenAI Chat Completions, OpenAI Responses or Claude Messages format. Your key is encrypted and stored only on your computer, and explanations go straight from Chrome to that provider, never through our server."
    ],
    [
     "How is the translation done?",
@@ -64,7 +68,7 @@
    ],
    [
     "What leaves my computer?",
-    "For subtitles, nothing. When you tap Explain, the words you marked and a few subtitle lines around them go to our server, which asks Claude, an AI model by Anthropic, for the answer. See the privacy policy."
+    "For subtitles, nothing. When you tap Explain, the words you marked and a few subtitle lines around them go to our server, which asks an AI model hosted in the United States for the answer. See the privacy policy."
    ],
    [
     "Which browsers does it run on?",
@@ -84,6 +88,43 @@
   "ok": "Twinsub Pro turns on within a few seconds. Go back to YouTube and keep watching.",
   "code": "Your Pro code is in the Twinsub menu (click the extension icon). Enter it on your other computers, up to 5.",
   "fail": "The payment didn't go through, so nothing was charged. You can try again from the Twinsub menu.",
-  "back": "Back to YouTube"
+  "back": "Back to YouTube",
+  "lifetimeTitle": "Thanks for getting Lifetime",
+  "lifetimeOk": "Your own API key is unlocked within a few seconds. Open the Twinsub menu, then AI settings, to add your provider and key.",
+  "lifetimeCode": "Your Lifetime code is in the AI settings. Enter it on your other computers, up to 5."
+ },
+ "plans": {
+  "title": "Free to start. Two ways to get more.",
+  "free": {
+   "name": "Free",
+   "price": "$0",
+   "points": [
+    "Dual subtitles, unlimited",
+    "5 AI explanations a day",
+    "No account, no sign-in"
+   ]
+  },
+  "pro": {
+   "name": "Pro",
+   "price": "$4.99",
+   "per": "/ month",
+   "points": [
+    "1,000 explanations a month",
+    "Written by AI, nothing to set up",
+    "Cancel anytime"
+   ]
+  },
+  "life": {
+   "name": "Lifetime",
+   "price": "$14.90",
+   "per": "once",
+   "badge": "Most private",
+   "points": [
+    "Use your own API key: OpenAI, Claude, Gemini, DeepSeek or any compatible endpoint",
+    "Explanations go straight from Chrome to your provider, never through our server",
+    "No Twinsub limits; you pay your provider for what you use",
+    "Up to 5 computers, no subscription"
+   ]
+  }
  }
 }

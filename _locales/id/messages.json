@@ -144,7 +144,7 @@
   "message": "Ambil Pro: 1.000 per bulan, $$4,99"
  },
  "quotaRestoreHint": {
-  "message": "Sudah Pro? Masukkan kodemu di menu Twinsub (ikon ekstensi)."
+  "message": "Sudah Pro atau Lifetime? Masukkan kodemu di menu Twinsub (ikon ekstensi)."
  },
  "proPitch": {
   "message": "1.000 penjelasan per bulan, bukan 5 per hari. $$4,99 per bulan, bisa berhenti kapan saja."
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro aktif. Terima kasih!"
+ },
+ "byokFooter": {
+  "message": "Kunci milikmu · $1"
+ },
+ "quotaOwnKey": {
+  "message": "Atau sekali $$14,90: kunci API milikmu, tidak ada yang lewat server kami"
+ },
+ "byokLocked": {
+  "message": "Kunci API milikmu sudah aktif, tetapi belum dibuka di komputer ini. Beli Lifetime atau masukkan kodemu di pengaturan AI."
+ },
+ "byokSetup": {
+  "message": "Kunci API milikmu sudah aktif, tetapi belum diatur."
+ },
+ "byokOpenSettings": {
+  "message": "Buka pengaturan AI"
+ },
+ "byokKeyBad": {
+  "message": "$1 menolak kunci API-mu. Periksa di pengaturan AI."
+ },
+ "byokRate": {
+  "message": "$1 bilang kamu sudah mencapai batas atau kreditmu habis."
+ },
+ "byokErr": {
+  "message": "$1 mengembalikan error."
+ },
+ "popupAi": {
+  "message": "Pengaturan AI · pakai kunci API milikmu"
+ },
+ "popupByokOn": {
+  "message": "Penjelasan memakai kunci milikmu ($1)."
+ },
+ "proOrLifetime": {
+  "message": "Atau bayar sekali ($$14,90): kunci API milikmu, penjelasan tidak pernah lewat server kami"
+ },
+ "optTitle": {
+  "message": "Pengaturan AI Twinsub"
+ },
+ "optWho": {
+  "message": "Siapa yang menulis penjelasan"
+ },
+ "optHosted": {
+  "message": "Twinsub: 5 gratis per hari, atau 1.000 per bulan dengan Pro"
+ },
+ "optOwn": {
+  "message": "Kunci API milikku, dikirim langsung ke penyediaku"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub Lifetime"
+ },
+ "optLt1": {
+  "message": "Kunci milikmu, AI pilihanmu: OpenAI, Claude, Gemini, DeepSeek, dan lainnya, atau endpoint apa pun yang kompatibel."
+ },
+ "optLt2": {
+  "message": "Lebih privat: penjelasan dikirim langsung dari Chrome ke penyediamu. Server Twinsub tidak pernah melihat apa yang kamu tonton atau tanyakan."
+ },
+ "optLt3": {
+  "message": "Tanpa batas Twinsub: sebanyak yang diizinkan penyediamu."
+ },
+ "optLt4": {
+  "message": "Sekali bayar $$14,90. Hingga 5 komputer, tanpa langganan."
+ },
+ "optLifetimePitch": {
+  "message": "Pemakaian kamu bayar langsung ke penyedia AI. Subtitle ganda tetap gratis."
+ },
+ "optBuy": {
+  "message": "Beli Lifetime"
+ },
+ "optHaveCode": {
+  "message": "Sudah beli? Masukkan kodemu"
+ },
+ "optUnlocked": {
+  "message": "Kunci API milikmu sudah terbuka di komputer ini."
+ },
+ "optUnlockedPro": {
+  "message": "Termasuk dalam langganan Pro selama masih aktif."
+ },
+ "optLifetimeCode": {
+  "message": "Kode Lifetime-mu, untuk komputer lain:"
+ },
+ "optThanks": {
+  "message": "Terbuka. Terima kasih!"
+ },
+ "optProvider": {
+  "message": "Penyedia"
+ },
+ "optBaseUrl": {
+  "message": "Base URL"
+ },
+ "optFormat": {
+  "message": "Format API"
+ },
+ "optFmtChat": {
+  "message": "Kompatibel OpenAI (Chat Completions)"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "Kunci API"
+ },
+ "optKeySaved": {
+  "message": "Tersimpan ($1). Kosongkan untuk tetap memakainya."
+ },
+ "optKeyNone": {
+  "message": "Tidak perlu untuk server lokal."
+ },
+ "optGetKey": {
+  "message": "Dapatkan kunci"
+ },
+ "optModel": {
+  "message": "Model"
+ },
+ "optLoadModels": {
+  "message": "Muat model"
+ },
+ "optModelsLoaded": {
+  "message": "$1 model dimuat. Pilih salah satu di kolom Model."
+ },
+ "optSave": {
+  "message": "Simpan"
+ },
+ "optSaved": {
+  "message": "Tersimpan."
+ },
+ "optTest": {
+  "message": "Uji"
+ },
+ "optTesting": {
+  "message": "Menguji…"
+ },
+ "optTestOk": {
+  "message": "Berhasil. Jawaban model: $1"
+ },
+ "optTestFail": {
+  "message": "Tidak berhasil: $1"
+ },
+ "optRemoveKey": {
+  "message": "Hapus kunci tersimpan"
+ },
+ "optKeyRemoved": {
+  "message": "Kunci dihapus."
+ },
+ "optPermDenied": {
+  "message": "Tanpa izin untuk mengakses $1, Twinsub tidak bisa memanggil penyedia ini."
+ },
+ "optNeedUrl": {
+  "message": "Masukkan Base URL lengkap yang diawali https://"
+ },
+ "optNeedModel": {
+  "message": "Masukkan model."
+ },
+ "optPrivacy": {
+  "message": "Kuncimu dienkripsi dan hanya disimpan di komputer ini: tidak pernah disinkronkan dan tidak pernah dikirim ke Twinsub. Dengan kunci milikmu, penjelasan dikirim langsung dari Chrome ke penyedia pilihanmu, sesuai ketentuan penyedia itu, dan tidak pernah lewat server Twinsub."
  }
 }

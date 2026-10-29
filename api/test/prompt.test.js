@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert";
-import { buildRequest } from "../src/prompt.js";
+import { buildRequest } from "../../src/prompt.js";
 
 const base = { video: { id: "v", title: "T", channel: "C" }, kind: "asr", source: "en", target: "zh-CN",
   lines: [{ start: 1000, text: "It flopped." }, { start: 4000, text: "So we pivoted." }], focus: { line: 1, text: "pivoted" } };

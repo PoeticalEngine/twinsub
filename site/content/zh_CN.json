@@ -24,7 +24,7 @@
   "mark": "遛狗界的优步",
   "gist": "一个像打车那样，用 App 随叫随到地匹配遛狗人和狗主人的平台。说得有点自嘲。",
   "background": "「X 界的 Uber」是 2010 年代硅谷创业圈的固定说法，被用得太滥，现在说出来常带调侃意味。",
-  "quota": "每天免费解释 5 次。Pro：每月 1000 次，$4.99。双语字幕永远免费。",
+  "quota": "每天免费解释 5 次。Pro：每月 1000 次，$4.99。买断版：一次 $14.90，用你自己的 API key。双语字幕永远免费。",
   "labels": {
    "gist": "这句在说什么",
    "background": "背景"
@@ -48,7 +48,11 @@
    ],
    [
     "有付费版吗？",
-    "Twinsub Pro 每月 1000 次解释，不再是每天 5 次，$4.99 一个月，可随时在 Twinsub 菜单里取消。双语字幕不管付不付费都免费、不限量。"
+    "有两种。Twinsub Pro 每月 1000 次解释，不再是每天 5 次，$4.99 一个月，可随时在 Twinsub 菜单里取消。Twinsub 买断版一次付 $14.90，就能永久用你自己的 AI API key。双语字幕不管付不付费都免费、不限量。"
+   ],
+   [
+    "能用我自己的 API key 吗？",
+    "能，买断版（一次 $14.90）或 Pro 订阅期间都可以。可选 OpenAI、Anthropic（Claude）、Google Gemini、DeepSeek、OpenRouter、Mistral、Groq、xAI、通义千问、Kimi、智谱 GLM、豆包、硅基流动或本地 Ollama，也可以填任意兼容 OpenAI Chat Completions、OpenAI Responses 或 Claude Messages 格式的 Base URL。你的 key 加密后只存在你的电脑上，解释由 Chrome 直接发给服务商，完全不经过我们的服务器。"
    ],
    [
     "翻译是怎么完成的？",
@@ -64,7 +68,7 @@
    ],
    [
     "哪些内容会离开我的电脑？",
-    "字幕翻译完全不出电脑。只有你点「解释」时，划出的内容和前后几句字幕会发到我们的服务器，由 Anthropic 的 AI 模型 Claude 生成解释。详见隐私政策。"
+    "字幕翻译完全不出电脑。只有你点「解释」时，划出的内容和前后几句字幕会发到我们的服务器，由托管在美国的 AI 模型生成解释。详见隐私政策。"
    ],
    [
     "支持哪些浏览器？",
@@ -84,6 +88,43 @@
   "ok": "Twinsub Pro 几秒钟内生效。回到 YouTube 接着看吧。",
   "code": "你的 Pro 码在 Twinsub 菜单里（点扩展图标）。在其他电脑上输入它即可使用，最多 5 台。",
   "fail": "付款没有成功，没有扣费。可以在 Twinsub 菜单里再试一次。",
-  "back": "回到 YouTube"
+  "back": "回到 YouTube",
+  "lifetimeTitle": "感谢购买买断版",
+  "lifetimeOk": "几秒钟内就会解锁自带 API key。打开 Twinsub 菜单里的「AI 设置」，填上服务商和 key 即可。",
+  "lifetimeCode": "你的买断码在 AI 设置里。在其他电脑上输入它即可使用，最多 5 台。"
+ },
+ "plans": {
+  "title": "免费开始，两种方式用得更多",
+  "free": {
+   "name": "免费",
+   "price": "$0",
+   "points": [
+    "双语字幕，不限量",
+    "每天 5 次 AI 解释",
+    "不用账号，不用登录"
+   ]
+  },
+  "pro": {
+   "name": "Pro",
+   "price": "$4.99",
+   "per": "/ 月",
+   "points": [
+    "每月 1000 次解释",
+    "AI 解释，无需任何设置",
+    "随时取消"
+   ]
+  },
+  "life": {
+   "name": "买断版",
+   "price": "$14.90",
+   "per": "一次",
+   "badge": "最私密",
+   "points": [
+    "用你自己的 API key：OpenAI、Claude、Gemini、DeepSeek 或任何兼容接口",
+    "解释由 Chrome 直接发给你的服务商，完全不经过我们的服务器",
+    "不受 Twinsub 次数限制，用量费用由你和服务商结算",
+    "最多 5 台电脑，没有订阅"
+   ]
+  }
  }
 }

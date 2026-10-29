@@ -24,7 +24,7 @@
   "mark": "遛狗界的 Uber",
   "gist": "一個像叫車那樣，用 App 隨叫隨到媒合遛狗人和狗主人的平台。說得有點自嘲。",
   "background": "「X 界的 Uber」是 2010 年代矽谷新創圈的固定說法，被用到爛，現在說出來常帶點調侃。",
-  "quota": "每天免費解釋 5 次。Pro：每月 1000 次，US$4.99。雙語字幕永遠免費。",
+  "quota": "每天免費解釋 5 次。Pro：每月 1000 次，US$4.99。買斷版：一次 US$14.90，使用你自己的 API 金鑰。雙語字幕永遠免費。",
   "labels": {
    "gist": "這句在說什麼",
    "background": "背景"
@@ -48,7 +48,11 @@
    ],
    [
     "有付費版嗎？",
-    "Twinsub Pro 每月 1000 次解釋，不再是每天 5 次，每月 US$4.99，隨時可以在 Twinsub 選單裡取消。雙語字幕不管有沒有付費都免費、不限次數。"
+    "有兩種。Twinsub Pro 每月 1000 次解釋，不再是每天 5 次，每月 US$4.99，隨時可以在 Twinsub 選單裡取消。Twinsub 買斷版一次付 US$14.90，就能永久使用你自己的 AI API 金鑰。雙語字幕不管有沒有付費都免費、不限次數。"
+   ],
+   [
+    "可以用我自己的 API 金鑰嗎？",
+    "可以，買斷版（一次 US$14.90）或 Pro 訂閱期間都能用。可選 OpenAI、Anthropic（Claude）、Google Gemini、DeepSeek、OpenRouter、Mistral、Groq、xAI、通義千問、Kimi、智譜 GLM、豆包、SiliconFlow 或本機 Ollama，也可以填任何相容 OpenAI Chat Completions、OpenAI Responses 或 Claude Messages 格式的 Base URL。你的金鑰加密後只存在你的電腦上，解釋由 Chrome 直接傳給服務供應商，完全不經過我們的伺服器。"
    ],
    [
     "翻譯是怎麼完成的？",
@@ -64,7 +68,7 @@
    ],
    [
     "哪些內容會離開我的電腦？",
-    "字幕翻譯完全不會離開電腦。只有你按「解釋」時，選取的內容和前後幾句字幕會傳到我們的伺服器，由 Anthropic 的 AI 模型 Claude 產生解釋。詳見隱私權政策。"
+    "字幕翻譯完全不會離開電腦。只有你按「解釋」時，選取的內容和前後幾句字幕會傳到我們的伺服器，由託管在美國的 AI 模型產生解釋。詳見隱私權政策。"
    ],
    [
     "支援哪些瀏覽器？",
@@ -84,6 +88,43 @@
   "ok": "Twinsub Pro 幾秒鐘內就會生效。回到 YouTube 繼續看吧。",
   "code": "你的 Pro 序號在 Twinsub 選單裡（按擴充功能圖示）。在其他電腦上輸入它就能使用，最多 5 台。",
   "fail": "付款沒有成功，也沒有扣款。可以在 Twinsub 選單裡再試一次。",
-  "back": "回到 YouTube"
+  "back": "回到 YouTube",
+  "lifetimeTitle": "感謝購買買斷版",
+  "lifetimeOk": "幾秒鐘內就會解鎖自備 API 金鑰。打開 Twinsub 選單裡的「AI 設定」，填上服務供應商和金鑰就可以了。",
+  "lifetimeCode": "你的買斷版序號在 AI 設定裡。在其他電腦上輸入就能使用，最多 5 台。"
+ },
+ "plans": {
+  "title": "免費開始，兩種方式用得更多",
+  "free": {
+   "name": "免費",
+   "price": "US$0",
+   "points": [
+    "雙語字幕，不限次數",
+    "每天 5 次 AI 解釋",
+    "不用帳號，不用登入"
+   ]
+  },
+  "pro": {
+   "name": "Pro",
+   "price": "US$4.99",
+   "per": "/ 月",
+   "points": [
+    "每月 1000 次解釋",
+    "由 AI 解釋，不用任何設定",
+    "隨時可以取消"
+   ]
+  },
+  "life": {
+   "name": "買斷版",
+   "price": "US$14.90",
+   "per": "一次",
+   "badge": "最有隱私",
+   "points": [
+    "使用你自己的 API 金鑰：OpenAI、Claude、Gemini、DeepSeek 或任何相容端點",
+    "解釋由 Chrome 直接傳給你的服務供應商，完全不經過我們的伺服器",
+    "不受 Twinsub 次數限制，用量費用由你和服務供應商結算",
+    "最多 5 台電腦，不用訂閱"
+   ]
+  }
  }
 }

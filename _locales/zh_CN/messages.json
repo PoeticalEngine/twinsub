@@ -144,7 +144,7 @@
   "message": "升级 Pro：每月 1000 次，$$4.99"
  },
  "quotaRestoreHint": {
-  "message": "已经是 Pro？在 Twinsub 菜单（扩展图标）里输入你的 Pro 码。"
+  "message": "已经是 Pro 或已买断？在 Twinsub 菜单（扩展图标）里输入你的码。"
  },
  "proPitch": {
   "message": "每月 1000 次解释，不再是每天 5 次。$$4.99 一个月，随时取消。"
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro 已开通，谢谢支持！"
+ },
+ "byokFooter": {
+  "message": "使用你自己的 key · $1"
+ },
+ "quotaOwnKey": {
+  "message": "或一次买断 $$14.90：用自己的 API key，内容不经过我们的服务器"
+ },
+ "byokLocked": {
+  "message": "已开启自带 API key，但这台电脑还没解锁。买断，或在 AI 设置里输入你的码。"
+ },
+ "byokSetup": {
+  "message": "已开启自带 API key，但还没设置好。"
+ },
+ "byokOpenSettings": {
+  "message": "打开 AI 设置"
+ },
+ "byokKeyBad": {
+  "message": "$1 拒绝了你的 API key，请在 AI 设置里检查。"
+ },
+ "byokRate": {
+  "message": "$1 提示你达到了速率限制，或额度已用完。"
+ },
+ "byokErr": {
+  "message": "$1 返回了错误。"
+ },
+ "popupAi": {
+  "message": "AI 设置 · 用自己的 API key"
+ },
+ "popupByokOn": {
+  "message": "解释使用你自己的 key（$1）。"
+ },
+ "proOrLifetime": {
+  "message": "或一次买断（$$14.90）：用自己的 API key，解释完全不经过我们的服务器"
+ },
+ "optTitle": {
+  "message": "Twinsub AI 设置"
+ },
+ "optWho": {
+  "message": "谁来写解释"
+ },
+ "optHosted": {
+  "message": "Twinsub：每天免费 5 次，Pro 每月 1000 次"
+ },
+ "optOwn": {
+  "message": "我自己的 API key，直接发给我的服务商"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub 买断版"
+ },
+ "optLt1": {
+  "message": "自己的 key，自己选 AI：OpenAI、Claude、Gemini、DeepSeek 等，或任何兼容的接口。"
+ },
+ "optLt2": {
+  "message": "更私密：解释由 Chrome 直接发给你的服务商，Twinsub 的服务器看不到你在看什么、问什么。"
+ },
+ "optLt3": {
+  "message": "不受 Twinsub 次数限制：服务商允许多少就能用多少。"
+ },
+ "optLt4": {
+  "message": "一次付清 $$14.90，最多 5 台电脑，没有订阅。"
+ },
+ "optLifetimePitch": {
+  "message": "用量费用由你和 AI 服务商结算。双语字幕始终免费。"
+ },
+ "optBuy": {
+  "message": "买断"
+ },
+ "optHaveCode": {
+  "message": "已经买过？输入你的码"
+ },
+ "optUnlocked": {
+  "message": "这台电脑已解锁自带 API key。"
+ },
+ "optUnlockedPro": {
+  "message": "Pro 订阅期间已包含。"
+ },
+ "optLifetimeCode": {
+  "message": "你的买断码，可在其他电脑上使用："
+ },
+ "optThanks": {
+  "message": "已解锁，谢谢支持！"
+ },
+ "optProvider": {
+  "message": "服务商"
+ },
+ "optBaseUrl": {
+  "message": "Base URL"
+ },
+ "optFormat": {
+  "message": "接口格式"
+ },
+ "optFmtChat": {
+  "message": "OpenAI 兼容（Chat Completions）"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "API key"
+ },
+ "optKeySaved": {
+  "message": "已保存（$1）。留空则保持不变。"
+ },
+ "optKeyNone": {
+  "message": "本地服务不需要。"
+ },
+ "optGetKey": {
+  "message": "获取 key"
+ },
+ "optModel": {
+  "message": "模型"
+ },
+ "optLoadModels": {
+  "message": "获取模型列表"
+ },
+ "optModelsLoaded": {
+  "message": "已获取 $1 个模型，在「模型」里选一个。"
+ },
+ "optSave": {
+  "message": "保存"
+ },
+ "optSaved": {
+  "message": "已保存。"
+ },
+ "optTest": {
+  "message": "测试"
+ },
+ "optTesting": {
+  "message": "测试中…"
+ },
+ "optTestOk": {
+  "message": "可以用。模型回答：$1"
+ },
+ "optTestFail": {
+  "message": "没成功：$1"
+ },
+ "optRemoveKey": {
+  "message": "删除已保存的 key"
+ },
+ "optKeyRemoved": {
+  "message": "key 已删除。"
+ },
+ "optPermDenied": {
+  "message": "没有访问 $1 的权限，Twinsub 无法调用这个服务商。"
+ },
+ "optNeedUrl": {
+  "message": "请填写完整的 Base URL，以 https:// 开头。"
+ },
+ "optNeedModel": {
+  "message": "请填写模型。"
+ },
+ "optPrivacy": {
+  "message": "你的 key 经过加密，只保存在这台电脑上：不会同步，也不会发给 Twinsub。使用自己的 key 时，解释由 Chrome 直接发给你选的服务商，适用该服务商的条款，完全不经过 Twinsub 的服务器。"
  }
 }

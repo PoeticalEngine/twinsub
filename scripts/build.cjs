@@ -7,7 +7,7 @@ const { execFileSync } = require("child_process");
 
 const root = path.resolve(__dirname, "..");
 const manifest = JSON.parse(fs.readFileSync(path.join(root, "manifest.json"), "utf8"));
-const SHIP = ["manifest.json", "_locales", "icons", "popup", "src"];
+const SHIP = ["manifest.json", "_locales", "icons", "popup", "options", "src"];
 const problems = [];
 
 const named = [

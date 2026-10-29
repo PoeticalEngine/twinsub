@@ -144,7 +144,7 @@
   "message": "Passer à Pro : 1 000 par mois pour 4,99 $"
  },
  "quotaRestoreHint": {
-  "message": "Déjà Pro ? Saisissez votre code dans le menu Twinsub (l'icône de l'extension)."
+  "message": "Déjà Pro ou Lifetime ? Saisissez votre code dans le menu Twinsub (l'icône de l'extension)."
  },
  "proPitch": {
   "message": "1 000 explications par mois au lieu de 5 par jour. 4,99 $ par mois, résiliable à tout moment."
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro est activé. Merci !"
+ },
+ "byokFooter": {
+  "message": "Votre propre clé · $1"
+ },
+ "quotaOwnKey": {
+  "message": "Ou 14,90 $ une fois : votre propre clé API, rien ne passe par notre serveur"
+ },
+ "byokLocked": {
+  "message": "Votre propre clé API est activée, mais pas encore débloquée sur cet ordinateur. Prenez Lifetime ou saisissez votre code dans les réglages IA."
+ },
+ "byokSetup": {
+  "message": "Votre propre clé API est activée, mais pas encore configurée."
+ },
+ "byokOpenSettings": {
+  "message": "Ouvrir les réglages IA"
+ },
+ "byokKeyBad": {
+  "message": "$1 a refusé votre clé API. Vérifiez-la dans les réglages IA."
+ },
+ "byokRate": {
+  "message": "$1 indique que vous avez atteint votre limite ou épuisé votre crédit."
+ },
+ "byokErr": {
+  "message": "$1 a renvoyé une erreur."
+ },
+ "popupAi": {
+  "message": "Réglages IA · utiliser votre propre clé API"
+ },
+ "popupByokOn": {
+  "message": "Les explications utilisent votre propre clé ($1)."
+ },
+ "proOrLifetime": {
+  "message": "Ou payez une fois (14,90 $) : votre propre clé API, les explications ne passent jamais par notre serveur"
+ },
+ "optTitle": {
+  "message": "Réglages IA de Twinsub"
+ },
+ "optWho": {
+  "message": "Qui écrit les explications"
+ },
+ "optHosted": {
+  "message": "Twinsub : 5 gratuites par jour, ou 1 000 par mois avec Pro"
+ },
+ "optOwn": {
+  "message": "Ma propre clé API, envoyée directement à mon fournisseur"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub Lifetime"
+ },
+ "optLt1": {
+  "message": "Votre clé, l'IA de votre choix : OpenAI, Claude, Gemini, DeepSeek et d'autres, ou tout point d'accès compatible."
+ },
+ "optLt2": {
+  "message": "Plus privé : les explications partent directement de Chrome vers votre fournisseur. Le serveur de Twinsub ne voit jamais ce que vous regardez ni ce que vous demandez."
+ },
+ "optLt3": {
+  "message": "Aucune limite Twinsub : autant que votre fournisseur le permet."
+ },
+ "optLt4": {
+  "message": "Un seul paiement de 14,90 $. Jusqu'à 5 ordinateurs, sans abonnement."
+ },
+ "optLifetimePitch": {
+  "message": "Vous payez votre fournisseur d'IA pour ce que vous utilisez. Les sous-titres doubles restent gratuits."
+ },
+ "optBuy": {
+  "message": "Prendre Lifetime"
+ },
+ "optHaveCode": {
+  "message": "Déjà acheté ? Saisissez votre code"
+ },
+ "optUnlocked": {
+  "message": "Votre propre clé API est débloquée sur cet ordinateur."
+ },
+ "optUnlockedPro": {
+  "message": "Inclus dans votre abonnement Pro tant qu'il dure."
+ },
+ "optLifetimeCode": {
+  "message": "Votre code Lifetime, pour vos autres ordinateurs :"
+ },
+ "optThanks": {
+  "message": "Débloqué. Merci !"
+ },
+ "optProvider": {
+  "message": "Fournisseur"
+ },
+ "optBaseUrl": {
+  "message": "URL de base"
+ },
+ "optFormat": {
+  "message": "Format d'API"
+ },
+ "optFmtChat": {
+  "message": "Compatible OpenAI (Chat Completions)"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "Clé API"
+ },
+ "optKeySaved": {
+  "message": "Enregistrée ($1). Laissez vide pour la garder."
+ },
+ "optKeyNone": {
+  "message": "Inutile pour un serveur local."
+ },
+ "optGetKey": {
+  "message": "Obtenir une clé"
+ },
+ "optModel": {
+  "message": "Modèle"
+ },
+ "optLoadModels": {
+  "message": "Charger les modèles"
+ },
+ "optModelsLoaded": {
+  "message": "$1 modèles chargés. Choisissez-en un dans le champ Modèle."
+ },
+ "optSave": {
+  "message": "Enregistrer"
+ },
+ "optSaved": {
+  "message": "Enregistré."
+ },
+ "optTest": {
+  "message": "Tester"
+ },
+ "optTesting": {
+  "message": "Test en cours…"
+ },
+ "optTestOk": {
+  "message": "Ça marche. Le modèle a répondu : $1"
+ },
+ "optTestFail": {
+  "message": "Ça n'a pas marché : $1"
+ },
+ "optRemoveKey": {
+  "message": "Supprimer la clé enregistrée"
+ },
+ "optKeyRemoved": {
+  "message": "Clé supprimée."
+ },
+ "optPermDenied": {
+  "message": "Sans autorisation d'accéder à $1, Twinsub ne peut pas appeler ce fournisseur."
+ },
+ "optNeedUrl": {
+  "message": "Saisissez une URL de base complète, commençant par https://"
+ },
+ "optNeedModel": {
+  "message": "Saisissez un modèle."
+ },
+ "optPrivacy": {
+  "message": "Votre clé est chiffrée et gardée uniquement sur cet ordinateur : elle n'est jamais synchronisée ni envoyée à Twinsub. Avec votre propre clé, les explications partent directement de Chrome vers le fournisseur choisi, selon ses conditions, sans jamais passer par le serveur de Twinsub."
  }
 }

@@ -33,4 +33,6 @@ footer a { color: var(--accent); }
 .code-row input { flex: 1; min-width: 0; padding: 5px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); color: var(--fg); font: 12px ui-monospace, monospace; }
 .code-row code { flex: 1; font: 600 13px ui-monospace, monospace; user-select: all; }
 #pro .msg { color: var(--accent); margin-top: 6px; }
-#manage { color: var(--accent); font-size: 12px; }
+#manage, a.settings { color: var(--accent); font-size: 12px; }
+#ai { border-top: 1px solid var(--line); padding: 10px 0 12px; }
+#ai p { margin: 0 0 4px; color: var(--muted); }

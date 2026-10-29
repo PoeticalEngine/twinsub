@@ -1,7 +1,8 @@
 // "Didn't catch that?" panel. A button next to the subtitles pauses the video and opens a panel with the last few
 // lines: the translation on top, the original under it for reference. The viewer marks what they don't get in
 // the translation (in the original only while there is no translation yet); tapping a mark (or "Explain whole
-// line") asks api.poeticalengine.com through background.js. The model always gets the original lines; a mark in
+// line") asks background.js, which calls api.poeticalengine.com or, with the viewer's own key, their provider directly.
+// The model always gets the original lines; a mark in
 // the translation only tells it where to look. The answer streams in under
 // the line, in the viewer's language.
 // content.js owns the cues and the overlay and hands them over through mount().
@@ -105,7 +106,8 @@ var TwinsubExplain = (() => {
 
   function setFooter(remaining) {
     const q = panel.querySelector(".twinsub-panel-quota");
-    q.textContent = remaining === null || remaining === undefined ? api.t("footerHint")
+    q.textContent = view?.quota?.plan === "byok" ? api.t("byokFooter", view.quota.provider)
+      : remaining === null || remaining === undefined ? api.t("footerHint")
       : api.t(view?.quota?.plan === "pro" ? "remainingPro" : "remaining", String(remaining));
   }
 
@@ -206,9 +208,9 @@ var TwinsubExplain = (() => {
       else if (m.type === "done") { a.status = /(^|\n)@@error/.test(a.raw) ? "error" : "done"; port.disconnect(); }
       else if (m.type === "error") {
         a.status = "error";
-        a.error = m.status === 429 ? "quota" : m.status === 503 ? "busy" : "failed";
-        a.limit = m.limit;
-        a.plan = m.plan;
+        // Own-key errors (byok, byok-locked, byok-setup) keep their name and the provider's own message.
+        a.error = /^byok/.test(m.error || "") ? m.error : m.status === 429 ? "quota" : m.status === 503 ? "busy" : "failed";
+        Object.assign(a, { limit: m.limit, plan: m.plan, code: m.status, provider: m.provider, detail: m.detail });
         if (m.status === 429) setFooter(0);
         port.disconnect();
       }
@@ -221,6 +223,12 @@ var TwinsubExplain = (() => {
       lines: cues.slice(from, to).map(c => ({ start: c.start, text: c.text })),
       focus: { line: line.index - from, text: mark.wholeLine ? "" : mark.text, side: mark.side, translation: line.tr },
     });
+  }
+
+  function settingsButton(key) {
+    const b = el("button", "twinsub-btn twinsub-btn-ghost", api.t(key)); b.type = "button";
+    b.addEventListener("click", () => chrome.runtime.sendMessage({ type: "settings" }).catch(() => {}));
+    return b;
   }
 
   function updateAnswer(mark) {
@@ -256,17 +264,26 @@ var TwinsubExplain = (() => {
           return box;
         }
         box.append(el("h5", "", api.t("quotaTitle", String(a.limit || 5))), el("p", "", api.t("quotaBody")));
-        // Pro is offered only once the server can sell it.
+        // Pro and Lifetime are offered only once the server can sell them.
         if (view.quota?.proReady) {
           const up = el("button", "twinsub-btn", api.t("quotaUpgrade")); up.type = "button";
           up.addEventListener("click", () => chrome.runtime.sendMessage({ type: "checkout" }).catch(() => {}));
-          box.append(up, el("p", "twinsub-ans-note", api.t("quotaRestoreHint")));
+          box.append(up);
         }
+        if (view.quota?.lifetimeReady) box.append(settingsButton("quotaOwnKey"));
+        if (view.quota?.proReady || view.quota?.lifetimeReady) box.append(el("p", "twinsub-ans-note", api.t("quotaRestoreHint")));
+        return box;
+      }
+      if (a.error === "byok-locked" || a.error === "byok-setup") {
+        box.append(el("p", "twinsub-ans-err", api.t(a.error === "byok-locked" ? "byokLocked" : "byokSetup")), settingsButton("byokOpenSettings"));
         return box;
       }
       const sections = parse(a.raw);
       if (sections.length) appendSections(box, sections);
-      box.append(el("p", "twinsub-ans-err", api.t(a.error === "busy" ? "errBusy" : "errFailed")));
+      if (a.error === "byok") {
+        box.append(el("p", "twinsub-ans-err", api.t(a.code === 401 || a.code === 403 ? "byokKeyBad" : a.code === 429 ? "byokRate" : "byokErr", a.provider || "")));
+        if (a.detail) box.append(el("p", "twinsub-ans-note", (a.code ? a.code + " · " : "") + a.detail));
+      } else box.append(el("p", "twinsub-ans-err", api.t(a.error === "busy" ? "errBusy" : "errFailed")));
       const retry = el("button", "twinsub-btn twinsub-btn-ghost", api.t("retry")); retry.type = "button";
       retry.addEventListener("click", () => { mark.answer = null; const line = view.lines.find(l => l.marks.includes(mark) || l.whole === mark); if (line) ask(line, mark); });
       box.append(retry);

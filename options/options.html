@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Twinsub</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <header><img src="../icons/48.png" alt="" width="32" height="32"><h1 data-i18n="optTitle"></h1></header>
+
+    <section>
+      <h2 data-i18n="optWho"></h2>
+      <label class="choice"><input type="radio" name="who" value="hosted"> <span data-i18n="optHosted"></span></label>
+      <label class="choice"><input type="radio" name="who" value="own"> <span data-i18n="optOwn"></span></label>
+    </section>
+
+    <section id="license">
+      <div class="locked" hidden>
+        <h2 data-i18n="optLifetimeTitle"></h2>
+        <ul class="points">
+          <li data-i18n="optLt1"></li>
+          <li data-i18n="optLt2"></li>
+          <li data-i18n="optLt3"></li>
+          <li data-i18n="optLt4"></li>
+        </ul>
+        <p class="muted" data-i18n="optLifetimePitch"></p>
+        <button type="button" id="buy" class="primary" data-i18n="optBuy" hidden></button>
+        <details>
+          <summary data-i18n="optHaveCode"></summary>
+          <form id="restore" class="inline"><input id="code" autocomplete="off" spellcheck="false" placeholder="TWIN-XXXX-XXXX-XXXX"><button type="submit" data-i18n="proApply"></button></form>
+        </details>
+        <p id="codeMsg" class="msg" hidden></p>
+      </div>
+      <div class="unlocked" hidden>
+        <p class="ok" data-i18n="optUnlocked"></p>
+        <p id="viaPro" class="muted" data-i18n="optUnlockedPro" hidden></p>
+        <div id="lifeCode" hidden><p class="muted" data-i18n="optLifetimeCode"></p><div class="inline"><code id="myCode"></code><button type="button" id="copy" data-i18n="proCopy"></button></div></div>
+      </div>
+    </section>
+
+    <form id="cfg">
+      <label class="field"><span data-i18n="optProvider"></span><select id="provider"></select></label>
+      <label class="field"><span data-i18n="optFormat"></span>
+        <select id="format">
+          <option value="chat" data-i18n="optFmtChat"></option>
+          <option value="responses" data-i18n="optFmtResponses"></option>
+          <option value="anthropic" data-i18n="optFmtAnthropic"></option>
+        </select>
+      </label>
+      <label class="field"><span data-i18n="optBaseUrl"></span><input id="baseUrl" type="url" list="bases" spellcheck="false" autocomplete="off" placeholder="https://"><datalist id="bases"></datalist></label>
+      <label class="field" id="keyField"><span><span data-i18n="optKey"></span> <a id="getKey" target="_blank" rel="noopener" data-i18n="optGetKey" hidden></a></span>
+        <input id="apiKey" type="password" spellcheck="false" autocomplete="off">
+        <small id="keyNote" class="muted"></small>
+      </label>
+      <label class="field"><span data-i18n="optModel"></span>
+        <span class="inline"><input id="model" list="models" spellcheck="false" autocomplete="off"><button type="button" id="loadModels" data-i18n="optLoadModels"></button></span>
+        <datalist id="models"></datalist>
+      </label>
+      <div class="actions">
+        <button type="submit" class="primary" data-i18n="optSave"></button>
+        <button type="button" id="test" data-i18n="optTest"></button>
+        <button type="button" id="removeKey" class="link" data-i18n="optRemoveKey" hidden></button>
+      </div>
+      <p id="status" class="msg" role="status"></p>
+    </form>
+
+    <p class="muted privacy" data-i18n="optPrivacy"></p>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

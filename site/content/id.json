@@ -24,7 +24,7 @@
   "mark": "Uber-nya jasa ajak jalan anjing",
   "gist": "Aplikasi yang langsung mempertemukan pemilik anjing dengan pengajak jalan, seperti Uber mempertemukan penumpang dan sopir. Diucapkan dengan sedikit menertawakan diri sendiri.",
   "background": "\"Uber-nya X\" adalah jargon wajib startup era 2010-an. Saking seringnya dipakai, sekarang terdengar seperti mengejek diri sendiri.",
-  "quota": "5 penjelasan gratis per hari. Pro: 1.000 per bulan seharga $4,99. Subtitle ganda selalu gratis.",
+  "quota": "5 penjelasan gratis per hari. Pro: 1.000 per bulan seharga $4,99. Lifetime: sekali bayar $14,90, dengan kunci API milikmu. Subtitle ganda selalu gratis.",
   "labels": {
    "gist": "Maksudnya",
    "background": "Latar belakang"
@@ -48,7 +48,11 @@
    ],
    [
     "Apakah ada paket berbayar?",
-    "Twinsub Pro memberi 1.000 penjelasan per bulan, bukan 5 per hari, seharga $4,99 per bulan. Bisa berhenti kapan saja dari menu Twinsub. Subtitle ganda tetap gratis dan tanpa batas."
+    "Ada dua. Twinsub Pro memberimu 1.000 penjelasan per bulan, bukan 5 per hari, seharga $4,99 per bulan; bisa dibatalkan kapan saja dari menu Twinsub. Twinsub Lifetime cukup sekali bayar $14,90 untuk memakai kunci API AI milikmu, selamanya. Subtitle ganda tetap gratis dan tanpa batas."
+   ],
+   [
+    "Bisakah aku pakai kunci API milikku?",
+    "Bisa, dengan Twinsub Lifetime (sekali bayar $14,90) atau selama kamu punya Pro. Pilih OpenAI, Anthropic (Claude), Google Gemini, DeepSeek, OpenRouter, Mistral, Groq, xAI, Qwen, Kimi, GLM, Doubao, SiliconFlow, atau Ollama lokal, atau masukkan Base URL apa pun yang mendukung format OpenAI Chat Completions, OpenAI Responses, atau Claude Messages. Kuncimu dienkripsi dan hanya disimpan di komputermu, dan penjelasan dikirim langsung dari Chrome ke penyedia itu, tidak pernah lewat server kami."
    ],
    [
     "Bagaimana terjemahannya dibuat?",
@@ -64,7 +68,7 @@
    ],
    [
     "Apa yang keluar dari komputerku?",
-    "Untuk subtitle, tidak ada. Saat kamu mengetuk Jelaskan, bagian yang kamu tandai dan beberapa baris di sekitarnya dikirim ke server kami, yang meminta jawaban dari Claude, model AI buatan Anthropic. Lihat kebijakan privasi."
+    "Untuk subtitle, tidak ada. Saat kamu mengetuk Jelaskan, bagian yang kamu tandai dan beberapa baris di sekitarnya dikirim ke server kami, yang meminta jawaban dari model AI yang di-hosting di Amerika Serikat. Lihat kebijakan privasi."
    ],
    [
     "Browser apa saja?",
@@ -84,6 +88,43 @@
   "ok": "Twinsub Pro aktif dalam beberapa detik. Kembali ke YouTube dan lanjutkan menonton.",
   "code": "Kode Pro-mu ada di menu Twinsub (ikon ekstensi). Masukkan di komputermu yang lain, sampai 5.",
   "fail": "Pembayaran tidak berhasil, tidak ada yang ditagih. Kamu bisa mencoba lagi dari menu Twinsub.",
-  "back": "Kembali ke YouTube"
+  "back": "Kembali ke YouTube",
+  "lifetimeTitle": "Terima kasih sudah membeli Lifetime",
+  "lifetimeOk": "Kunci API milikmu terbuka dalam beberapa detik. Buka menu Twinsub, lalu Pengaturan AI, untuk menambahkan penyedia dan kuncimu.",
+  "lifetimeCode": "Kode Lifetime-mu ada di pengaturan AI. Masukkan di komputer lain, hingga 5."
+ },
+ "plans": {
+  "title": "Mulai gratis. Dua cara untuk dapat lebih.",
+  "free": {
+   "name": "Gratis",
+   "price": "$0",
+   "points": [
+    "Subtitle ganda tanpa batas",
+    "5 penjelasan AI per hari",
+    "Tanpa akun, tanpa login"
+   ]
+  },
+  "pro": {
+   "name": "Pro",
+   "price": "$4,99",
+   "per": "/ bulan",
+   "points": [
+    "1.000 penjelasan per bulan",
+    "Ditulis oleh AI, tanpa pengaturan",
+    "Bisa batal kapan saja"
+   ]
+  },
+  "life": {
+   "name": "Lifetime",
+   "price": "$14,90",
+   "per": "sekali",
+   "badge": "Paling privat",
+   "points": [
+    "Pakai kunci API milikmu: OpenAI, Claude, Gemini, DeepSeek, atau endpoint yang kompatibel",
+    "Penjelasan langsung dari Chrome ke penyediamu, tidak pernah lewat server kami",
+    "Tanpa batas Twinsub; kamu bayar penyediamu",
+    "Hingga 5 komputer, tanpa langganan"
+   ]
+  }
  }
 }

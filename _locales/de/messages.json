@@ -144,7 +144,7 @@
   "message": "Pro holen: 1.000 im Monat für 4,99 $"
  },
  "quotaRestoreHint": {
-  "message": "Schon Pro? Gib deinen Code im Twinsub-Menü ein (Erweiterungssymbol)."
+  "message": "Schon Pro oder Lifetime? Gib deinen Code im Twinsub-Menü ein (Erweiterungssymbol)."
  },
  "proPitch": {
   "message": "1.000 Erklärungen im Monat statt 5 am Tag. 4,99 $ im Monat, jederzeit kündbar."
@@ -184,5 +184,161 @@
  },
  "proThanks": {
   "message": "Pro ist aktiv. Danke!"
+ },
+ "byokFooter": {
+  "message": "Eigener Schlüssel · $1"
+ },
+ "quotaOwnKey": {
+  "message": "Oder einmal 14,90 $: dein eigener API-Schlüssel, nichts läuft über unseren Server"
+ },
+ "byokLocked": {
+  "message": "Dein eigener API-Schlüssel ist an, aber auf diesem Computer nicht freigeschaltet. Hol dir Lifetime oder gib deinen Code in den KI-Einstellungen ein."
+ },
+ "byokSetup": {
+  "message": "Dein eigener API-Schlüssel ist an, aber noch nicht eingerichtet."
+ },
+ "byokOpenSettings": {
+  "message": "KI-Einstellungen öffnen"
+ },
+ "byokKeyBad": {
+  "message": "$1 hat deinen API-Schlüssel abgelehnt. Prüf ihn in den KI-Einstellungen."
+ },
+ "byokRate": {
+  "message": "$1 meldet, dass dein Limit erreicht oder dein Guthaben aufgebraucht ist."
+ },
+ "byokErr": {
+  "message": "$1 hat einen Fehler gemeldet."
+ },
+ "popupAi": {
+  "message": "KI-Einstellungen · eigener API-Schlüssel"
+ },
+ "popupByokOn": {
+  "message": "Erklärungen laufen über deinen eigenen Schlüssel ($1)."
+ },
+ "proOrLifetime": {
+  "message": "Oder einmal zahlen (14,90 $): eigener API-Schlüssel, Erklärungen laufen nie über unseren Server"
+ },
+ "optTitle": {
+  "message": "Twinsub KI-Einstellungen"
+ },
+ "optWho": {
+  "message": "Wer die Erklärungen schreibt"
+ },
+ "optHosted": {
+  "message": "Twinsub: 5 am Tag gratis, mit Pro 1.000 im Monat"
+ },
+ "optOwn": {
+  "message": "Mein eigener API-Schlüssel, direkt an meinen Anbieter"
+ },
+ "optLifetimeTitle": {
+  "message": "Twinsub Lifetime"
+ },
+ "optLt1": {
+  "message": "Dein Schlüssel, deine KI: OpenAI, Claude, Gemini, DeepSeek und mehr, oder jeder kompatible Endpunkt."
+ },
+ "optLt2": {
+  "message": "Privater: Erklärungen gehen direkt von Chrome an deinen Anbieter. Der Twinsub-Server sieht nie, was du schaust oder fragst."
+ },
+ "optLt3": {
+  "message": "Keine Twinsub-Limits: so viel, wie dein Anbieter erlaubt."
+ },
+ "optLt4": {
+  "message": "Einmal 14,90 $. Bis zu 5 Computer, kein Abo."
+ },
+ "optLifetimePitch": {
+  "message": "Was du verbrauchst, zahlst du deinem KI-Anbieter. Die Doppel-Untertitel bleiben gratis."
+ },
+ "optBuy": {
+  "message": "Lifetime holen"
+ },
+ "optHaveCode": {
+  "message": "Schon gekauft? Code eingeben"
+ },
+ "optUnlocked": {
+  "message": "Dein eigener API-Schlüssel ist auf diesem Computer freigeschaltet."
+ },
+ "optUnlockedPro": {
+  "message": "In deinem Pro-Abo enthalten, solange es läuft."
+ },
+ "optLifetimeCode": {
+  "message": "Dein Lifetime-Code für deine anderen Computer:"
+ },
+ "optThanks": {
+  "message": "Freigeschaltet. Danke!"
+ },
+ "optProvider": {
+  "message": "Anbieter"
+ },
+ "optBaseUrl": {
+  "message": "Basis-URL"
+ },
+ "optFormat": {
+  "message": "API-Format"
+ },
+ "optFmtChat": {
+  "message": "OpenAI-kompatibel (Chat Completions)"
+ },
+ "optFmtResponses": {
+  "message": "OpenAI Responses"
+ },
+ "optFmtAnthropic": {
+  "message": "Claude Messages"
+ },
+ "optKey": {
+  "message": "API-Schlüssel"
+ },
+ "optKeySaved": {
+  "message": "Gespeichert ($1). Leer lassen, um ihn zu behalten."
+ },
+ "optKeyNone": {
+  "message": "Für einen lokalen Server nicht nötig."
+ },
+ "optGetKey": {
+  "message": "Schlüssel holen"
+ },
+ "optModel": {
+  "message": "Modell"
+ },
+ "optLoadModels": {
+  "message": "Modelle laden"
+ },
+ "optModelsLoaded": {
+  "message": "$1 Modelle geladen. Wähl eins im Feld Modell."
+ },
+ "optSave": {
+  "message": "Speichern"
+ },
+ "optSaved": {
+  "message": "Gespeichert."
+ },
+ "optTest": {
+  "message": "Testen"
+ },
+ "optTesting": {
+  "message": "Wird getestet…"
+ },
+ "optTestOk": {
+  "message": "Es klappt. Das Modell schrieb: $1"
+ },
+ "optTestFail": {
+  "message": "Das hat nicht geklappt: $1"
+ },
+ "optRemoveKey": {
+  "message": "Gespeicherten Schlüssel löschen"
+ },
+ "optKeyRemoved": {
+  "message": "Schlüssel gelöscht."
+ },
+ "optPermDenied": {
+  "message": "Ohne Erlaubnis, $1 zu erreichen, kann Twinsub diesen Anbieter nicht aufrufen."
+ },
+ "optNeedUrl": {
+  "message": "Gib eine vollständige Basis-URL ein, die mit https:// beginnt."
+ },
+ "optNeedModel": {
+  "message": "Gib ein Modell ein."
+ },
+ "optPrivacy": {
+  "message": "Dein Schlüssel wird verschlüsselt und nur auf diesem Computer gespeichert: nie synchronisiert und nie an Twinsub gesendet. Mit eigenem Schlüssel gehen Erklärungen direkt von Chrome an den gewählten Anbieter, zu dessen Bedingungen, und nie über den Server von Twinsub."
  }
 }

@@ -1,15 +1,16 @@
 // Twinsub API: explains a subtitle line the viewer didn't understand, streamed as plain text.
 // POST /v1/explain  -> text stream of "@@section" blocks (see prompt.js), X-Twinsub-Remaining header
-// GET  /v1/quota?install=<id> -> { plan, remaining, limit, period, code?, proReady }
-// POST /v1/checkout {install, lang} -> { url } of a Dodo checkout for Twinsub Pro
-// POST /v1/restore {install, code} -> links this install to a Pro code
+// GET  /v1/quota?install=<id> -> { plan, remaining, limit, period, code?, proReady, lifetime?, lifetimeReady, byok }
+// POST /v1/checkout {install, lang, plan?} -> { url } of a Dodo checkout for Twinsub Pro, or Lifetime with plan "lifetime"
+// POST /v1/restore {install, code} -> links this install to a Pro or Lifetime code
 // GET  /v1/portal?install=<id> -> { url } of the Dodo customer portal (cancel, change card)
-// POST /v1/dodo -> Dodo subscription webhooks
+// POST /v1/dodo -> Dodo subscription, payment and refund webhooks
+// Explanations through the viewer's own API key (Lifetime or Pro) never reach this server; quota only says they are unlocked.
 // Free use is counted per install id and per IP each UTC day in D1, with a global daily cap as a cost brake.
 // Pro use is counted per Pro code each UTC month.
 // Answers are cached by video + line + marked text, and a cached answer costs the viewer nothing.
 import Anthropic from "@anthropic-ai/sdk";
-import { SYSTEM, buildRequest } from "./prompt.js";
+import { SYSTEM, buildRequest } from "../../src/prompt.js";
 import * as pro from "./pro.js";
 
 const CORS = {
@@ -118,15 +119,17 @@ async function explain(request, env, ctx) {
 async function quota(url, env) {
   const install = url.searchParams.get("install");
   if (!validInstall(install)) return json({ error: "bad install id" }, 400);
-  const plan = await pro.proFor(env, install);
+  const [plan, license] = await Promise.all([pro.proFor(env, install), pro.licenseFor(env, install)]);
+  // Own-key explanations are unlocked by Lifetime, and come with Pro while it lasts.
+  const extra = { lifetime: license ? { code: license.code } : null, lifetimeReady: pro.lifetimeReady(env), byok: !!(license || plan) };
   if (plan) {
     const limit = pro.proLimit(env), k = "p:" + plan.code;
     const used = await counts(env.DB, pro.month(), [k]);
-    return json({ plan: "pro", remaining: Math.max(0, limit - used[k]), limit, period: "month", code: plan.code, renews: !plan.cancel_at_end && plan.status !== "cancelled", until: plan.period_end, proReady: true });
+    return json({ plan: "pro", remaining: Math.max(0, limit - used[k]), limit, period: "month", code: plan.code, renews: !plan.cancel_at_end && plan.status !== "cancelled", until: plan.period_end, proReady: true, ...extra });
   }
   const limit = Number(env.FREE_PER_DAY) || 5;
   const used = await counts(env.DB, today(), ["i:" + install]);
-  return json({ plan: "free", remaining: Math.max(0, limit - used["i:" + install]), limit, period: "day", proReady: pro.proReady(env) });
+  return json({ plan: "free", remaining: Math.max(0, limit - used["i:" + install]), limit, period: "day", proReady: pro.proReady(env), ...extra });
 }
 
 async function readJson(request) {
@@ -152,7 +155,7 @@ export default {
     if (url.pathname === "/v1/checkout" && request.method === "POST") {
       const b = await readJson(request);
       if (!validInstall(b?.install)) return json({ error: "bad install id" }, 400);
-      const out = await pro.checkout(env, b.install, b.lang);
+      const out = await pro.checkout(env, b.install, b.lang, b.plan);
       return out.url ? json(out) : json({ error: out.error }, out.status);
     }
     if (url.pathname === "/v1/restore" && request.method === "POST") {

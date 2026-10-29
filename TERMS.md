@@ -1,6 +1,6 @@
 # Twinsub terms of use
 
-Last updated: 2026-10-29. Publisher: Poetical Engine LLC (hello@poeticalengine.com).
+Last updated: 2026-10-30. Publisher: Poetical Engine LLC (hello@poeticalengine.com).
 
 By installing or using Twinsub you agree to these terms.
 
@@ -18,7 +18,18 @@ Twinsub Pro is a paid subscription for more explanations: currently US$4.99 a mo
 - Unused explanations do not carry over to the next month.
 - If Pro doesn't work for you because of a fault on our side, write to us and we will make it right, including a refund. Other refunds follow the law where you live.
 
-**What explanations send.** Dual subtitles never leave your computer, but explanations, free or Pro, are written on our server. When you tap Explain, the words you marked, a few subtitle lines around them, the video's title, channel and id, and your answer language are sent to our server at api.poeticalengine.com, which passes the text to Anthropic's Claude API to write the answer. Nothing is sent until you tap Explain. Paying for Pro does not change this, and we do not keep a history of what you watch or ask. Details are in the [privacy policy](https://twinsub.poeticalengine.com/privacy/).
+## Twinsub Lifetime
+
+Twinsub Lifetime is a one-time purchase, currently US$14.90, that lets Twinsub write explanations with your own API key from an AI provider you choose.
+
+- It works on up to 5 computers, using the code you get after paying, for as long as Twinsub offers own-key explanations. It does not include explanations through our server beyond the free daily limit; that is what Pro is for.
+- You need your own account and API key with the provider. You pay the provider for what you use, under its terms; we are not responsible for its charges, availability or answers.
+- Pro subscribers can use their own key too, while the subscription lasts.
+- Payment is handled by our payment provider as the seller of record. If Lifetime doesn't work for you because of a fault on our side, write to us and we will make it right, including a refund. A refunded Lifetime code stops working.
+
+**Keep your key safe.** Twinsub encrypts your API key and keeps it only on your computer, but anyone who uses your computer and Chrome profile can use Twinsub with it. Set spending limits with your provider, and remove the key from the AI settings when you no longer need it.
+
+**What explanations send.** Dual subtitles never leave your computer, but explanations, free or Pro, are written on our server. When you tap Explain, the words you marked, a few subtitle lines around them, the video's title, channel and id, and your answer language are sent to our server at api.poeticalengine.com, which passes the text to an AI model and service hosted in the United States to write the answer. With your own API key, the same content goes directly from Chrome to the provider you chose instead, and never reaches our server. Nothing is sent until you tap Explain, and we do not keep a history of what you watch or ask. Details are in the [privacy policy](https://twinsub.poeticalengine.com/privacy/).
 
 ## AI answers
 

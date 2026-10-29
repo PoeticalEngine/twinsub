@@ -3,11 +3,12 @@
   "name": "__MSG_extName__",
   "short_name": "Twinsub",
   "description": "__MSG_extDescription__",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "default_locale": "en",
   "minimum_chrome_version": "138",
   "homepage_url": "https://twinsub.poeticalengine.com/",
   "permissions": ["storage"],
+  "optional_host_permissions": ["https://*/*", "http://*/*"],
   "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
   "action": {
     "default_popup": "popup/popup.html",
@@ -27,5 +28,6 @@
       "run_at": "document_start"
     }
   ],
-  "background": { "service_worker": "src/background.js" }
+  "options_ui": { "page": "options/options.html", "open_in_tab": true },
+  "background": { "service_worker": "src/background.js", "type": "module" }
 }
