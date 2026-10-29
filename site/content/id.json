@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "title": "Twinsub: Subtitle Ganda untuk YouTube, Gratis",
+  "description": "Tonton YouTube dengan subtitle asli dan bahasamu tepat di bawahnya. Gratis, tanpa batas, diterjemahkan di komputermu. Tandai baris yang bikin bingung, AI menjelaskannya."
+ },
+ "cta": "Tambahkan ke Chrome, gratis",
+ "soon": "Segera hadir di Chrome Web Store",
+ "hero": {
+  "h1": "Subtitle ganda untuk YouTube.",
+  "sub": "Baris aslinya, dan bahasamu tepat di bawahnya. Kalau masih belum nyambung, tandai saja: arti, latar belakang, dan leluconnya dijelaskan.",
+  "note": "Chrome 138+ di komputer · Gratis · Tanpa login"
+ },
+ "featuresTitle": "Dibuat untuk menonton dalam bahasa lain",
+ "explain": {
+  "eyebrow": "Kurang paham?",
+  "title": "Tandai. Paham.",
+  "sub": "Terjemahan mesin menerjemahkan kata, belum tentu maknanya. Jeda, tandai bagian terjemahan yang membingungkan, dan Twinsub menjelaskan maksud teks aslinya: ungkapan, istilah teknis, rujukan budaya, meme.",
+  "steps": [
+   "Tekan ? di samping subtitle, atau E. Video berhenti.",
+   "Tandai bagian terjemahan yang membingungkan.",
+   "Ketuk Jelaskan. Jawabannya muncul di bawah baris itu, dalam bahasa Indonesia."
+  ],
+  "tr": "Jadi kami berganti arah — jujur saja, sekarang kami pada dasarnya Uber-nya jasa ajak jalan anjing.",
+  "mark": "Uber-nya jasa ajak jalan anjing",
+  "gist": "Aplikasi yang langsung mempertemukan pemilik anjing dengan pengajak jalan, seperti Uber mempertemukan penumpang dan sopir. Diucapkan dengan sedikit menertawakan diri sendiri.",
+  "background": "\"Uber-nya X\" adalah jargon wajib startup era 2010-an. Saking seringnya dipakai, sekarang terdengar seperti mengejek diri sendiri.",
+  "quota": "5 penjelasan gratis per hari. Subtitle ganda selalu gratis.",
+  "labels": {
+   "gist": "Maksudnya",
+   "background": "Latar belakang"
+  },
+  "orig": "So we pivoted — honestly, we're basically the Uber for dog walking now."
+ },
+ "how": {
+  "title": "Cara mulai",
+  "steps": [
+   "Tambahkan Twinsub ke Chrome.",
+   "Buka video YouTube apa pun yang punya subtitle, buatan manusia atau otomatis.",
+   "Saat pertama memakai pasangan bahasa, klik pesan kuning. Chrome mengunduh paket terjemahan dalam beberapa detik."
+  ]
+ },
+ "faq": {
+  "title": "Pertanyaan",
+  "items": [
+   [
+    "Apakah Twinsub gratis?",
+    "Ya. Subtitle ganda gratis dan tanpa batas, tanpa akun dan tanpa masa uji coba. Penjelasan gratis 5 kali sehari."
+   ],
+   [
+    "Bagaimana terjemahannya dibuat?",
+    "Dengan penerjemah bawaan Chrome (Chrome 138 ke atas). Setiap baris diterjemahkan di komputermu dalam hitungan milidetik, tanpa menunggu server."
+   ],
+   [
+    "Bisa untuk subtitle otomatis?",
+    "Bisa. Twinsub menyusun subtitle otomatis YouTube jadi kalimat utuh sebelum diterjemahkan, dan mengikuti trek yang kamu pilih di menu CC."
+   ],
+   [
+    "Ke bahasa apa saja?",
+    "39: Indonesia, Inggris, Mandarin (sederhana dan tradisional), Jepang, Korea, Spanyol, Prancis, Jerman, Portugis, Italia, Rusia, Arab, Hindi, Vietnam, Thailand, Turki, dan lainnya."
+   ],
+   [
+    "Apa yang keluar dari komputerku?",
+    "Untuk subtitle, tidak ada. Saat kamu mengetuk Jelaskan, bagian yang kamu tandai dan beberapa baris di sekitarnya dikirim ke server kami, yang meminta jawaban dari Claude, model AI buatan Anthropic. Lihat kebijakan privasi."
+   ],
+   [
+    "Browser apa saja?",
+    "Chrome 138 atau lebih baru di Windows, macOS, Linux, dan ChromeOS. Browser Chromium lain bisa memasangnya, tapi belum tentu punya penerjemah lokal Chrome."
+   ]
+  ]
+ },
+ "footer": {
+  "privacy": "Privasi",
+  "by": "Dibuat oleh Poetical Engine",
+  "disclaimer": "YouTube adalah merek dagang Google LLC. Twinsub tidak berafiliasi dengan atau didukung oleh YouTube maupun Google.",
+  "terms": "Ketentuan"
+ },
+ "langName": "Bahasa Indonesia"
+}

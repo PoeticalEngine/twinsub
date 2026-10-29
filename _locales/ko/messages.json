@@ -63,9 +63,72 @@
   "message": "자막이 있는 YouTube 동영상을 열면 Twinsub가 자막을 켜고 번역을 붙여 줍니다. 플레이어 하단의 두 줄 버튼으로 끌 수 있습니다."
  },
  "popupPrivacy": {
-  "message": "번역은 Chrome에 내장된 번역 기능으로 내 컴퓨터에서 이루어집니다. 계정도, 서버도 없고, 무엇을 보는지는 브라우저 밖으로 나가지 않습니다."
+  "message": "자막은 Chrome 내장 번역기가 내 컴퓨터에서 번역해요. '설명'을 누를 때만 표시한 단어와 앞뒤 자막 몇 줄이 설명을 만들기 위해 저희 서버로 전송돼요. 계정 필요 없음."
  },
  "popupPrivacyLink": {
   "message": "개인정보 보호"
+ },
+ "askTip": {
+  "message": "못 알아들었나요? ($1)"
+ },
+ "panelTitle": {
+  "message": "못 알아들었나요?"
+ },
+ "panelHint": {
+  "message": "번역문에서 이해되지 않는 부분을 드래그하세요. 여러 곳도 가능해요. 한 줄 전체를 설명받을 수도 있어요."
+ },
+ "panelHintNoTr": {
+  "message": "이해되지 않는 부분을 드래그하세요. 여러 곳도 가능해요. 한 줄 전체를 설명받을 수도 있어요."
+ },
+ "explainThis": {
+  "message": "이 부분 설명"
+ },
+ "explainLine": {
+  "message": "한 줄 전체 설명"
+ },
+ "justNow": {
+  "message": "방금 그 줄"
+ },
+ "footerHint": {
+  "message": "표시한 뒤 '설명'을 누르세요"
+ },
+ "remaining": {
+  "message": "오늘 무료 설명 $1회 남음"
+ },
+ "aiNote": {
+  "message": "AI가 쓴 설명이라 틀릴 수 있어요"
+ },
+ "secGist": {
+  "message": "무슨 말인지"
+ },
+ "secBackground": {
+  "message": "배경"
+ },
+ "secLanguage": {
+  "message": "표현"
+ },
+ "secAsr": {
+  "message": "잘못 들렸을 수도"
+ },
+ "quotaTitle": {
+  "message": "오늘 무료 설명 $1회를 다 썼어요"
+ },
+ "quotaBody": {
+  "message": "내일 다시 생겨요. 표시한 부분은 그대로 남아 있어요."
+ },
+ "errFailed": {
+  "message": "설명을 가져오지 못했어요."
+ },
+ "errBusy": {
+  "message": "지금 요청이 많아요. 1분 뒤에 다시 시도해 주세요."
+ },
+ "retry": {
+  "message": "다시 시도"
+ },
+ "thinking": {
+  "message": "생각 중…"
+ },
+ "close": {
+  "message": "닫기"
  }
 }

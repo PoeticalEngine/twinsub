@@ -3,9 +3,10 @@
   "name": "__MSG_extName__",
   "short_name": "Twinsub",
   "description": "__MSG_extDescription__",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "default_locale": "en",
   "minimum_chrome_version": "138",
+  "homepage_url": "https://twinsub.poeticalengine.com/",
   "permissions": ["storage"],
   "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
   "action": {
@@ -21,9 +22,10 @@
     },
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["src/captions.js", "src/content.js"],
+      "js": ["src/captions.js", "src/explain.js", "src/content.js"],
       "css": ["src/content.css"],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "background": { "service_worker": "src/background.js" }
 }

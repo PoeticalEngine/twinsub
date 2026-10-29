@@ -63,9 +63,72 @@
   "message": "Open any YouTube video with subtitles. Twinsub turns them on and adds the translation; the button with two lines in the player bar switches it off."
  },
  "popupPrivacy": {
-  "message": "Translation runs on your computer with Chrome's built-in translator. No account, no server, nothing about what you watch leaves your browser."
+  "message": "Subtitles are translated on your computer by Chrome's built-in translator. Only when you tap Explain are the marked words and the nearby subtitle lines sent to our server to write the answer. No account."
  },
  "popupPrivacyLink": {
   "message": "Privacy"
+ },
+ "askTip": {
+  "message": "Didn't catch that? ($1)"
+ },
+ "panelTitle": {
+  "message": "Didn't catch that?"
+ },
+ "panelHint": {
+  "message": "Mark the parts of the translation you don't get, as many as you like. Or explain the whole line."
+ },
+ "panelHintNoTr": {
+  "message": "Mark the parts you don't get, as many as you like. Or explain the whole line."
+ },
+ "explainThis": {
+  "message": "Explain this"
+ },
+ "explainLine": {
+  "message": "Explain whole line"
+ },
+ "justNow": {
+  "message": "just now"
+ },
+ "footerHint": {
+  "message": "Mark something, then tap Explain"
+ },
+ "remaining": {
+  "message": "$1 free explanations left today"
+ },
+ "aiNote": {
+  "message": "Written by AI, may be wrong"
+ },
+ "secGist": {
+  "message": "What it says"
+ },
+ "secBackground": {
+  "message": "Background"
+ },
+ "secLanguage": {
+  "message": "Language"
+ },
+ "secAsr": {
+  "message": "Maybe misheard"
+ },
+ "quotaTitle": {
+  "message": "That's today's $1 free explanations"
+ },
+ "quotaBody": {
+  "message": "They come back tomorrow. Your marks stay where they are."
+ },
+ "errFailed": {
+  "message": "Couldn't get an explanation."
+ },
+ "errBusy": {
+  "message": "Lots of people are asking right now. Try again in a minute."
+ },
+ "retry": {
+  "message": "Try again"
+ },
+ "thinking": {
+  "message": "Thinking…"
+ },
+ "close": {
+  "message": "Close"
  }
 }

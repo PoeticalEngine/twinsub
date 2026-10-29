@@ -63,9 +63,72 @@
   "message": "Ouvrez n'importe quelle vidéo YouTube avec sous-titres : Twinsub les active et ajoute la traduction. Le bouton à deux lignes dans la barre du lecteur le désactive."
  },
  "popupPrivacy": {
-  "message": "La traduction se fait sur votre ordinateur avec le traducteur intégré à Chrome. Pas de compte, pas de serveur : rien de ce que vous regardez ne quitte votre navigateur."
+  "message": "Les sous-titres sont traduits sur votre ordinateur par le traducteur intégré de Chrome. C'est seulement quand vous touchez Expliquer que le passage surligné et les lignes voisines sont envoyés à notre serveur pour rédiger la réponse. Sans compte."
  },
  "popupPrivacyLink": {
   "message": "Confidentialité"
+ },
+ "askTip": {
+  "message": "Pas compris ? ($1)"
+ },
+ "panelTitle": {
+  "message": "Pas compris ?"
+ },
+ "panelHint": {
+  "message": "Surlignez dans la traduction ce qui vous échappe, autant de passages que vous voulez. Ou faites expliquer toute la ligne."
+ },
+ "panelHintNoTr": {
+  "message": "Surlignez ce qui vous échappe, autant de passages que vous voulez. Ou faites expliquer toute la ligne."
+ },
+ "explainThis": {
+  "message": "Expliquer"
+ },
+ "explainLine": {
+  "message": "Expliquer toute la ligne"
+ },
+ "justNow": {
+  "message": "à l'instant"
+ },
+ "footerHint": {
+  "message": "Surlignez, puis touchez Expliquer"
+ },
+ "remaining": {
+  "message": "Encore $1 explications gratuites aujourd'hui"
+ },
+ "aiNote": {
+  "message": "Rédigé par une IA, peut contenir des erreurs"
+ },
+ "secGist": {
+  "message": "Ce que ça veut dire"
+ },
+ "secBackground": {
+  "message": "Contexte"
+ },
+ "secLanguage": {
+  "message": "Langue"
+ },
+ "secAsr": {
+  "message": "Peut-être mal transcrit"
+ },
+ "quotaTitle": {
+  "message": "Vous avez utilisé les $1 explications gratuites du jour"
+ },
+ "quotaBody": {
+  "message": "Elles reviennent demain. Vos passages surlignés restent là."
+ },
+ "errFailed": {
+  "message": "Impossible d'obtenir une explication."
+ },
+ "errBusy": {
+  "message": "Beaucoup de demandes en ce moment. Réessayez dans une minute."
+ },
+ "retry": {
+  "message": "Réessayer"
+ },
+ "thinking": {
+  "message": "Réflexion…"
+ },
+ "close": {
+  "message": "Fermer"
  }
 }

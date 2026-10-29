@@ -63,9 +63,72 @@
   "message": "字幕のある YouTube 動画を開くだけ。Twinsub が字幕をオンにして訳文を添えます。プレーヤー下部の2本線のボタンでオフにできます。"
  },
  "popupPrivacy": {
-  "message": "翻訳は Chrome 内蔵の翻訳機能があなたのパソコン上で行います。アカウントもサーバーも不要。何を見たかがブラウザの外に出ることはありません。"
+  "message": "字幕は Chrome 内蔵の翻訳機能があなたのパソコン上で翻訳します。「説明」をタップしたときだけ、なぞった言葉と前後の字幕が説明作成のため当社サーバーに送られます。アカウント不要。"
  },
  "popupPrivacyLink": {
   "message": "プライバシー"
+ },
+ "askTip": {
+  "message": "聞き取れなかった？（$1）"
+ },
+ "panelTitle": {
+  "message": "聞き取れなかった？"
+ },
+ "panelHint": {
+  "message": "訳文のわからない部分をなぞってください。いくつでもOK。1行まるごと説明することもできます。"
+ },
+ "panelHintNoTr": {
+  "message": "わからない部分をなぞってください。いくつでもOK。1行まるごと説明することもできます。"
+ },
+ "explainThis": {
+  "message": "ここを説明"
+ },
+ "explainLine": {
+  "message": "この行を説明"
+ },
+ "justNow": {
+  "message": "さっきの行"
+ },
+ "footerHint": {
+  "message": "なぞったら「説明」をタップ"
+ },
+ "remaining": {
+  "message": "今日の無料説明：残り $1 回"
+ },
+ "aiNote": {
+  "message": "AI による説明です。誤りがある場合があります"
+ },
+ "secGist": {
+  "message": "ここで言っていること"
+ },
+ "secBackground": {
+  "message": "背景"
+ },
+ "secLanguage": {
+  "message": "ことば"
+ },
+ "secAsr": {
+  "message": "聞き間違いかも"
+ },
+ "quotaTitle": {
+  "message": "今日の無料説明 $1 回を使い切りました"
+ },
+ "quotaBody": {
+  "message": "明日また使えます。なぞった部分はそのまま残ります。"
+ },
+ "errFailed": {
+  "message": "説明を取得できませんでした。"
+ },
+ "errBusy": {
+  "message": "いま混み合っています。1分ほどしてからもう一度お試しください。"
+ },
+ "retry": {
+  "message": "もう一度"
+ },
+ "thinking": {
+  "message": "考え中…"
+ },
+ "close": {
+  "message": "閉じる"
  }
 }

@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "title": "Twinsub: subtítulos bilingües para YouTube, gratis",
+  "description": "Mira YouTube con el subtítulo original y tu idioma justo debajo. Gratis, ilimitado, traducido en tu ordenador. Marca una línea que no entiendas y la IA te la explica."
+ },
+ "cta": "Añadir a Chrome, es gratis",
+ "soon": "Pronto en Chrome Web Store",
+ "hero": {
+  "h1": "Subtítulos bilingües para YouTube.",
+  "sub": "La línea original, y tu idioma justo debajo. Si una línea sigue sin cuadrarte, márcala: significado, contexto y chiste, explicados.",
+  "note": "Chrome 138+ en ordenador · Gratis · Sin cuenta"
+ },
+ "featuresTitle": "Hecho para ver vídeos en otro idioma",
+ "explain": {
+  "eyebrow": "¿No lo pillaste?",
+  "title": "Márcalo. Entiéndelo.",
+  "sub": "La traducción automática traduce palabras, no siempre el sentido. Pausa, marca en la traducción lo que no entiendas y Twinsub explica lo que dice el original: la expresión, el término técnico, la referencia cultural, el meme.",
+  "steps": [
+   "Pulsa ? junto a los subtítulos, o E. El vídeo se pausa.",
+   "Marca la parte confusa de la traducción.",
+   "Toca Explicar. La respuesta aparece bajo la línea, en español."
+  ],
+  "tr": "Así que pivotamos; sinceramente, ahora somos básicamente el Uber de pasear perros.",
+  "mark": "el Uber de pasear perros",
+  "gist": "Una app que conecta al momento a dueños de perros con paseadores, como Uber conecta pasajeros y conductores. Dicho con algo de autoironía.",
+  "background": "«El Uber de X» fue la frase de manual de las startups en los 2010. Se usó tanto que hoy suena a burla de uno mismo.",
+  "quota": "5 explicaciones gratis al día. Los subtítulos bilingües siempre son gratis.",
+  "labels": {
+   "gist": "Qué dice",
+   "background": "Contexto"
+  },
+  "orig": "So we pivoted — honestly, we're basically the Uber for dog walking now."
+ },
+ "how": {
+  "title": "Cómo empezar",
+  "steps": [
+   "Añade Twinsub a Chrome.",
+   "Abre cualquier vídeo de YouTube con subtítulos, manuales o automáticos.",
+   "La primera vez con un par de idiomas, haz clic en el aviso amarillo. Chrome descarga el paquete de traducción en unos segundos."
+  ]
+ },
+ "faq": {
+  "title": "Preguntas",
+  "items": [
+   [
+    "¿Twinsub es gratis?",
+    "Sí. Los subtítulos bilingües son gratis e ilimitados, sin cuenta ni periodo de prueba. Las explicaciones son gratis 5 veces al día."
+   ],
+   [
+    "¿Cómo se traduce?",
+    "Con el traductor integrado en Chrome (Chrome 138 o posterior). Cada línea se traduce en tu ordenador en milisegundos, sin esperar a un servidor."
+   ],
+   [
+    "¿Funciona con subtítulos automáticos?",
+    "Sí. Twinsub agrupa los subtítulos automáticos de YouTube en frases completas antes de traducirlos y sigue la pista que elijas en el menú CC."
+   ],
+   [
+    "¿A qué idiomas traduce?",
+    "39: español, inglés, chino (simplificado y tradicional), japonés, coreano, francés, alemán, portugués, italiano, ruso, árabe, hindi, indonesio, vietnamita, tailandés, turco y más."
+   ],
+   [
+    "¿Qué sale de mi ordenador?",
+    "Para los subtítulos, nada. Cuando tocas Explicar, lo que marcaste y unas líneas alrededor van a nuestro servidor, que pide la respuesta a Claude, un modelo de IA de Anthropic. Consulta la política de privacidad."
+   ],
+   [
+    "¿En qué navegadores funciona?",
+    "Chrome 138 o posterior en Windows, macOS, Linux y ChromeOS. Otros navegadores Chromium pueden instalarlo, pero quizá no tengan el traductor local de Chrome."
+   ]
+  ]
+ },
+ "footer": {
+  "privacy": "Privacidad",
+  "by": "Hecho por Poetical Engine",
+  "disclaimer": "YouTube es una marca de Google LLC. Twinsub no está afiliado ni respaldado por YouTube ni Google.",
+  "terms": "Términos"
+ },
+ "langName": "Español"
+}

@@ -63,9 +63,72 @@
   "message": "打开任意有字幕的 YouTube 视频，Twinsub 会自动打开字幕并加上译文；播放器底栏里两条横线的按钮可以关掉它。"
  },
  "popupPrivacy": {
-  "message": "翻译由 Chrome 内置翻译在你的电脑上完成。不用账号，没有服务器，你看了什么不会离开浏览器。"
+  "message": "字幕由 Chrome 内置翻译在你的电脑上翻译。只有你点「解释」时，划出的词和前后几句字幕才会发到我们的服务器来生成解释。不用账号。"
  },
  "popupPrivacyLink": {
   "message": "隐私说明"
+ },
+ "askTip": {
+  "message": "没听懂？（$1）"
+ },
+ "panelTitle": {
+  "message": "没听懂？"
+ },
+ "panelHint": {
+  "message": "在译文上划出看不懂的地方，可以划好几处；也可以直接解释整句。"
+ },
+ "panelHintNoTr": {
+  "message": "划出看不懂的地方，可以划好几处；也可以直接解释整句。"
+ },
+ "explainThis": {
+  "message": "解释这段"
+ },
+ "explainLine": {
+  "message": "解释整句"
+ },
+ "justNow": {
+  "message": "刚才这句"
+ },
+ "footerHint": {
+  "message": "划好了点「解释」"
+ },
+ "remaining": {
+  "message": "今日免费还剩 $1 次"
+ },
+ "aiNote": {
+  "message": "解释由 AI 生成，可能有误"
+ },
+ "secGist": {
+  "message": "这句在说什么"
+ },
+ "secBackground": {
+  "message": "背景"
+ },
+ "secLanguage": {
+  "message": "语言"
+ },
+ "secAsr": {
+  "message": "可能听错了"
+ },
+ "quotaTitle": {
+  "message": "今天的 $1 次免费解释用完了"
+ },
+ "quotaBody": {
+  "message": "明天会恢复。划过的线都保留着。"
+ },
+ "errFailed": {
+  "message": "没能拿到解释。"
+ },
+ "errBusy": {
+  "message": "现在问的人太多了，过一分钟再试试。"
+ },
+ "retry": {
+  "message": "再试一次"
+ },
+ "thinking": {
+  "message": "正在想…"
+ },
+ "close": {
+  "message": "关闭"
  }
 }

@@ -1,0 +1,11 @@
+{
+  // Static landing site: assets only, no Worker code.
+  "name": "twinsub-site",
+  "compatibility_date": "2026-05-22",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  "routes": [{ "pattern": "twinsub.poeticalengine.com", "custom_domain": true }]
+}

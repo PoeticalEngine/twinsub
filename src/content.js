@@ -18,6 +18,27 @@
     downloading: "Downloading the $1 → $2 translation pack… $3%",
     noCaptions: "This video has no subtitles, so Twinsub has nothing to translate.",
     failed: "Translation stopped: $1",
+    askTip: "Didn't catch that? ($1)",
+    panelTitle: "Didn't catch that?",
+    panelHint: "Mark the parts of the translation you don't get, as many as you like. Or explain the whole line.",
+    panelHintNoTr: "Mark the parts you don't get, as many as you like. Or explain the whole line.",
+    explainThis: "Explain this",
+    explainLine: "Explain whole line",
+    justNow: "just now",
+    footerHint: "Mark something, then tap Explain",
+    remaining: "$1 free explanations left today",
+    aiNote: "Written by AI, may be wrong",
+    secGist: "What it says",
+    secBackground: "Background",
+    secLanguage: "Language",
+    secAsr: "Maybe misheard",
+    quotaTitle: "That's today's $1 free explanations",
+    quotaBody: "They come back tomorrow. Your marks stay where they are.",
+    errFailed: "Couldn't get an explanation.",
+    errBusy: "Lots of people are asking right now. Try again in a minute.",
+    retry: "Try again",
+    thinking: "Thinking…",
+    close: "Close",
   };
   function t(key, ...subs) {
     let s = "";
@@ -82,6 +103,7 @@
       button.title = settings.enabled ? t("buttonOn") : t("buttonOff");
     }
     if (!settings.enabled || !track.ready) { hide(); return; }
+    TwinsubExplain.sync();
     if (track.videoId !== lastVideo) { lastVideo = track.videoId; sameVideoSince = Date.now(); chip(""); }
     if (track.ad) { hide(); return; }
 
@@ -165,6 +187,7 @@
       chipEl.className = "twinsub-chip";
       chipEl.hidden = true;
       player.append(overlay, chipEl);
+      TwinsubExplain.attach(overlay);
       new ResizeObserver(() => player.style.setProperty("--twinsub-base", Math.max(14, player.clientHeight * 0.045) + "px")).observe(player);
       applyStyle();
     }
@@ -248,6 +271,17 @@
     lineB.lang = settings.order === "translation-first" ? (track.tlang || track.lang) : targetLang();
     overlay.hidden = !first && !second;
   }
+
+  TwinsubExplain.mount({
+    t, player: () => document.getElementById("movie_player"), video: () => document.querySelector("#movie_player video"),
+    cues: () => cues, translations: () => translations, track: () => track, key: () => currentKey,
+    sourceLang: () => track.tlang || track.lang || "", targetLang,
+    videoMeta: () => ({
+      id: track.videoId || "",
+      title: (document.querySelector("#title h1, h1.ytd-watch-metadata")?.textContent || document.title.replace(/ - YouTube$/, "")).trim(),
+      channel: (document.querySelector("ytd-watch-metadata ytd-channel-name a, #owner ytd-channel-name a")?.textContent || "").trim(),
+    }),
+  });
 
   setInterval(render, 100);
   // YouTube is a single-page app: the player and its controls get rebuilt on navigation.

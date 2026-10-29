@@ -63,9 +63,72 @@
   "message": "Buka video YouTube apa pun yang punya subtitle. Twinsub menyalakan subtitle dan menambahkan terjemahannya; tombol dua garis di bilah pemutar untuk mematikannya."
  },
  "popupPrivacy": {
-  "message": "Terjemahan berjalan di komputermu dengan penerjemah bawaan Chrome. Tanpa akun, tanpa server; apa yang kamu tonton tidak keluar dari browser."
+  "message": "Subtitle diterjemahkan di komputermu oleh penerjemah bawaan Chrome. Hanya saat kamu mengetuk Jelaskan, kata yang ditandai dan baris subtitle di sekitarnya dikirim ke server kami untuk menyusun jawabannya. Tanpa akun."
  },
  "popupPrivacyLink": {
   "message": "Privasi"
+ },
+ "askTip": {
+  "message": "Kurang paham? ($1)"
+ },
+ "panelTitle": {
+  "message": "Kurang paham?"
+ },
+ "panelHint": {
+  "message": "Tandai bagian terjemahan yang tidak kamu pahami, sebanyak yang kamu mau. Atau minta penjelasan satu baris penuh."
+ },
+ "panelHintNoTr": {
+  "message": "Tandai bagian yang tidak kamu pahami, sebanyak yang kamu mau. Atau minta penjelasan satu baris penuh."
+ },
+ "explainThis": {
+  "message": "Jelaskan ini"
+ },
+ "explainLine": {
+  "message": "Jelaskan satu baris"
+ },
+ "justNow": {
+  "message": "barusan"
+ },
+ "footerHint": {
+  "message": "Tandai dulu, lalu ketuk Jelaskan"
+ },
+ "remaining": {
+  "message": "Sisa $1 penjelasan gratis hari ini"
+ },
+ "aiNote": {
+  "message": "Ditulis oleh AI, bisa saja keliru"
+ },
+ "secGist": {
+  "message": "Maksudnya"
+ },
+ "secBackground": {
+  "message": "Latar belakang"
+ },
+ "secLanguage": {
+  "message": "Bahasa"
+ },
+ "secAsr": {
+  "message": "Mungkin salah dengar"
+ },
+ "quotaTitle": {
+  "message": "$1 penjelasan gratis hari ini sudah habis"
+ },
+ "quotaBody": {
+  "message": "Besok tersedia lagi. Tandaanmu tetap tersimpan."
+ },
+ "errFailed": {
+  "message": "Gagal mendapatkan penjelasan."
+ },
+ "errBusy": {
+  "message": "Lagi banyak yang bertanya. Coba lagi dalam semenit."
+ },
+ "retry": {
+  "message": "Coba lagi"
+ },
+ "thinking": {
+  "message": "Sedang berpikir…"
+ },
+ "close": {
+  "message": "Tutup"
  }
 }

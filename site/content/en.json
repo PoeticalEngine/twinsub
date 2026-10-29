@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "title": "Twinsub: Dual Subtitles for YouTube, Free",
+  "description": "Watch YouTube with the original subtitle and your language right under it. Free, unlimited, translated on your computer. Mark a line you don't get and AI explains it."
+ },
+ "cta": "Add to Chrome, it's free",
+ "soon": "Coming soon to the Chrome Web Store",
+ "hero": {
+  "h1": "Dual subtitles for YouTube.",
+  "sub": "The original line, and your language right under it. When a line still doesn't click, mark it and get the meaning, the background and the joke explained.",
+  "note": "Chrome 138+ on a computer · Free · No sign-in"
+ },
+ "featuresTitle": "Built for watching in another language",
+ "explain": {
+  "eyebrow": "Didn't catch that?",
+  "title": "Mark it. Get it.",
+  "sub": "Machine translation gets the words, not always the meaning. Pause, mark the part of the translation you don't get, and Twinsub explains what the original says: the idiom, the field term, the cultural reference, the meme.",
+  "steps": [
+   "Press ? next to the subtitles, or E. The video pauses.",
+   "Mark the confusing part of the translation.",
+   "Tap Explain. The answer appears under the line, in your language."
+  ],
+  "tr": "So we pivoted — honestly, we're basically the Uber for dog walking now.",
+  "mark": "the Uber for dog walking",
+  "gist": "An app that matches dog owners with walkers on demand, the way Uber matches riders with drivers. Said with a bit of self-mockery.",
+  "background": "\"The Uber for X\" was a stock startup pitch in the 2010s. It got used so much that saying it now sounds like a joke about yourself.",
+  "quota": "5 free explanations a day. Dual subtitles are always free.",
+  "labels": {
+   "gist": "What it says",
+   "background": "Background"
+  },
+  "orig": "Así que pivotamos; sinceramente, ahora somos básicamente el Uber de pasear perros."
+ },
+ "how": {
+  "title": "How to start",
+  "steps": [
+   "Add Twinsub to Chrome.",
+   "Open any YouTube video that has subtitles, hand-made or auto-generated.",
+   "The first time you use a language pair, click the yellow prompt. Chrome downloads its translation pack in a few seconds."
+  ]
+ },
+ "faq": {
+  "title": "Questions",
+  "items": [
+   [
+    "Is Twinsub free?",
+    "Yes. Dual subtitles are free and unlimited, with no account and no trial. Explanations are free 5 times a day."
+   ],
+   [
+    "How is the translation done?",
+    "With the translator built into Chrome (Chrome 138 and newer). Each line is translated on your own computer in a few milliseconds, so nothing waits on a server."
+   ],
+   [
+    "Does it work with auto-generated subtitles?",
+    "Yes. Twinsub regroups YouTube's auto-generated captions into whole sentences before translating them, and follows whatever track you pick in the CC menu."
+   ],
+   [
+    "Which languages can I translate into?",
+    "39: English, Chinese (Simplified and Traditional), Japanese, Korean, Spanish, French, German, Portuguese, Italian, Russian, Arabic, Hindi, Indonesian, Vietnamese, Thai, Turkish, Polish, Dutch, Ukrainian and more."
+   ],
+   [
+    "What leaves my computer?",
+    "For subtitles, nothing. When you tap Explain, the words you marked and a few subtitle lines around them go to our server, which asks Claude, an AI model by Anthropic, for the answer. See the privacy policy."
+   ],
+   [
+    "Which browsers does it run on?",
+    "Chrome 138 or newer on Windows, macOS, Linux and ChromeOS. Other Chromium browsers can install it, but may not include Chrome's on-device translator."
+   ]
+  ]
+ },
+ "footer": {
+  "privacy": "Privacy",
+  "by": "Made by Poetical Engine",
+  "disclaimer": "YouTube is a trademark of Google LLC. Twinsub is not affiliated with or endorsed by YouTube or Google.",
+  "terms": "Terms"
+ },
+ "langName": "English"
+}

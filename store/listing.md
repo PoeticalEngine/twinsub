@@ -81,7 +81,8 @@ Twinsub 用的是 Chrome 自带的翻译，每一句都在你的电脑上翻译�
 
 - Single purpose: `Shows a second subtitle line on YouTube videos: the current caption translated into the user's language with Chrome's built-in on-device translator.`
 - storage: `Saves the user's Twinsub settings (on/off, target language, line order, text size, position) in chrome.storage.sync.`
-- Host permissions (content scripts on https://www.youtube.com/*): `Twinsub's only job happens inside YouTube's video player: it reads the captions the player has already downloaded, translates them on the device, and draws the second subtitle line over the video. It runs on no other site and makes no network requests of its own.`
+- Host permissions (content scripts on https://www.youtube.com/*): `Twinsub works inside YouTube's video player: it reads the captions the player has already downloaded, translates them on the device, and draws the second subtitle line over the video. When the user taps Explain, it sends the marked words and nearby subtitle lines to api.poeticalengine.com for an explanation. It runs on no other site.`
 - Remote code: No.
-- Data usage: nothing collected; tick all three certifications.
-- Privacy policy URL: https://github.com/poeticalengine/twinsub/blob/main/PRIVACY.md
+- Data usage (from 0.2.0, the explain feature): tick "Website content" (marked subtitle text, nearby lines, video title/channel, sent only when the user taps Explain). Nothing else. Tick all three certifications (not sold, not used for unrelated purposes, not used for credit).
+- Before submitting 0.2.0: the store descriptions and screenshot 5 still say nothing leaves the browser / no server. Rewrite them to say translation is on-device and explanations go to our server only when asked, and add the explain feature to the copy.
+- Privacy policy URL: https://twinsub.poeticalengine.com/privacy/

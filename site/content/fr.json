@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "title": "Twinsub : double sous-titres YouTube, gratuit",
+  "description": "Regardez YouTube avec le sous-titre original et votre langue juste en dessous. Gratuit, illimité, traduit sur votre ordinateur. Surlignez une ligne obscure, l'IA l'explique."
+ },
+ "cta": "Ajouter à Chrome, c'est gratuit",
+ "soon": "Bientôt sur le Chrome Web Store",
+ "hero": {
+  "h1": "Double sous-titres pour YouTube.",
+  "sub": "La ligne originale, et votre langue juste en dessous. Si une ligne reste obscure, surlignez-la : sens, contexte et blague expliqués.",
+  "note": "Chrome 138+ sur ordinateur · Gratuit · Sans compte"
+ },
+ "featuresTitle": "Pensé pour regarder dans une autre langue",
+ "explain": {
+  "eyebrow": "Pas compris ?",
+  "title": "Surlignez. Comprenez.",
+  "sub": "La traduction automatique rend les mots, pas toujours le sens. Mettez en pause, surlignez dans la traduction ce qui vous échappe, et Twinsub explique ce que dit l'original : l'expression, le terme technique, la référence culturelle, le mème.",
+  "steps": [
+   "Appuyez sur ? à côté des sous-titres, ou sur E. La vidéo se met en pause.",
+   "Surlignez le passage obscur de la traduction.",
+   "Touchez Expliquer. La réponse s'affiche sous la ligne, en français."
+  ],
+  "tr": "Alors on a pivoté — franchement, on est en gros l'Uber de la promenade de chiens maintenant.",
+  "mark": "l'Uber de la promenade de chiens",
+  "gist": "Une appli qui met en relation, à la demande, propriétaires de chiens et promeneurs, comme Uber avec passagers et chauffeurs. Dit avec un brin d'autodérision.",
+  "background": "« L'Uber de X » était le pitch tout fait des start-up des années 2010. Tellement rabâché qu'aujourd'hui, le dire sonne comme une moquerie envers soi-même.",
+  "quota": "5 explications gratuites par jour. Les doubles sous-titres restent toujours gratuits.",
+  "labels": {
+   "gist": "Ce que ça veut dire",
+   "background": "Contexte"
+  },
+  "orig": "So we pivoted — honestly, we're basically the Uber for dog walking now."
+ },
+ "how": {
+  "title": "Pour commencer",
+  "steps": [
+   "Ajoutez Twinsub à Chrome.",
+   "Ouvrez une vidéo YouTube avec des sous-titres, manuels ou automatiques.",
+   "La première fois pour une paire de langues, cliquez sur le message jaune. Chrome télécharge le pack de traduction en quelques secondes."
+  ]
+ },
+ "faq": {
+  "title": "Questions",
+  "items": [
+   [
+    "Twinsub est-il gratuit ?",
+    "Oui. Les doubles sous-titres sont gratuits et illimités, sans compte ni période d'essai. Les explications sont gratuites 5 fois par jour."
+   ],
+   [
+    "Comment se fait la traduction ?",
+    "Avec le traducteur intégré à Chrome (Chrome 138 et plus). Chaque ligne est traduite sur votre ordinateur en quelques millisecondes, sans attendre de serveur."
+   ],
+   [
+    "Ça marche avec les sous-titres automatiques ?",
+    "Oui. Twinsub regroupe les sous-titres automatiques de YouTube en phrases entières avant de les traduire, et suit la piste choisie dans le menu CC."
+   ],
+   [
+    "Vers quelles langues ?",
+    "39 : français, anglais, chinois (simplifié et traditionnel), japonais, coréen, espagnol, allemand, portugais, italien, russe, arabe, hindi, indonésien, vietnamien, thaï, turc et d'autres."
+   ],
+   [
+    "Qu'est-ce qui quitte mon ordinateur ?",
+    "Pour les sous-titres, rien. Quand vous touchez Expliquer, le passage surligné et quelques lignes autour partent vers notre serveur, qui demande la réponse à Claude, un modèle d'IA d'Anthropic. Voir la politique de confidentialité."
+   ],
+   [
+    "Quels navigateurs ?",
+    "Chrome 138 ou plus récent sous Windows, macOS, Linux et ChromeOS. D'autres navigateurs Chromium peuvent l'installer, sans forcément avoir le traducteur local de Chrome."
+   ]
+  ]
+ },
+ "footer": {
+  "privacy": "Confidentialité",
+  "by": "Créé par Poetical Engine",
+  "disclaimer": "YouTube est une marque de Google LLC. Twinsub n'est ni affilié à YouTube ou Google, ni approuvé par eux.",
+  "terms": "Conditions"
+ },
+ "langName": "Français"
+}

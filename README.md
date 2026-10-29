@@ -28,8 +28,12 @@ The store screenshots and promo tiles are rendered from `store/copy/<locale>.jso
 
 ## Privacy
 
-See [PRIVACY.md](PRIVACY.md).
+See [PRIVACY.md](PRIVACY.md), also published at https://twinsub.poeticalengine.com/privacy/.
 
 YouTube is a trademark of Google LLC. Twinsub is not affiliated with or endorsed by YouTube or Google.
 
 © 2026 Poetical Engine LLC
+
+## Website
+
+`site/` builds the landing site at https://twinsub.poeticalengine.com (9 languages, llms.txt, sitemap). `node site/build.mjs` writes `site/dist`; deploy with wrangler from `site/`. Set `cws` in `site/config.json` once the store listing is live.

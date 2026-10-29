@@ -63,9 +63,72 @@
   "message": "Öffne ein beliebiges YouTube-Video mit Untertiteln. Twinsub schaltet sie ein und ergänzt die Übersetzung; der Knopf mit zwei Linien in der Player-Leiste schaltet es aus."
  },
  "popupPrivacy": {
-  "message": "Die Übersetzung läuft mit Chromes eingebautem Übersetzer auf deinem Computer. Kein Konto, kein Server, nichts darüber, was du schaust, verlässt deinen Browser."
+  "message": "Untertitel übersetzt der in Chrome eingebaute Übersetzer auf deinem Computer. Nur wenn du auf Erklären tippst, gehen die markierten Wörter und die Zeilen drumherum an unseren Server, der die Antwort schreibt. Kein Konto nötig."
  },
  "popupPrivacyLink": {
   "message": "Datenschutz"
+ },
+ "askTip": {
+  "message": "Nicht verstanden? ($1)"
+ },
+ "panelTitle": {
+  "message": "Nicht verstanden?"
+ },
+ "panelHint": {
+  "message": "Markiere in der Übersetzung, was du nicht verstehst – so viele Stellen du willst. Oder lass dir die ganze Zeile erklären."
+ },
+ "panelHintNoTr": {
+  "message": "Markiere, was du nicht verstehst – so viele Stellen du willst. Oder lass dir die ganze Zeile erklären."
+ },
+ "explainThis": {
+  "message": "Erklären"
+ },
+ "explainLine": {
+  "message": "Ganze Zeile erklären"
+ },
+ "justNow": {
+  "message": "gerade eben"
+ },
+ "footerHint": {
+  "message": "Markieren, dann auf Erklären tippen"
+ },
+ "remaining": {
+  "message": "Heute noch $1 kostenlose Erklärungen"
+ },
+ "aiNote": {
+  "message": "Von KI geschrieben, kann Fehler enthalten"
+ },
+ "secGist": {
+  "message": "Was gemeint ist"
+ },
+ "secBackground": {
+  "message": "Hintergrund"
+ },
+ "secLanguage": {
+  "message": "Sprache"
+ },
+ "secAsr": {
+  "message": "Vielleicht falsch erkannt"
+ },
+ "quotaTitle": {
+  "message": "Die $1 kostenlosen Erklärungen für heute sind aufgebraucht"
+ },
+ "quotaBody": {
+  "message": "Morgen gibt es neue. Deine Markierungen bleiben erhalten."
+ },
+ "errFailed": {
+  "message": "Keine Erklärung erhalten."
+ },
+ "errBusy": {
+  "message": "Gerade fragen sehr viele. Versuch es in einer Minute noch einmal."
+ },
+ "retry": {
+  "message": "Erneut versuchen"
+ },
+ "thinking": {
+  "message": "Denke nach…"
+ },
+ "close": {
+  "message": "Schließen"
  }
 }

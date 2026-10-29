@@ -63,9 +63,72 @@
   "message": "Abre cualquier vídeo de YouTube con subtítulos: Twinsub los activa y añade la traducción. El botón de dos líneas en la barra del reproductor lo desactiva."
  },
  "popupPrivacy": {
-  "message": "La traducción se hace en tu ordenador con el traductor integrado de Chrome. Sin cuenta ni servidor: nada de lo que ves sale de tu navegador."
+  "message": "Los subtítulos se traducen en tu ordenador con el traductor integrado de Chrome. Solo cuando tocas Explicar se envían a nuestro servidor las palabras marcadas y las líneas cercanas para redactar la respuesta. Sin cuenta."
  },
  "popupPrivacyLink": {
   "message": "Privacidad"
+ },
+ "askTip": {
+  "message": "¿No lo pillaste? ($1)"
+ },
+ "panelTitle": {
+  "message": "¿No lo pillaste?"
+ },
+ "panelHint": {
+  "message": "Marca en la traducción lo que no entiendas, tantas partes como quieras. O pide que te expliquen la línea entera."
+ },
+ "panelHintNoTr": {
+  "message": "Marca lo que no entiendas, tantas partes como quieras. O pide que te expliquen la línea entera."
+ },
+ "explainThis": {
+  "message": "Explicar"
+ },
+ "explainLine": {
+  "message": "Explicar la línea entera"
+ },
+ "justNow": {
+  "message": "hace un momento"
+ },
+ "footerHint": {
+  "message": "Marca algo y toca Explicar"
+ },
+ "remaining": {
+  "message": "Te quedan $1 explicaciones gratis hoy"
+ },
+ "aiNote": {
+  "message": "Escrito por IA, puede contener errores"
+ },
+ "secGist": {
+  "message": "Qué dice"
+ },
+ "secBackground": {
+  "message": "Contexto"
+ },
+ "secLanguage": {
+  "message": "Lengua"
+ },
+ "secAsr": {
+  "message": "Quizá mal transcrito"
+ },
+ "quotaTitle": {
+  "message": "Ya usaste las $1 explicaciones gratis de hoy"
+ },
+ "quotaBody": {
+  "message": "Vuelven mañana. Tus marcas se quedan donde están."
+ },
+ "errFailed": {
+  "message": "No se pudo obtener la explicación."
+ },
+ "errBusy": {
+  "message": "Hay mucha gente preguntando ahora. Prueba otra vez en un minuto."
+ },
+ "retry": {
+  "message": "Reintentar"
+ },
+ "thinking": {
+  "message": "Pensando…"
+ },
+ "close": {
+  "message": "Cerrar"
  }
 }

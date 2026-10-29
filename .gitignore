@@ -3,3 +3,4 @@ dist/
 store/verify/
 test/fixtures/
 .DS_Store
+site/dist/

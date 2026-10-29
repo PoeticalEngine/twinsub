@@ -1,0 +1,78 @@
+{
+ "meta": {
+  "title": "Twinsub: Zweisprachige Untertitel für YouTube",
+  "description": "YouTube mit Original-Untertitel und deiner Sprache direkt darunter. Kostenlos, unbegrenzt, auf deinem Computer übersetzt. Unklare Zeile markieren, die KI erklärt sie."
+ },
+ "cta": "Zu Chrome hinzufügen – kostenlos",
+ "soon": "Bald im Chrome Web Store",
+ "hero": {
+  "h1": "Zweisprachige Untertitel für YouTube.",
+  "sub": "Die Originalzeile, und deine Sprache direkt darunter. Bleibt eine Zeile unklar, markier sie: Bedeutung, Hintergrund und Witz erklärt.",
+  "note": "Chrome 138+ am Computer · Kostenlos · Ohne Anmeldung"
+ },
+ "featuresTitle": "Gemacht fürs Schauen in einer anderen Sprache",
+ "explain": {
+  "eyebrow": "Nicht verstanden?",
+  "title": "Markieren. Verstehen.",
+  "sub": "Maschinelle Übersetzung trifft die Wörter, nicht immer den Sinn. Pausieren, in der Übersetzung markieren, was unklar ist – Twinsub erklärt, was im Original steht: die Redewendung, den Fachbegriff, die kulturelle Anspielung, das Meme.",
+  "steps": [
+   "Auf ? neben den Untertiteln tippen oder E drücken. Das Video pausiert.",
+   "Die unklare Stelle der Übersetzung markieren.",
+   "Auf Erklären tippen. Die Antwort erscheint unter der Zeile, auf Deutsch."
+  ],
+  "tr": "Also haben wir umgeschwenkt – ehrlich gesagt sind wir jetzt im Grunde das Uber fürs Gassigehen.",
+  "mark": "das Uber fürs Gassigehen",
+  "gist": "Eine App, die Hundebesitzer und Gassigeher auf Abruf zusammenbringt, so wie Uber Fahrgäste und Fahrer. Mit etwas Selbstironie gesagt.",
+  "background": "„Das Uber für X“ war in den 2010ern der Standard-Pitch von Start-ups. So abgenutzt, dass es heute wie ein Witz über sich selbst klingt.",
+  "quota": "5 kostenlose Erklärungen pro Tag. Zweisprachige Untertitel sind immer kostenlos.",
+  "labels": {
+   "gist": "Was gemeint ist",
+   "background": "Hintergrund"
+  },
+  "orig": "So we pivoted — honestly, we're basically the Uber for dog walking now."
+ },
+ "how": {
+  "title": "So geht's los",
+  "steps": [
+   "Twinsub zu Chrome hinzufügen.",
+   "Ein YouTube-Video mit Untertiteln öffnen, manuell oder automatisch erstellt.",
+   "Beim ersten Mal für ein Sprachpaar auf den gelben Hinweis klicken. Chrome lädt das Übersetzungspaket in wenigen Sekunden."
+  ]
+ },
+ "faq": {
+  "title": "Fragen",
+  "items": [
+   [
+    "Ist Twinsub kostenlos?",
+    "Ja. Zweisprachige Untertitel sind kostenlos und unbegrenzt, ohne Konto und ohne Testphase. Erklärungen sind 5-mal am Tag kostenlos."
+   ],
+   [
+    "Wie wird übersetzt?",
+    "Mit dem in Chrome eingebauten Übersetzer (ab Chrome 138). Jede Zeile wird auf deinem Computer in Millisekunden übersetzt, ohne auf einen Server zu warten."
+   ],
+   [
+    "Klappt es mit automatischen Untertiteln?",
+    "Ja. Twinsub fasst YouTubes automatische Untertitel zu ganzen Sätzen zusammen, bevor es übersetzt, und folgt der Spur, die du im CC-Menü wählst."
+   ],
+   [
+    "In welche Sprachen?",
+    "39: Deutsch, Englisch, Chinesisch (vereinfacht und traditionell), Japanisch, Koreanisch, Spanisch, Französisch, Portugiesisch, Italienisch, Russisch, Arabisch, Hindi, Indonesisch, Vietnamesisch, Thai, Türkisch und mehr."
+   ],
+   [
+    "Was verlässt meinen Computer?",
+    "Bei den Untertiteln nichts. Wenn du auf Erklären tippst, gehen die markierten Wörter und ein paar Zeilen drumherum an unseren Server, der Claude, ein KI-Modell von Anthropic, um die Antwort bittet. Siehe Datenschutzerklärung."
+   ],
+   [
+    "Welche Browser?",
+    "Chrome 138 oder neuer unter Windows, macOS, Linux und ChromeOS. Andere Chromium-Browser können es installieren, haben aber nicht unbedingt Chromes lokalen Übersetzer."
+   ]
+  ]
+ },
+ "footer": {
+  "privacy": "Datenschutz",
+  "by": "Von Poetical Engine",
+  "disclaimer": "YouTube ist eine Marke der Google LLC. Twinsub steht in keiner Verbindung zu YouTube oder Google und wird von ihnen nicht unterstützt.",
+  "terms": "Nutzungsbedingungen"
+ },
+ "langName": "Deutsch"
+}
