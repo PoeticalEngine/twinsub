@@ -1,0 +1,71 @@
+{
+ "extName": {
+  "message": "Twinsub：YouTube™ 2か国語字幕"
+ },
+ "extDescription": {
+  "message": "YouTubeに2か国語字幕を。原文の下にあなたの言語を表示。無料・無制限・ログイン不要。翻訳はあなたのパソコンの中で完了します。"
+ },
+ "buttonOn": {
+  "message": "Twinsub 2か国語字幕：オン（クリックでオフ）"
+ },
+ "buttonOff": {
+  "message": "Twinsub 2か国語字幕：オフ（クリックでオン）"
+ },
+ "noApi": {
+  "message": "Twinsub はパソコン上で翻訳するため、パソコン版 Chrome 138 以降が必要です。"
+ },
+ "unsupported": {
+  "message": "$1から$2へのオンデバイス翻訳は、まだ Chrome で使えません。原文の字幕を表示します。"
+ },
+ "needsDownload": {
+  "message": "クリックして$1 → $2の翻訳パックをダウンロード（初回のみ・数秒）"
+ },
+ "downloading": {
+  "message": "$1 → $2の翻訳パックをダウンロード中… $3%"
+ },
+ "noCaptions": {
+  "message": "この動画には字幕がないため、Twinsub が翻訳できるものがありません。"
+ },
+ "failed": {
+  "message": "翻訳が止まりました：$1"
+ },
+ "popupEnabled": {
+  "message": "YouTube で2か国語字幕を表示"
+ },
+ "popupTarget": {
+  "message": "翻訳先"
+ },
+ "popupTargetAuto": {
+  "message": "ブラウザの言語（$1）"
+ },
+ "popupOrder": {
+  "message": "表示順"
+ },
+ "popupOrderOriginal": {
+  "message": "原文を上に"
+ },
+ "popupOrderTranslation": {
+  "message": "訳文を上に"
+ },
+ "popupShowOriginal": {
+  "message": "原文を表示"
+ },
+ "popupShowTranslation": {
+  "message": "訳文を表示"
+ },
+ "popupSize": {
+  "message": "文字の大きさ"
+ },
+ "popupPosition": {
+  "message": "下からの高さ"
+ },
+ "popupHow": {
+  "message": "字幕のある YouTube 動画を開くだけ。Twinsub が字幕をオンにして訳文を添えます。プレーヤー下部の2本線のボタンでオフにできます。"
+ },
+ "popupPrivacy": {
+  "message": "翻訳は Chrome 内蔵の翻訳機能があなたのパソコン上で行います。アカウントもサーバーも不要。何を見たかがブラウザの外に出ることはありません。"
+ },
+ "popupPrivacyLink": {
+  "message": "プライバシー"
+ }
+}

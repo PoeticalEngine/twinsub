@@ -1,0 +1,71 @@
+{
+ "extName": {
+  "message": "Twinsub : double sous-titres pour YouTube™"
+ },
+ "extDescription": {
+  "message": "Double sous-titres YouTube : l'original et sa traduction en dessous. Gratuit, illimité, sans compte, traduit sur votre appareil."
+ },
+ "buttonOn": {
+  "message": "Twinsub double sous-titres : activé (cliquer pour désactiver)"
+ },
+ "buttonOff": {
+  "message": "Twinsub double sous-titres : désactivé (cliquer pour activer)"
+ },
+ "noApi": {
+  "message": "Twinsub traduit sur votre ordinateur, ce qui demande Chrome 138 ou plus récent sur un ordinateur."
+ },
+ "unsupported": {
+  "message": "Chrome ne sait pas encore traduire du $1 vers le $2 sur l'appareil. Les sous-titres d'origine restent affichés."
+ },
+ "needsDownload": {
+  "message": "Cliquez pour télécharger le pack de traduction $1 → $2 (une seule fois, quelques secondes)"
+ },
+ "downloading": {
+  "message": "Téléchargement du pack de traduction $1 → $2… $3 %"
+ },
+ "noCaptions": {
+  "message": "Cette vidéo n'a pas de sous-titres : Twinsub n'a rien à traduire."
+ },
+ "failed": {
+  "message": "La traduction s'est arrêtée : $1"
+ },
+ "popupEnabled": {
+  "message": "Double sous-titres sur YouTube"
+ },
+ "popupTarget": {
+  "message": "Traduire en"
+ },
+ "popupTargetAuto": {
+  "message": "Langue du navigateur ($1)"
+ },
+ "popupOrder": {
+  "message": "Ordre des lignes"
+ },
+ "popupOrderOriginal": {
+  "message": "Original en haut"
+ },
+ "popupOrderTranslation": {
+  "message": "Traduction en haut"
+ },
+ "popupShowOriginal": {
+  "message": "Afficher l'original"
+ },
+ "popupShowTranslation": {
+  "message": "Afficher la traduction"
+ },
+ "popupSize": {
+  "message": "Taille du texte"
+ },
+ "popupPosition": {
+  "message": "Hauteur depuis le bas"
+ },
+ "popupHow": {
+  "message": "Ouvrez n'importe quelle vidéo YouTube avec sous-titres : Twinsub les active et ajoute la traduction. Le bouton à deux lignes dans la barre du lecteur le désactive."
+ },
+ "popupPrivacy": {
+  "message": "La traduction se fait sur votre ordinateur avec le traducteur intégré à Chrome. Pas de compte, pas de serveur : rien de ce que vous regardez ne quitte votre navigateur."
+ },
+ "popupPrivacyLink": {
+  "message": "Confidentialité"
+ }
+}

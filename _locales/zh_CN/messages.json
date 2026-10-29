@@ -1,0 +1,71 @@
+{
+ "extName": {
+  "message": "Twinsub：YouTube™ 双语字幕"
+ },
+ "extDescription": {
+  "message": "YouTube 双语字幕：每句原文配上你的语言。免费、不限量、不用登录，翻译在你自己的电脑上完成。"
+ },
+ "buttonOn": {
+  "message": "Twinsub 双语字幕：已开启（点击关闭）"
+ },
+ "buttonOff": {
+  "message": "Twinsub 双语字幕：已关闭（点击开启）"
+ },
+ "noApi": {
+  "message": "Twinsub 在你的电脑上翻译，需要电脑版 Chrome 138 或更新版本。"
+ },
+ "unsupported": {
+  "message": "Chrome 暂不支持从$1到$2的本地翻译，先显示原文字幕。"
+ },
+ "needsDownload": {
+  "message": "点击下载$1 → $2翻译包（只需一次，几秒钟）"
+ },
+ "downloading": {
+  "message": "正在下载$1 → $2翻译包… $3%"
+ },
+ "noCaptions": {
+  "message": "这个视频没有字幕，Twinsub 没有可翻译的内容。"
+ },
+ "failed": {
+  "message": "翻译中断：$1"
+ },
+ "popupEnabled": {
+  "message": "在 YouTube 上显示双语字幕"
+ },
+ "popupTarget": {
+  "message": "翻译成"
+ },
+ "popupTargetAuto": {
+  "message": "跟随浏览器语言（$1）"
+ },
+ "popupOrder": {
+  "message": "上下顺序"
+ },
+ "popupOrderOriginal": {
+  "message": "原文在上"
+ },
+ "popupOrderTranslation": {
+  "message": "译文在上"
+ },
+ "popupShowOriginal": {
+  "message": "显示原文"
+ },
+ "popupShowTranslation": {
+  "message": "显示译文"
+ },
+ "popupSize": {
+  "message": "字号"
+ },
+ "popupPosition": {
+  "message": "离底部的高度"
+ },
+ "popupHow": {
+  "message": "打开任意有字幕的 YouTube 视频，Twinsub 会自动打开字幕并加上译文；播放器底栏里两条横线的按钮可以关掉它。"
+ },
+ "popupPrivacy": {
+  "message": "翻译由 Chrome 内置翻译在你的电脑上完成。不用账号，没有服务器，你看了什么不会离开浏览器。"
+ },
+ "popupPrivacyLink": {
+  "message": "隐私说明"
+ }
+}

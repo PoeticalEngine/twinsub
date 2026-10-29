@@ -1,0 +1,117 @@
+{
+ "font": "-apple-system, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+ "messages": {
+  "extName": "Twinsub: Dual Subtitles for YouTube™",
+  "extDescription": "Dual subtitles for YouTube: every line in the original and in your language. Free, unlimited, no sign-in. Translated on your device.",
+  "buttonOn": "Twinsub dual subtitles: on (click to turn off)",
+  "buttonOff": "Twinsub dual subtitles: off (click to turn on)",
+  "noApi": "Twinsub translates on your computer, which needs Chrome 138 or newer on a desktop or laptop.",
+  "unsupported": "On-device translation from $1 to $2 isn't available in Chrome yet. Showing the original subtitles.",
+  "needsDownload": "Click to download the $1 → $2 translation pack (one time, a few seconds)",
+  "downloading": "Downloading the $1 → $2 translation pack… $3%",
+  "noCaptions": "This video has no subtitles, so Twinsub has nothing to translate.",
+  "failed": "Translation stopped: $1",
+  "popupEnabled": "Dual subtitles on YouTube",
+  "popupTarget": "Translate into",
+  "popupTargetAuto": "My browser language ($1)",
+  "popupOrder": "Line order",
+  "popupOrderOriginal": "Original on top",
+  "popupOrderTranslation": "Translation on top",
+  "popupShowOriginal": "Show original",
+  "popupShowTranslation": "Show translation",
+  "popupSize": "Text size",
+  "popupPosition": "Height above the bottom",
+  "popupHow": "Open any YouTube video with subtitles. Twinsub turns them on and adds the translation; the button with two lines in the player bar switches it off.",
+  "popupPrivacy": "Translation runs on your computer with Chrome's built-in translator. No account, no server, nothing about what you watch leaves your browser.",
+  "popupPrivacyLink": "Privacy"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub for YouTube",
+   "title": "Understand every line.",
+   "sub": "The original subtitle, and your language right under it.",
+   "orig": "Nunca es tarde para empezar de nuevo.",
+   "trans": "It's never too late to start over.",
+   "chips": [
+    "Free & unlimited",
+    "No sign-in",
+    "Translated on your computer"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "For language learners",
+   "title": "Learn from the videos you already love.",
+   "sub": "Hear the real voice. Read the original. Check the meaning, all at once.",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "Shall we take a little detour today?",
+   "callouts": [
+    "Hear it",
+    "Read it",
+    "Get it"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "On-device translation",
+   "title": "No lag. No limits.",
+   "sub": "Each line is translated on your own computer in milliseconds, before the speaker finishes it.",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "I really want to watch this scene again.",
+   "stat": [
+    "Instant",
+    "per line, no server in between"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "Settings",
+   "title": "Your subtitles, your way.",
+   "sub": "Swap the order, resize the text, raise it, or hide either line.",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "One sees clearly only with the heart.",
+   "popup": true,
+   "bullets": [
+    "39 languages",
+    "Original or translation on top",
+    "Text size and height",
+    "One button in the player bar"
+   ]
+  },
+  {
+   "scene": "night",
+   "eyebrow": "Private by design",
+   "title": "What you watch stays on your computer.",
+   "sub": "No account, no server, no tracking. Twinsub reads the subtitles your player already has.",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "See you at the station tomorrow.",
+   "privacy": [
+    [
+     "No account",
+     "Nothing to sign up for"
+    ],
+    [
+     "No server",
+     "Translation runs in Chrome"
+    ],
+    [
+     "No tracking",
+     "No analytics, no history"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "Dual subtitles for YouTube",
+  "tag": "Free · No sign-in"
+ },
+ "marquee": {
+  "title": "Understand every line.",
+  "sub": "Dual subtitles for YouTube. Free, unlimited, translated on your computer.",
+  "orig": "Nunca es tarde para empezar de nuevo.",
+  "trans": "It's never too late to start over."
+ },
+ "description": "Watch anything on YouTube and understand every line.\n\nTwinsub puts two subtitles on the video at once: the original line, and the same line in your language right underneath. You hear the real voice, read the original words, and never miss what was said.\n\nFREE, UNLIMITED, NO SIGN-IN\nNo account, no API key, no \"trial ended\" screen after 15 minutes. Install it and open a video. That's the whole setup.\n\nTRANSLATED ON YOUR OWN COMPUTER\nTwinsub uses the translator built into Chrome, so every line is translated on your device in milliseconds. Nothing waits on a server, and nothing about what you watch is sent anywhere.\n\nBUILT FOR LANGUAGE LEARNERS\nKeep the original on top and the translation underneath, or swap them. Watch Spanish vlogs, Japanese anime clips, Korean variety shows, French cooking, English lectures, and pick up the language from the videos you already like.\n\nWORKS WITH THE SUBTITLES YOU ALREADY HAVE\nHand-made subtitles and YouTube's auto-generated ones both work. Twinsub turns subtitles on for you, follows whatever track you pick in YouTube's CC menu, and keeps working as you click from video to video.\n\nMAKE IT YOURS\n• Translate into 39 languages, including Chinese, Japanese, Korean, Spanish, French, German, Portuguese, Russian, Arabic, Hindi and Vietnamese\n• Original on top or translation on top\n• Text size and height on screen\n• Show only the translation, or only the original\n• One button in the player bar switches it on and off\n\nHOW TO USE\n1. Install Twinsub.\n2. Open any YouTube video that has subtitles.\n3. The first time you use a language pair, click the yellow prompt once. Chrome downloads its translation pack in a few seconds.\n4. Watch.\n\nNeeds Chrome 138 or newer on a computer (Windows, Mac, Linux or ChromeOS). Twinsub isn't affiliated with or endorsed by YouTube or Google."
+}

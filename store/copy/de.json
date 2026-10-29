@@ -1,0 +1,117 @@
+{
+ "font": "-apple-system, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+ "messages": {
+  "extName": "Twinsub: Zweisprachige Untertitel für YouTube™",
+  "extDescription": "Zweisprachige Untertitel auf YouTube: jede Zeile im Original und darunter in deiner Sprache. Kostenlos, unbegrenzt, ohne Konto.",
+  "buttonOn": "Twinsub zweisprachige Untertitel: an (zum Ausschalten klicken)",
+  "buttonOff": "Twinsub zweisprachige Untertitel: aus (zum Einschalten klicken)",
+  "noApi": "Twinsub übersetzt auf deinem Computer und braucht dafür Chrome 138 oder neuer auf einem Desktop oder Laptop.",
+  "unsupported": "Chrome kann noch nicht auf dem Gerät von $1 nach $2 übersetzen. Die Original-Untertitel bleiben sichtbar.",
+  "needsDownload": "Klicken, um das Übersetzungspaket $1 → $2 zu laden (einmalig, ein paar Sekunden)",
+  "downloading": "Übersetzungspaket $1 → $2 wird geladen … $3 %",
+  "noCaptions": "Dieses Video hat keine Untertitel, Twinsub hat also nichts zu übersetzen.",
+  "failed": "Übersetzung abgebrochen: $1",
+  "popupEnabled": "Zweisprachige Untertitel auf YouTube",
+  "popupTarget": "Übersetzen in",
+  "popupTargetAuto": "Browsersprache ($1)",
+  "popupOrder": "Reihenfolge",
+  "popupOrderOriginal": "Original oben",
+  "popupOrderTranslation": "Übersetzung oben",
+  "popupShowOriginal": "Original zeigen",
+  "popupShowTranslation": "Übersetzung zeigen",
+  "popupSize": "Textgröße",
+  "popupPosition": "Abstand vom unteren Rand",
+  "popupHow": "Öffne ein beliebiges YouTube-Video mit Untertiteln. Twinsub schaltet sie ein und ergänzt die Übersetzung; der Knopf mit zwei Linien in der Player-Leiste schaltet es aus.",
+  "popupPrivacy": "Die Übersetzung läuft mit Chromes eingebautem Übersetzer auf deinem Computer. Kein Konto, kein Server, nichts darüber, was du schaust, verlässt deinen Browser.",
+  "popupPrivacyLink": "Datenschutz"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub für YouTube",
+   "title": "Versteh jede Zeile.",
+   "sub": "Der Original-Untertitel und direkt darunter deine Sprache.",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "Der beste Zeitpunkt anzufangen war gestern. Der zweitbeste ist jetzt.",
+   "chips": [
+    "Kostenlos & unbegrenzt",
+    "Ohne Anmeldung",
+    "Übersetzt auf deinem Computer"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "Zum Sprachenlernen",
+   "title": "Lerne mit den Videos, die du sowieso liebst.",
+   "sub": "Die echte Stimme hören, das Original lesen, die Bedeutung prüfen. Alles auf einmal.",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "Wollen wir heute einen kleinen Umweg machen?",
+   "callouts": [
+    "Hören",
+    "Lesen",
+    "Verstehen"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "Übersetzung auf dem Gerät",
+   "title": "Keine Wartezeit. Keine Limits.",
+   "sub": "Jede Zeile wird auf deinem Computer in Millisekunden übersetzt, noch bevor der Satz zu Ende ist.",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "Diese Szene will ich unbedingt noch mal sehen.",
+   "stat": [
+    "Sofort",
+    "pro Zeile, kein Server dazwischen"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "Einstellungen",
+   "title": "Deine Untertitel, wie du sie willst.",
+   "sub": "Reihenfolge tauschen, Text größer machen, höher setzen oder eine Zeile ausblenden.",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "Man sieht nur mit dem Herzen gut.",
+   "bullets": [
+    "39 Sprachen",
+    "Original oder Übersetzung oben",
+    "Textgröße und Höhe",
+    "Ein Knopf im Player"
+   ],
+   "popup": true
+  },
+  {
+   "scene": "night",
+   "eyebrow": "Datenschutz",
+   "title": "Was du schaust, bleibt auf deinem Computer.",
+   "sub": "Kein Konto, kein Server, kein Tracking. Twinsub liest nur die Untertitel, die der Player schon geladen hat.",
+   "orig": "On se voit demain à la gare.",
+   "trans": "Wir sehen uns morgen am Bahnhof.",
+   "privacy": [
+    [
+     "Kein Konto",
+     "Keine Anmeldung nötig"
+    ],
+    [
+     "Kein Server",
+     "Übersetzt wird in Chrome"
+    ],
+    [
+     "Kein Tracking",
+     "Keine Statistik, kein Verlauf"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "Zweisprachige YouTube-Untertitel",
+  "tag": "Kostenlos · Ohne Konto"
+ },
+ "marquee": {
+  "title": "Versteh jede Zeile.",
+  "sub": "Zweisprachige Untertitel für YouTube. Kostenlos, unbegrenzt, übersetzt auf deinem Computer.",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "Der beste Zeitpunkt anzufangen war gestern. Der zweitbeste ist jetzt."
+ },
+ "description": "Schau dir jedes YouTube-Video an und versteh jede Zeile.\n\nTwinsub zeigt zwei Untertitel gleichzeitig: den Originalsatz und direkt darunter denselben Satz in deiner Sprache. Du hörst die echte Stimme, liest die echten Worte und verpasst nichts.\n\nKOSTENLOS, UNBEGRENZT, OHNE KONTO\nKeine Anmeldung, kein API-Schlüssel, kein „Testzeitraum abgelaufen“ nach 15 Minuten. Installieren, Video öffnen, fertig.\n\nÜBERSETZT AUF DEINEM COMPUTER\nTwinsub nutzt den in Chrome eingebauten Übersetzer: Jede Zeile wird auf deinem Gerät in Millisekunden übersetzt. Nichts wartet auf einen Server, und nichts darüber, was du schaust, wird irgendwohin geschickt.\n\nIDEAL ZUM SPRACHENLERNEN\nOriginal oben, Übersetzung darunter, oder umgekehrt. Spanische Vlogs, japanische Anime-Clips, koreanische Shows, englische Vorlesungen: Lerne die Sprache mit Videos, die du sowieso magst.\n\nMIT DEN UNTERTITELN, DIE ES SCHON GIBT\nHandgemachte Untertitel und automatisch erzeugte von YouTube funktionieren beide. Twinsub schaltet Untertitel ein, folgt der Spur, die du im CC-Menü wählst, und läuft von Video zu Video weiter.\n\nGANZ NACH DEINEM GESCHMACK\n• Übersetzung in 39 Sprachen, darunter Deutsch, Englisch, Spanisch, Französisch, Japanisch, Koreanisch und Chinesisch\n• Original oder Übersetzung oben\n• Textgröße und Höhe im Bild\n• Nur die Übersetzung oder nur das Original zeigen\n• Ein Knopf in der Player-Leiste zum Ein- und Ausschalten\n\nSO GEHT'S\n1. Twinsub installieren.\n2. Ein YouTube-Video mit Untertiteln öffnen.\n3. Beim ersten Mal mit einem Sprachpaar einmal auf den gelben Hinweis klicken. Chrome lädt das Übersetzungspaket in ein paar Sekunden.\n4. Zuschauen.\n\nBenötigt Chrome 138 oder neuer auf einem Computer (Windows, Mac, Linux oder ChromeOS). Twinsub ist weder mit YouTube noch mit Google verbunden oder von ihnen unterstützt."
+}

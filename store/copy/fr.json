@@ -1,0 +1,117 @@
+{
+ "font": "-apple-system, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+ "messages": {
+  "extName": "Twinsub : double sous-titres pour YouTube™",
+  "extDescription": "Double sous-titres YouTube : l'original et sa traduction en dessous. Gratuit, illimité, sans compte, traduit sur votre appareil.",
+  "buttonOn": "Twinsub double sous-titres : activé (cliquer pour désactiver)",
+  "buttonOff": "Twinsub double sous-titres : désactivé (cliquer pour activer)",
+  "noApi": "Twinsub traduit sur votre ordinateur, ce qui demande Chrome 138 ou plus récent sur un ordinateur.",
+  "unsupported": "Chrome ne sait pas encore traduire du $1 vers le $2 sur l'appareil. Les sous-titres d'origine restent affichés.",
+  "needsDownload": "Cliquez pour télécharger le pack de traduction $1 → $2 (une seule fois, quelques secondes)",
+  "downloading": "Téléchargement du pack de traduction $1 → $2… $3 %",
+  "noCaptions": "Cette vidéo n'a pas de sous-titres : Twinsub n'a rien à traduire.",
+  "failed": "La traduction s'est arrêtée : $1",
+  "popupEnabled": "Double sous-titres sur YouTube",
+  "popupTarget": "Traduire en",
+  "popupTargetAuto": "Langue du navigateur ($1)",
+  "popupOrder": "Ordre des lignes",
+  "popupOrderOriginal": "Original en haut",
+  "popupOrderTranslation": "Traduction en haut",
+  "popupShowOriginal": "Afficher l'original",
+  "popupShowTranslation": "Afficher la traduction",
+  "popupSize": "Taille du texte",
+  "popupPosition": "Hauteur depuis le bas",
+  "popupHow": "Ouvrez n'importe quelle vidéo YouTube avec sous-titres : Twinsub les active et ajoute la traduction. Le bouton à deux lignes dans la barre du lecteur le désactive.",
+  "popupPrivacy": "La traduction se fait sur votre ordinateur avec le traducteur intégré à Chrome. Pas de compte, pas de serveur : rien de ce que vous regardez ne quitte votre navigateur.",
+  "popupPrivacyLink": "Confidentialité"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub pour YouTube",
+   "title": "Comprenez chaque réplique.",
+   "sub": "Le sous-titre d'origine, et votre langue juste en dessous.",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "Le meilleur moment pour commencer, c'était hier. Le deuxième meilleur, c'est maintenant.",
+   "chips": [
+    "Gratuit et illimité",
+    "Sans compte",
+    "Traduit sur votre ordinateur"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "Pour apprendre une langue",
+   "title": "Apprenez avec les vidéos que vous aimez déjà.",
+   "sub": "Entendez la vraie voix, lisez l'original, vérifiez le sens. Tout en même temps.",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "Et si on faisait un petit détour aujourd'hui ?",
+   "callouts": [
+    "Écouter",
+    "Lire",
+    "Comprendre"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "Traduction sur l'appareil",
+   "title": "Pas d'attente. Pas de limite.",
+   "sub": "Chaque ligne est traduite sur votre ordinateur en quelques millisecondes, avant même la fin de la phrase.",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "Je veux absolument revoir cette scène.",
+   "stat": [
+    "Instantané",
+    "par ligne, sans serveur"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "Réglages",
+   "title": "Vos sous-titres, à votre façon.",
+   "sub": "Inversez l'ordre, changez la taille, la hauteur, ou masquez une des deux lignes.",
+   "orig": "Nunca es tarde para empezar de nuevo.",
+   "trans": "Il n'est jamais trop tard pour recommencer.",
+   "bullets": [
+    "39 langues",
+    "Original ou traduction en haut",
+    "Taille et hauteur du texte",
+    "Un bouton dans le lecteur"
+   ],
+   "popup": true
+  },
+  {
+   "scene": "night",
+   "eyebrow": "Confidentialité",
+   "title": "Ce que vous regardez reste chez vous.",
+   "sub": "Pas de compte, pas de serveur, pas de pistage. Twinsub lit seulement les sous-titres déjà chargés par le lecteur.",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "On se voit demain à la gare.",
+   "privacy": [
+    [
+     "Pas de compte",
+     "Aucune inscription"
+    ],
+    [
+     "Pas de serveur",
+     "La traduction se fait dans Chrome"
+    ],
+    [
+     "Pas de pistage",
+     "Ni statistiques ni historique"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "Double sous-titres YouTube",
+  "tag": "Gratuit · Sans compte"
+ },
+ "marquee": {
+  "title": "Comprenez chaque réplique.",
+  "sub": "Double sous-titres pour YouTube. Gratuit, illimité, traduit sur votre ordinateur.",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "Le meilleur moment pour commencer, c'était hier. Le deuxième meilleur, c'est maintenant."
+ },
+ "description": "Regardez n'importe quelle vidéo YouTube et comprenez chaque réplique.\n\nTwinsub affiche deux sous-titres à la fois : la phrase d'origine, et la même phrase dans votre langue juste en dessous. Vous entendez la vraie voix, vous lisez les vrais mots, et vous ne ratez rien.\n\nGRATUIT, ILLIMITÉ, SANS COMPTE\nPas d'inscription, pas de clé API, pas d'écran « essai terminé » au bout de 15 minutes. Installez, ouvrez une vidéo, c'est tout.\n\nTRADUIT SUR VOTRE ORDINATEUR\nTwinsub utilise le traducteur intégré à Chrome : chaque ligne est traduite sur votre appareil en quelques millisecondes. Rien n'attend un serveur, et rien de ce que vous regardez n'est envoyé nulle part.\n\nIDÉAL POUR APPRENDRE UNE LANGUE\nL'original en haut, la traduction en dessous, ou l'inverse. Vlogs en espagnol, extraits d'anime japonais, émissions coréennes, cours en anglais : apprenez avec les vidéos que vous aimez déjà.\n\nAVEC LES SOUS-TITRES QUE VOUS AVEZ DÉJÀ\nLes sous-titres faits à la main comme ceux générés automatiquement par YouTube fonctionnent. Twinsub active les sous-titres, suit la piste choisie dans le menu CC de YouTube et continue de vidéo en vidéo.\n\nÀ VOTRE FAÇON\n• Traduction vers 39 langues, dont le français, l'anglais, l'espagnol, l'allemand, le japonais, le coréen et le chinois\n• Original ou traduction en haut\n• Taille du texte et hauteur à l'écran\n• Afficher seulement la traduction, ou seulement l'original\n• Un bouton dans la barre du lecteur pour activer ou désactiver\n\nMODE D'EMPLOI\n1. Installez Twinsub.\n2. Ouvrez une vidéo YouTube qui a des sous-titres.\n3. La première fois que vous utilisez une paire de langues, cliquez une fois sur le bandeau jaune : Chrome télécharge le pack de traduction en quelques secondes.\n4. Regardez.\n\nNécessite Chrome 138 ou plus récent sur ordinateur (Windows, Mac, Linux ou ChromeOS). Twinsub n'est ni affilié à YouTube ou Google, ni approuvé par eux."
+}

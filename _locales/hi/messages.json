@@ -1,0 +1,71 @@
+{
+ "extName": {
+  "message": "Twinsub: YouTube™ के लिए दोहरे सबटाइटल"
+ },
+ "extDescription": {
+  "message": "YouTube पर दोहरे सबटाइटल: हर लाइन मूल भाषा में और ठीक नीचे आपकी भाषा में। मुफ़्त, असीमित, बिना लॉगिन। अनुवाद आपके कंप्यूटर पर।"
+ },
+ "buttonOn": {
+  "message": "Twinsub दोहरे सबटाइटल: चालू (बंद करने के लिए क्लिक करें)"
+ },
+ "buttonOff": {
+  "message": "Twinsub दोहरे सबटाइटल: बंद (चालू करने के लिए क्लिक करें)"
+ },
+ "noApi": {
+  "message": "Twinsub आपके कंप्यूटर पर अनुवाद करता है, इसके लिए डेस्कटॉप या लैपटॉप पर Chrome 138 या नया वर्ज़न चाहिए।"
+ },
+ "unsupported": {
+  "message": "Chrome अभी डिवाइस पर $1 से $2 में अनुवाद नहीं कर सकता। मूल सबटाइटल दिखाए जा रहे हैं।"
+ },
+ "needsDownload": {
+  "message": "$1 → $2 अनुवाद पैक डाउनलोड करने के लिए क्लिक करें (सिर्फ़ एक बार, कुछ सेकंड)"
+ },
+ "downloading": {
+  "message": "$1 → $2 अनुवाद पैक डाउनलोड हो रहा है… $3%"
+ },
+ "noCaptions": {
+  "message": "इस वीडियो में सबटाइटल नहीं हैं, इसलिए Twinsub के पास अनुवाद करने को कुछ नहीं है।"
+ },
+ "failed": {
+  "message": "अनुवाद रुक गया: $1"
+ },
+ "popupEnabled": {
+  "message": "YouTube पर दोहरे सबटाइटल"
+ },
+ "popupTarget": {
+  "message": "किस भाषा में अनुवाद करें"
+ },
+ "popupTargetAuto": {
+  "message": "ब्राउज़र की भाषा ($1)"
+ },
+ "popupOrder": {
+  "message": "लाइनों का क्रम"
+ },
+ "popupOrderOriginal": {
+  "message": "मूल ऊपर"
+ },
+ "popupOrderTranslation": {
+  "message": "अनुवाद ऊपर"
+ },
+ "popupShowOriginal": {
+  "message": "मूल दिखाएँ"
+ },
+ "popupShowTranslation": {
+  "message": "अनुवाद दिखाएँ"
+ },
+ "popupSize": {
+  "message": "टेक्स्ट का आकार"
+ },
+ "popupPosition": {
+  "message": "नीचे से ऊँचाई"
+ },
+ "popupHow": {
+  "message": "सबटाइटल वाला कोई भी YouTube वीडियो खोलें। Twinsub सबटाइटल चालू करके अनुवाद जोड़ देता है; प्लेयर बार में दो लाइनों वाला बटन इसे बंद करता है।"
+ },
+ "popupPrivacy": {
+  "message": "अनुवाद Chrome के बिल्ट-इन ट्रांसलेटर से आपके कंप्यूटर पर ही होता है। न अकाउंट, न सर्वर; आप क्या देखते हैं, यह आपके ब्राउज़र से बाहर नहीं जाता।"
+ },
+ "popupPrivacyLink": {
+  "message": "प्राइवेसी"
+ }
+}

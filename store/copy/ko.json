@@ -1,0 +1,117 @@
+{
+ "font": "\"Apple SD Gothic Neo\", -apple-system, sans-serif",
+ "messages": {
+  "extName": "Twinsub: YouTube™ 이중 자막",
+  "extDescription": "YouTube 이중 자막: 원문 아래에 내 언어로 번역을 함께 보여 줍니다. 무료, 무제한, 로그인 없이. 번역은 내 컴퓨터에서 이루어집니다.",
+  "buttonOn": "Twinsub 이중 자막: 켜짐 (클릭하면 꺼짐)",
+  "buttonOff": "Twinsub 이중 자막: 꺼짐 (클릭하면 켜짐)",
+  "noApi": "Twinsub는 컴퓨터에서 번역하므로 데스크톱용 Chrome 138 이상이 필요합니다.",
+  "unsupported": "$1에서 $2(으)로의 기기 내 번역은 아직 Chrome에서 지원되지 않습니다. 원문 자막을 보여 드립니다.",
+  "needsDownload": "클릭해서 $1 → $2 번역 팩 다운로드 (처음 한 번, 몇 초)",
+  "downloading": "$1 → $2 번역 팩 다운로드 중… $3%",
+  "noCaptions": "이 동영상에는 자막이 없어서 Twinsub가 번역할 내용이 없습니다.",
+  "failed": "번역이 중단되었습니다: $1",
+  "popupEnabled": "YouTube에서 이중 자막 표시",
+  "popupTarget": "번역할 언어",
+  "popupTargetAuto": "브라우저 언어 ($1)",
+  "popupOrder": "줄 순서",
+  "popupOrderOriginal": "원문을 위에",
+  "popupOrderTranslation": "번역을 위에",
+  "popupShowOriginal": "원문 표시",
+  "popupShowTranslation": "번역 표시",
+  "popupSize": "글자 크기",
+  "popupPosition": "아래에서의 높이",
+  "popupHow": "자막이 있는 YouTube 동영상을 열면 Twinsub가 자막을 켜고 번역을 붙여 줍니다. 플레이어 하단의 두 줄 버튼으로 끌 수 있습니다.",
+  "popupPrivacy": "번역은 Chrome에 내장된 번역 기능으로 내 컴퓨터에서 이루어집니다. 계정도, 서버도 없고, 무엇을 보는지는 브라우저 밖으로 나가지 않습니다.",
+  "popupPrivacyLink": "개인정보 보호"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub for YouTube",
+   "title": "한 줄도 놓치지 않게.",
+   "sub": "원문 자막 바로 아래에 내 언어로.",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "시작하기 가장 좋은 때는 어제였다. 그다음으로 좋은 때는 바로 지금이다.",
+   "chips": [
+    "무료 · 무제한",
+    "로그인 없음",
+    "내 컴퓨터에서 번역"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "외국어 공부",
+   "title": "좋아하는 영상으로 외국어를 배우세요.",
+   "sub": "진짜 목소리를 듣고, 원문을 읽고, 뜻을 확인하고. 한 번에.",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "오늘은 잠깐 돌아서 가 볼까?",
+   "callouts": [
+    "듣고",
+    "읽고",
+    "이해하고"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "기기 내 번역",
+   "title": "끊김 없이, 제한 없이.",
+   "sub": "한 줄 한 줄 내 컴퓨터에서 밀리초 만에 번역됩니다. 말이 끝나기 전에 번역이 먼저 나와요.",
+   "orig": "Nunca es tarde para empezar de nuevo.",
+   "trans": "다시 시작하기에 너무 늦은 때란 없어요.",
+   "stat": [
+    "즉시",
+    "한 줄당, 중간에 서버 없음"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "설정",
+   "title": "자막을 내 마음대로.",
+   "sub": "순서 바꾸기, 글자 크기, 높이 조절. 한 줄만 보기도 가능해요.",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "마음으로 봐야 잘 보인다.",
+   "bullets": [
+    "39개 언어 지원",
+    "원문 또는 번역을 위에",
+    "글자 크기와 높이 조절",
+    "플레이어 버튼으로 켜고 끄기"
+   ],
+   "popup": true
+  },
+  {
+   "scene": "night",
+   "eyebrow": "개인정보 보호",
+   "title": "무엇을 보는지는 나만 알아요.",
+   "sub": "계정 없음, 서버 없음, 추적 없음. Twinsub는 플레이어가 이미 받아 둔 자막만 읽습니다.",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "내일 역에서 만나요.",
+   "privacy": [
+    [
+     "계정 없음",
+     "가입할 것이 없어요"
+    ],
+    [
+     "서버 없음",
+     "번역은 Chrome 안에서"
+    ],
+    [
+     "추적 없음",
+     "분석도, 시청 기록도 없음"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "YouTube 이중 자막",
+  "tag": "무료 · 로그인 없음"
+ },
+ "marquee": {
+  "title": "한 줄도 놓치지 않게.",
+  "sub": "YouTube 이중 자막. 무료, 무제한, 번역은 내 컴퓨터에서.",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "시작하기 가장 좋은 때는 어제였다. 그다음으로 좋은 때는 바로 지금이다."
+ },
+ "description": "YouTube의 어떤 영상이든, 한 줄도 놓치지 마세요.\n\nTwinsub는 영상에 자막 두 줄을 동시에 띄웁니다. 위에는 원문, 바로 아래에는 같은 문장을 내 언어로. 진짜 목소리를 들으며 원문을 읽으니 놓치는 말이 없습니다.\n\n무료, 무제한, 로그인 없이\n계정도, API 키도 필요 없고, 15분 뒤에 '체험 종료' 화면이 뜨지도 않습니다. 설치하고 영상을 열면 끝입니다.\n\n번역은 내 컴퓨터에서\nChrome에 내장된 번역 기능을 사용해 한 줄씩 내 컴퓨터에서 밀리초 만에 번역합니다. 서버를 기다릴 일이 없고, 무엇을 보는지 어디에도 전송되지 않습니다.\n\n외국어 공부에 딱\n원문은 위, 번역은 아래. 순서도 바꿀 수 있습니다. 스페인어 브이로그, 일본 애니 클립, 프랑스 요리 영상, 영어 강의까지. 원래 좋아하던 영상으로 언어를 익히세요.\n\n지금 있는 자막 그대로\n직접 만든 자막도, YouTube 자동 생성 자막도 모두 지원합니다. Twinsub가 자막을 켜고, 자막 메뉴에서 고른 언어를 따라가며, 다음 영상으로 넘어가도 계속 작동합니다.\n\n내 마음대로\n• 한국어, 영어, 일본어, 중국어, 스페인어, 프랑스어, 독일어 등 39개 언어로 번역\n• 원문을 위로, 또는 번역을 위로\n• 글자 크기와 화면 높이\n• 번역만, 또는 원문만 보기\n• 플레이어 하단 버튼 하나로 켜고 끄기\n\n사용 방법\n1. Twinsub를 설치합니다.\n2. 자막이 있는 YouTube 영상을 엽니다.\n3. 어떤 언어 조합을 처음 쓸 때는 노란 안내를 한 번 클릭하세요. Chrome이 몇 초 만에 번역 팩을 받습니다.\n4. 이제 보기만 하면 됩니다.\n\n데스크톱용 Chrome 138 이상이 필요합니다(Windows, Mac, Linux, ChromeOS). Twinsub는 YouTube 및 Google과 제휴하거나 승인받지 않았습니다."
+}

@@ -1,0 +1,9 @@
+{
+  "name": "twinsub",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "build": "node scripts/build.cjs",
+    "verify": "node scripts/verify.cjs"
+  }
+}

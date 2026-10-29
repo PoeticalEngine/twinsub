@@ -1,0 +1,117 @@
+{
+ "font": "\"PingFang SC\", -apple-system, \"Helvetica Neue\", \"Microsoft YaHei\", sans-serif",
+ "messages": {
+  "extName": "Twinsub：YouTube™ 双语字幕",
+  "extDescription": "YouTube 双语字幕：每句原文配上你的语言。免费、不限量、不用登录，翻译在你自己的电脑上完成。",
+  "buttonOn": "Twinsub 双语字幕：已开启（点击关闭）",
+  "buttonOff": "Twinsub 双语字幕：已关闭（点击开启）",
+  "noApi": "Twinsub 在你的电脑上翻译，需要电脑版 Chrome 138 或更新版本。",
+  "unsupported": "Chrome 暂不支持从$1到$2的本地翻译，先显示原文字幕。",
+  "needsDownload": "点击下载$1 → $2翻译包（只需一次，几秒钟）",
+  "downloading": "正在下载$1 → $2翻译包… $3%",
+  "noCaptions": "这个视频没有字幕，Twinsub 没有可翻译的内容。",
+  "failed": "翻译中断：$1",
+  "popupEnabled": "在 YouTube 上显示双语字幕",
+  "popupTarget": "翻译成",
+  "popupTargetAuto": "跟随浏览器语言（$1）",
+  "popupOrder": "上下顺序",
+  "popupOrderOriginal": "原文在上",
+  "popupOrderTranslation": "译文在上",
+  "popupShowOriginal": "显示原文",
+  "popupShowTranslation": "显示译文",
+  "popupSize": "字号",
+  "popupPosition": "离底部的高度",
+  "popupHow": "打开任意有字幕的 YouTube 视频，Twinsub 会自动打开字幕并加上译文；播放器底栏里两条横线的按钮可以关掉它。",
+  "popupPrivacy": "翻译由 Chrome 内置翻译在你的电脑上完成。不用账号，没有服务器，你看了什么不会离开浏览器。",
+  "popupPrivacyLink": "隐私说明"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub · YouTube 双语字幕",
+   "title": "每一句，都看得懂。",
+   "sub": "原文字幕在上，中文紧跟在下。",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "最好的开始时机是昨天，其次就是现在。",
+   "chips": [
+    "免费不限量",
+    "不用登录",
+    "在你电脑上翻译"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "学外语",
+   "title": "在爱看的视频里，顺手学外语。",
+   "sub": "听原声、看原文、对中文，一次全有。",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "今天要不要稍微绕个路？",
+   "callouts": [
+    "听原声",
+    "看原文",
+    "懂意思"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "本地翻译",
+   "title": "不卡顿，不限量。",
+   "sub": "每一句都在你自己的电脑上翻译，话还没说完，译文已经出来了。",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "这一幕我一定要再看一遍。",
+   "stat": [
+    "毫秒级",
+    "每句翻译，不经过任何服务器"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "设置",
+   "title": "字幕，按你的习惯来。",
+   "sub": "上下顺序、字号、高度都能调，也可以只看一行。",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "只有用心才能看清。",
+   "popup": true,
+   "bullets": [
+    "支持 39 种语言",
+    "原文或译文在上",
+    "字号和高度可调",
+    "播放器里一键开关"
+   ]
+  },
+  {
+   "scene": "night",
+   "eyebrow": "隐私",
+   "title": "你看了什么，只有你知道。",
+   "sub": "不用账号，没有服务器，不做追踪。Twinsub 只读取播放器已经下载好的字幕。",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "明天火车站见。",
+   "privacy": [
+    [
+     "不用账号",
+     "没有任何注册"
+    ],
+    [
+     "没有服务器",
+     "翻译在 Chrome 里完成"
+    ],
+    [
+     "不做追踪",
+     "不统计、不记录观看历史"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "YouTube 双语字幕",
+  "tag": "免费 · 不用登录"
+ },
+ "marquee": {
+  "title": "每一句，都看得懂。",
+  "sub": "YouTube 双语字幕。免费、不限量，翻译在你的电脑上完成。",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "最好的开始时机是昨天，其次就是现在。"
+ },
+ "description": "在 YouTube 上看任何视频，每一句都看得懂。\n\nTwinsub 同时给视频配上两行字幕：上面是原文，下面紧跟着同一句的中文。听着原声，看着原文，哪句都不会错过。\n\n免费、不限量、不用登录\n不用注册账号，不用填 API key，也不会看了 15 分钟就弹出\"试用已结束\"。装好、打开视频，就这么简单。\n\n翻译就在你的电脑上完成\nTwinsub 用的是 Chrome 自带的翻译，每一句都在你的电脑上翻译，几毫秒就好。不等服务器，你看了什么也不会被发送到任何地方。\n\n学外语的好帮手\n原文在上、译文在下，也可以对调。看西班牙语 vlog、日语动画片段、韩国综艺、法语美食、英文公开课，在本来就爱看的视频里学语言。\n\n自带字幕、自动字幕都能用\n人工字幕和 YouTube 自动生成的字幕都支持。Twinsub 会帮你打开字幕，跟随你在 YouTube 字幕菜单里选的语言，点到下一个视频也照样生效。\n\n按你的习惯来\n• 可以翻译成 39 种语言：中文（简体、繁体）、日语、韩语、英语、西班牙语、法语、德语、葡萄牙语、俄语、阿拉伯语、越南语等\n• 原文在上或译文在上\n• 字号大小、离底部的高度都能调\n• 可以只看译文，或者只看原文\n• 播放器底栏一个按钮，随时开关\n\n怎么用\n1. 安装 Twinsub。\n2. 打开任意有字幕的 YouTube 视频。\n3. 第一次用某个语言组合时，点一下黄色提示，Chrome 几秒钟就下载好翻译包。\n4. 开始看。\n\n需要电脑版 Chrome 138 或更新版本（Windows、Mac、Linux、ChromeOS）。Twinsub 与 YouTube、Google 没有关联，也未获其背书。"
+}

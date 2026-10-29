@@ -1,0 +1,61 @@
+/* Twinsub overlay inside YouTube's player. Sizes follow the player height (--twinsub-base, set from JS). */
+html.twinsub-on #movie_player .ytp-caption-window-container { display: none !important; }
+
+#movie_player .twinsub-overlay {
+  position: absolute;
+  left: 50%;
+  bottom: var(--twinsub-bottom, 10%);
+  transform: translateX(-50%);
+  z-index: 60;
+  width: max-content;
+  max-width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+  pointer-events: none;
+  transition: bottom 0.15s ease;
+  font-size: calc(var(--twinsub-base, 20px) * var(--twinsub-scale, 1));
+}
+/* Lift the lines above the control bar while it's showing. */
+#movie_player:not(.ytp-autohide) .twinsub-overlay { bottom: calc(var(--twinsub-bottom, 10%) + 48px); }
+#movie_player .twinsub-overlay[hidden] { display: none; }
+
+#movie_player .twinsub-line {
+  padding: 0.12em 0.45em;
+  border-radius: 0.25em;
+  background: rgba(8, 8, 8, 0.72);
+  color: #fff;
+  line-height: 1.35;
+  text-align: center;
+  white-space: pre-wrap;
+  font-family: "YouTube Noto", Roboto, "Arial Unicode Ms", Arial, Helvetica, Verdana, "PT Sans Caption", sans-serif;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  pointer-events: auto;
+  user-select: text;
+}
+#movie_player .twinsub-line[hidden] { display: none; }
+#movie_player .twinsub-line.twinsub-translation { color: #ffe27a; font-size: 0.92em; }
+
+#movie_player .twinsub-chip {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 61;
+  max-width: 80%;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 18px;
+  background: rgba(20, 20, 20, 0.88);
+  color: #fff;
+  font: 500 13px/1.4 Roboto, Arial, sans-serif;
+  cursor: default;
+}
+#movie_player .twinsub-chip[hidden] { display: none; }
+#movie_player .twinsub-chip.twinsub-chip-action { background: #ffe27a; color: #111; cursor: pointer; }
+#movie_player .twinsub-chip.twinsub-chip-action:hover { background: #ffd54a; }
+
+#movie_player .twinsub-button svg { width: 100%; height: 100%; }
+#movie_player .twinsub-button[aria-pressed="true"] .twinsub-icon-second { stroke: #ffe27a; }
+#movie_player .twinsub-button[aria-pressed="false"] { opacity: 0.7; }

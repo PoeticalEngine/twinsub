@@ -1,0 +1,117 @@
+{
+ "font": "\"Hiragino Sans\", \"Hiragino Kaku Gothic ProN\", -apple-system, sans-serif",
+ "messages": {
+  "extName": "Twinsub：YouTube™ 2か国語字幕",
+  "extDescription": "YouTubeに2か国語字幕を。原文の下にあなたの言語を表示。無料・無制限・ログイン不要。翻訳はあなたのパソコンの中で完了します。",
+  "buttonOn": "Twinsub 2か国語字幕：オン（クリックでオフ）",
+  "buttonOff": "Twinsub 2か国語字幕：オフ（クリックでオン）",
+  "noApi": "Twinsub はパソコン上で翻訳するため、パソコン版 Chrome 138 以降が必要です。",
+  "unsupported": "$1から$2へのオンデバイス翻訳は、まだ Chrome で使えません。原文の字幕を表示します。",
+  "needsDownload": "クリックして$1 → $2の翻訳パックをダウンロード（初回のみ・数秒）",
+  "downloading": "$1 → $2の翻訳パックをダウンロード中… $3%",
+  "noCaptions": "この動画には字幕がないため、Twinsub が翻訳できるものがありません。",
+  "failed": "翻訳が止まりました：$1",
+  "popupEnabled": "YouTube で2か国語字幕を表示",
+  "popupTarget": "翻訳先",
+  "popupTargetAuto": "ブラウザの言語（$1）",
+  "popupOrder": "表示順",
+  "popupOrderOriginal": "原文を上に",
+  "popupOrderTranslation": "訳文を上に",
+  "popupShowOriginal": "原文を表示",
+  "popupShowTranslation": "訳文を表示",
+  "popupSize": "文字の大きさ",
+  "popupPosition": "下からの高さ",
+  "popupHow": "字幕のある YouTube 動画を開くだけ。Twinsub が字幕をオンにして訳文を添えます。プレーヤー下部の2本線のボタンでオフにできます。",
+  "popupPrivacy": "翻訳は Chrome 内蔵の翻訳機能があなたのパソコン上で行います。アカウントもサーバーも不要。何を見たかがブラウザの外に出ることはありません。",
+  "popupPrivacyLink": "プライバシー"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub for YouTube",
+   "title": "一行残らず、わかる。",
+   "sub": "原文の字幕と、そのすぐ下にあなたの言語。",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "始めるのに一番いい時は昨日だった。次にいい時は、今だ。",
+   "chips": [
+    "無料・無制限",
+    "ログイン不要",
+    "パソコン上で翻訳"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "語学学習に",
+   "title": "好きな動画で、外国語が身につく。",
+   "sub": "本物の声を聞き、原文を読み、意味を確かめる。全部いっぺんに。",
+   "orig": "Nunca es tarde para empezar de nuevo.",
+   "trans": "やり直すのに遅すぎることはない。",
+   "callouts": [
+    "聞く",
+    "読む",
+    "わかる"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "オンデバイス翻訳",
+   "title": "待たない。制限もない。",
+   "sub": "一行ずつ、あなたのパソコンの中でミリ秒単位で翻訳。話し終わる前に訳が出ます。",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "このシーン、絶対もう一度見たい。",
+   "stat": [
+    "一瞬",
+    "1行あたり。間にサーバーなし"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "設定",
+   "title": "字幕を、あなた好みに。",
+   "sub": "順番の入れ替え、文字の大きさ、高さ。どちらか1行だけの表示も。",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "心で見なければ、ものごとはよく見えない。",
+   "bullets": [
+    "39言語に対応",
+    "原文と訳文、どちらを上にも",
+    "文字サイズと高さを調整",
+    "プレーヤーのボタンでオン／オフ"
+   ],
+   "popup": true
+  },
+  {
+   "scene": "night",
+   "eyebrow": "プライバシー",
+   "title": "何を見たかは、あなただけのもの。",
+   "sub": "アカウントなし、サーバーなし、トラッキングなし。Twinsub はプレーヤーが読み込んだ字幕だけを使います。",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "明日、駅で会おう。",
+   "privacy": [
+    [
+     "アカウント不要",
+     "登録は一切なし"
+    ],
+    [
+     "サーバーなし",
+     "翻訳は Chrome の中で完結"
+    ],
+    [
+     "追跡なし",
+     "分析も視聴履歴の記録もなし"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "YouTube 2か国語字幕",
+  "tag": "無料・ログイン不要"
+ },
+ "marquee": {
+  "title": "一行残らず、わかる。",
+  "sub": "YouTube に2か国語字幕。無料・無制限、翻訳はあなたのパソコンの中で。",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "始めるのに一番いい時は昨日だった。次にいい時は、今だ。"
+ },
+ "description": "YouTube のどんな動画も、一行残らずわかる。\n\nTwinsub は動画に2つの字幕を同時に表示します。上に原文、すぐ下に同じ一文をあなたの言語で。本物の声を聞きながら原文を読めるので、聞き逃しがありません。\n\n無料・無制限・ログイン不要\nアカウントも API キーも不要。15分で「試用期間終了」と出ることもありません。インストールして動画を開くだけです。\n\n翻訳はあなたのパソコンの中で\nChrome に内蔵された翻訳機能を使い、一行ずつパソコン上でミリ秒単位で翻訳します。サーバーを待つことはなく、何を見たかがどこかに送られることもありません。\n\n語学学習にぴったり\n原文を上、訳文を下に。入れ替えも自由です。スペイン語の Vlog、韓国のバラエティ、フランスの料理動画、英語の講義。好きな動画で言葉が身につきます。\n\nいつもの字幕でそのまま使える\n手作りの字幕にも、YouTube の自動生成字幕にも対応。Twinsub が字幕をオンにし、字幕メニューで選んだ言語に合わせ、次の動画に移っても動き続けます。\n\n好みに合わせて\n• 日本語・英語・中国語・韓国語・スペイン語・フランス語・ドイツ語など39言語に翻訳\n• 原文を上にも、訳文を上にも\n• 文字の大きさと画面上の高さ\n• 訳文だけ、原文だけの表示も\n• プレーヤー下部のボタン1つでオン／オフ\n\n使い方\n1. Twinsub をインストール。\n2. 字幕のある YouTube 動画を開く。\n3. ある言語の組み合わせを初めて使うときは、黄色い案内を一度クリック。Chrome が数秒で翻訳パックをダウンロードします。\n4. あとは見るだけ。\n\nパソコン版 Chrome 138 以降が必要です（Windows、Mac、Linux、ChromeOS）。Twinsub は YouTube および Google と提携・承認関係にありません。"
+}

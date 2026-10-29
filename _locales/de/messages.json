@@ -1,0 +1,71 @@
+{
+ "extName": {
+  "message": "Twinsub: Zweisprachige Untertitel für YouTube™"
+ },
+ "extDescription": {
+  "message": "Zweisprachige Untertitel auf YouTube: jede Zeile im Original und darunter in deiner Sprache. Kostenlos, unbegrenzt, ohne Konto."
+ },
+ "buttonOn": {
+  "message": "Twinsub zweisprachige Untertitel: an (zum Ausschalten klicken)"
+ },
+ "buttonOff": {
+  "message": "Twinsub zweisprachige Untertitel: aus (zum Einschalten klicken)"
+ },
+ "noApi": {
+  "message": "Twinsub übersetzt auf deinem Computer und braucht dafür Chrome 138 oder neuer auf einem Desktop oder Laptop."
+ },
+ "unsupported": {
+  "message": "Chrome kann noch nicht auf dem Gerät von $1 nach $2 übersetzen. Die Original-Untertitel bleiben sichtbar."
+ },
+ "needsDownload": {
+  "message": "Klicken, um das Übersetzungspaket $1 → $2 zu laden (einmalig, ein paar Sekunden)"
+ },
+ "downloading": {
+  "message": "Übersetzungspaket $1 → $2 wird geladen … $3 %"
+ },
+ "noCaptions": {
+  "message": "Dieses Video hat keine Untertitel, Twinsub hat also nichts zu übersetzen."
+ },
+ "failed": {
+  "message": "Übersetzung abgebrochen: $1"
+ },
+ "popupEnabled": {
+  "message": "Zweisprachige Untertitel auf YouTube"
+ },
+ "popupTarget": {
+  "message": "Übersetzen in"
+ },
+ "popupTargetAuto": {
+  "message": "Browsersprache ($1)"
+ },
+ "popupOrder": {
+  "message": "Reihenfolge"
+ },
+ "popupOrderOriginal": {
+  "message": "Original oben"
+ },
+ "popupOrderTranslation": {
+  "message": "Übersetzung oben"
+ },
+ "popupShowOriginal": {
+  "message": "Original zeigen"
+ },
+ "popupShowTranslation": {
+  "message": "Übersetzung zeigen"
+ },
+ "popupSize": {
+  "message": "Textgröße"
+ },
+ "popupPosition": {
+  "message": "Abstand vom unteren Rand"
+ },
+ "popupHow": {
+  "message": "Öffne ein beliebiges YouTube-Video mit Untertiteln. Twinsub schaltet sie ein und ergänzt die Übersetzung; der Knopf mit zwei Linien in der Player-Leiste schaltet es aus."
+ },
+ "popupPrivacy": {
+  "message": "Die Übersetzung läuft mit Chromes eingebautem Übersetzer auf deinem Computer. Kein Konto, kein Server, nichts darüber, was du schaust, verlässt deinen Browser."
+ },
+ "popupPrivacyLink": {
+  "message": "Datenschutz"
+ }
+}

@@ -1,0 +1,117 @@
+{
+ "font": "-apple-system, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+ "messages": {
+  "extName": "Twinsub: subtítulos bilingües para YouTube™",
+  "extDescription": "Subtítulos bilingües en YouTube: cada frase en el idioma original y en el tuyo justo debajo. Gratis, sin límites y sin registrarte.",
+  "buttonOn": "Twinsub subtítulos bilingües: activados (clic para desactivar)",
+  "buttonOff": "Twinsub subtítulos bilingües: desactivados (clic para activar)",
+  "noApi": "Twinsub traduce en tu ordenador, y para eso necesita Chrome 138 o posterior en un equipo de escritorio o portátil.",
+  "unsupported": "Chrome todavía no puede traducir del $1 al $2 en el dispositivo. Se muestran los subtítulos originales.",
+  "needsDownload": "Haz clic para descargar el paquete de traducción $1 → $2 (solo una vez, unos segundos)",
+  "downloading": "Descargando el paquete de traducción $1 → $2… $3 %",
+  "noCaptions": "Este vídeo no tiene subtítulos, así que Twinsub no tiene nada que traducir.",
+  "failed": "La traducción se detuvo: $1",
+  "popupEnabled": "Subtítulos bilingües en YouTube",
+  "popupTarget": "Traducir al",
+  "popupTargetAuto": "Idioma del navegador ($1)",
+  "popupOrder": "Orden de las líneas",
+  "popupOrderOriginal": "Original arriba",
+  "popupOrderTranslation": "Traducción arriba",
+  "popupShowOriginal": "Mostrar original",
+  "popupShowTranslation": "Mostrar traducción",
+  "popupSize": "Tamaño del texto",
+  "popupPosition": "Altura desde abajo",
+  "popupHow": "Abre cualquier vídeo de YouTube con subtítulos: Twinsub los activa y añade la traducción. El botón de dos líneas en la barra del reproductor lo desactiva.",
+  "popupPrivacy": "La traducción se hace en tu ordenador con el traductor integrado de Chrome. Sin cuenta ni servidor: nada de lo que ves sale de tu navegador.",
+  "popupPrivacyLink": "Privacidad"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub para YouTube",
+   "title": "Entiende cada frase.",
+   "sub": "El subtítulo original y tu idioma justo debajo.",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "El mejor momento para empezar fue ayer. El segundo mejor es ahora.",
+   "chips": [
+    "Gratis y sin límites",
+    "Sin registro",
+    "Traducido en tu ordenador"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "Para aprender idiomas",
+   "title": "Aprende con los vídeos que ya te encantan.",
+   "sub": "Escucha la voz real, lee el original y comprueba el significado. Todo a la vez.",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "¿Y si hoy damos un pequeño rodeo?",
+   "callouts": [
+    "Escuchar",
+    "Leer",
+    "Entender"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "Traducción en el dispositivo",
+   "title": "Sin esperas. Sin límites.",
+   "sub": "Cada línea se traduce en tu ordenador en milisegundos, antes de que termine la frase.",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "Tengo que volver a ver esta escena.",
+   "stat": [
+    "Al instante",
+    "por línea, sin servidor de por medio"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "Ajustes",
+   "title": "Tus subtítulos, a tu manera.",
+   "sub": "Cambia el orden, el tamaño, la altura, u oculta una de las dos líneas.",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "Solo se ve bien con el corazón.",
+   "bullets": [
+    "39 idiomas",
+    "Original o traducción arriba",
+    "Tamaño y altura del texto",
+    "Un botón en el reproductor"
+   ],
+   "popup": true
+  },
+  {
+   "scene": "night",
+   "eyebrow": "Privacidad",
+   "title": "Lo que ves se queda en tu ordenador.",
+   "sub": "Sin cuenta, sin servidor, sin rastreo. Twinsub solo lee los subtítulos que el reproductor ya descargó.",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "Nos vemos mañana en la estación.",
+   "privacy": [
+    [
+     "Sin cuenta",
+     "Nada que registrar"
+    ],
+    [
+     "Sin servidor",
+     "La traducción ocurre en Chrome"
+    ],
+    [
+     "Sin rastreo",
+     "Ni estadísticas ni historial"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "Subtítulos bilingües para YouTube",
+  "tag": "Gratis · Sin registro"
+ },
+ "marquee": {
+  "title": "Entiende cada frase.",
+  "sub": "Subtítulos bilingües para YouTube. Gratis, sin límites y traducidos en tu ordenador.",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "El mejor momento para empezar fue ayer. El segundo mejor es ahora."
+ },
+ "description": "Mira cualquier vídeo de YouTube y entiende cada frase.\n\nTwinsub muestra dos subtítulos a la vez: la frase original y, justo debajo, la misma frase en tu idioma. Oyes la voz real, lees las palabras reales y no te pierdes nada.\n\nGRATIS, SIN LÍMITES, SIN REGISTRO\nSin cuenta, sin clave de API y sin la pantalla de «prueba terminada» a los 15 minutos. Instálalo, abre un vídeo y listo.\n\nTRADUCIDO EN TU ORDENADOR\nTwinsub usa el traductor integrado de Chrome: cada línea se traduce en tu dispositivo en milisegundos. Nada espera a un servidor y nada de lo que ves se envía a ninguna parte.\n\nPERFECTO PARA APRENDER IDIOMAS\nEl original arriba y la traducción abajo, o al revés. Vlogs en inglés, anime japonés, programas coreanos, clases en francés: aprende el idioma con los vídeos que ya te gustan.\n\nFUNCIONA CON LOS SUBTÍTULOS QUE YA EXISTEN\nFunciona con subtítulos hechos a mano y con los generados automáticamente por YouTube. Twinsub activa los subtítulos, sigue la pista que elijas en el menú CC de YouTube y sigue funcionando de vídeo en vídeo.\n\nA TU MANERA\n• Traduce a 39 idiomas, entre ellos español, inglés, portugués, francés, alemán, japonés, coreano y chino\n• Original o traducción arriba\n• Tamaño del texto y altura en pantalla\n• Mostrar solo la traducción o solo el original\n• Un botón en la barra del reproductor para activarlo o desactivarlo\n\nCÓMO SE USA\n1. Instala Twinsub.\n2. Abre un vídeo de YouTube que tenga subtítulos.\n3. La primera vez que uses una combinación de idiomas, haz clic una vez en el aviso amarillo. Chrome descarga el paquete de traducción en unos segundos.\n4. Disfruta.\n\nRequiere Chrome 138 o posterior en un ordenador (Windows, Mac, Linux o ChromeOS). Twinsub no está afiliado a YouTube ni a Google, ni cuenta con su aprobación."
+}

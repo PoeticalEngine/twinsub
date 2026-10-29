@@ -1,0 +1,274 @@
+// Twinsub content script (isolated world). Owns the settings, the player button, the two-line overlay and the
+// translation queue. Caption files and the Translator itself live in page.js; see the note there.
+(() => {
+  if (window.__twinsubContent) return;
+  window.__twinsubContent = true;
+
+  const C = TwinsubCaptions;
+  const FROM_PAGE = "twinsub-page", FROM_CONTENT = "twinsub-content";
+  const hasChrome = typeof chrome !== "undefined" && chrome.storage && chrome.storage.sync;
+
+  // ---- strings -------------------------------------------------------------------------------------------
+  const EN = {
+    buttonOn: "Twinsub dual subtitles: on (click to turn off)",
+    buttonOff: "Twinsub dual subtitles: off (click to turn on)",
+    noApi: "Twinsub translates on your computer, which needs Chrome 138 or newer on a desktop or laptop.",
+    unsupported: "On-device translation from $1 to $2 isn't available in Chrome yet. Showing the original subtitles.",
+    needsDownload: "Click to download the $1 → $2 translation pack (one time, a few seconds)",
+    downloading: "Downloading the $1 → $2 translation pack… $3%",
+    noCaptions: "This video has no subtitles, so Twinsub has nothing to translate.",
+    failed: "Translation stopped: $1",
+  };
+  function t(key, ...subs) {
+    let s = "";
+    try { s = hasChrome && chrome.i18n ? chrome.i18n.getMessage(key, subs) : ""; } catch {}
+    if (!s) s = (EN[key] || key).replace(/\$(\d)/g, (_, n) => subs[n - 1] ?? "");
+    return s;
+  }
+  const langName = code => {
+    try { return new Intl.DisplayNames([navigator.language], { type: "language" }).of(code) || code; } catch { return code; }
+  };
+
+  // ---- settings ------------------------------------------------------------------------------------------
+  const DEFAULTS = { enabled: true, target: "auto", order: "original-first", showOriginal: true, showTranslation: true, size: 1, bottom: 10 };
+  let settings = { ...DEFAULTS };
+  const store = {
+    async get() { return hasChrome ? chrome.storage.sync.get(DEFAULTS) : { ...DEFAULTS, ...settings }; },
+    async set(v) { if (hasChrome) await chrome.storage.sync.set(v); else Object.assign(settings, v); },
+  };
+  const targetLang = () => settings.target === "auto" ? (C.translatorLang(navigator.language) || "en") : settings.target;
+
+  // ---- page bridge ---------------------------------------------------------------------------------------
+  let nextId = 1;
+  const pending = new Map();
+  function rpc(type, data = {}) {
+    const id = "ts" + nextId++;
+    return new Promise((resolve, reject) => {
+      pending.set(id, { resolve, reject });
+      window.postMessage({ source: FROM_CONTENT, id, type, ...data }, location.origin);
+    });
+  }
+
+  const files = new Map();   // "<videoId>|<lang>|<kind>|<tlang>" -> { meta, body }
+  let track = { ready: false };
+
+  window.addEventListener("message", e => {
+    if (e.source !== window || !e.data || e.data.source !== FROM_PAGE) return;
+    const d = e.data;
+    if (d.id && pending.has(d.id)) {
+      const p = pending.get(d.id); pending.delete(d.id);
+      d.error ? p.reject(new Error(d.error)) : p.resolve(d.value !== undefined ? d.value : d.ok);
+    } else if (d.type === "captions") {
+      const m = d.meta;
+      files.set([m.videoId, m.lang, m.kind, m.tlang].join("|"), { meta: m, body: d.body });
+      refresh();
+    } else if (d.type === "track") {
+      track = d.state;
+      refresh();
+    } else if (d.type === "download") {
+      if (job && job.src === d.src && job.tgt === d.tgt && d.loaded < 1)
+        chip(t("downloading", langName(d.src), langName(d.tgt), String(Math.round(d.loaded * 100))));
+    }
+  });
+
+  // ---- state -----------------------------------------------------------------------------------------------
+  let currentKey = "", cues = [], translations = [], job = null, shownIndex = -2;
+  let askedOnFor = "", sameVideoSince = 0, lastVideo = "";
+
+  function refresh() {
+    ensureUi();
+    if (button) {
+      button.setAttribute("aria-pressed", String(settings.enabled));
+      button.title = settings.enabled ? t("buttonOn") : t("buttonOff");
+    }
+    if (!settings.enabled || !track.ready) { hide(); return; }
+    if (track.videoId !== lastVideo) { lastVideo = track.videoId; sameVideoSince = Date.now(); chip(""); }
+    if (track.ad) { hide(); return; }
+
+    if (!track.on) {
+      if (track.hasTracks && askedOnFor !== track.videoId) { askedOnFor = track.videoId; rpc("captionsOn").catch(() => {}); }
+      else if (!track.hasTracks && Date.now() - sameVideoSince > 4000) chip(t("noCaptions"), { timeout: 6000, once: "nocap:" + track.videoId });
+      clearCues();
+      return;
+    }
+    const key = [track.videoId, track.lang, track.kind, track.tlang].join("|");
+    if (key === currentKey) return;
+    const file = files.get(key);
+    if (!file) { if (currentKey) clearCues(); return; }  // the file arrives with the next "captions" message
+    currentKey = key;
+    cues = C.parse(file.body, track.kind);
+    translations = new Array(cues.length);
+    shownIndex = -2;
+    startTranslation();
+  }
+
+  function clearCues() { currentKey = ""; cues = []; translations = []; job = null; shownIndex = -2; render(); }
+
+  // ---- translation -----------------------------------------------------------------------------------------
+  async function startTranslation(withGesture = false) {
+    const src = C.translatorLang(track.tlang || track.lang), tgt = targetLang();
+    const my = job = { src, tgt, key: currentKey };
+    if (!src || !tgt) { chip(t("unsupported", langName(track.tlang || track.lang), langName(tgt)), { timeout: 8000 }); return; }
+    if (src === tgt || src.split("-")[0] === tgt.split("-")[0] && src !== "zh" && tgt !== "zh") { chip(""); return; }
+    let avail;
+    try { avail = await rpc("availability", { src, tgt }); } catch (e) { avail = "no-api"; }
+    if (job !== my) return;
+    if (avail === "no-api") { chip(t("noApi"), { timeout: 10000, once: "noapi" }); return; }
+    if (avail === "unavailable") { chip(t("unsupported", langName(src), langName(tgt)), { timeout: 8000 }); return; }
+    if (avail !== "available" && !withGesture) {
+      chip(t("needsDownload", langName(src), langName(tgt)), { action: () => startTranslation(true) });
+      return;
+    }
+    try {
+      if (avail !== "available") chip(t("downloading", langName(src), langName(tgt), "0"));
+      await rpc("prepare", { src, tgt });  // sent inside the click, while the page still has user activation
+      chip("");
+      await translateFrom(my);
+    } catch (e) {
+      if (job === my) chip(t("failed", e.message), { timeout: 8000 });
+    }
+  }
+
+  // Translate outward from where the viewer is, in small batches, so the current line is ready first.
+  async function translateFrom(my) {
+    const video = document.querySelector("#movie_player video");
+    const here = Math.max(0, C.cueAt(cues, (video ? video.currentTime : 0) * 1000));
+    const order = [];
+    for (let i = here; i < cues.length; i++) order.push(i);
+    for (let i = here - 1; i >= 0; i--) order.push(i);
+    for (let i = 0; i < order.length; i += 20) {
+      if (job !== my) return;
+      const batch = order.slice(i, i + 20).filter(k => translations[k] === undefined);
+      if (!batch.length) continue;
+      const out = await rpc("translate", { src: my.src, tgt: my.tgt, texts: batch.map(k => cues[k].text) });
+      if (job !== my) return;
+      batch.forEach((k, j) => { translations[k] = out[j] || ""; });
+      if (batch.includes(shownIndex)) shownIndex = -2;
+    }
+  }
+
+  // ---- UI ----------------------------------------------------------------------------------------------------
+  let button = null, overlay = null, lineA = null, lineB = null, chipEl = null, chipTimer = 0;
+  const shownOnce = new Set();
+
+  function ensureUi() {
+    const player = document.getElementById("movie_player");
+    if (!player) return;
+    if (!overlay || !player.contains(overlay)) {
+      overlay = document.createElement("div");
+      overlay.className = "twinsub-overlay";
+      lineA = document.createElement("div"); lineA.className = "twinsub-line twinsub-a";
+      lineB = document.createElement("div"); lineB.className = "twinsub-line twinsub-b";
+      overlay.append(lineA, lineB);
+      chipEl = document.createElement("button");
+      chipEl.type = "button";
+      chipEl.className = "twinsub-chip";
+      chipEl.hidden = true;
+      player.append(overlay, chipEl);
+      new ResizeObserver(() => player.style.setProperty("--twinsub-base", Math.max(14, player.clientHeight * 0.045) + "px")).observe(player);
+      applyStyle();
+    }
+    const controls = player.querySelector(".ytp-right-controls");
+    if (controls && (!button || !controls.contains(button))) {
+      button = document.createElement("button");
+      button.className = "ytp-button twinsub-button";
+      button.setAttribute("aria-pressed", String(settings.enabled));
+      button.title = settings.enabled ? t("buttonOn") : t("buttonOff");
+      button.append(icon());
+      button.addEventListener("click", async () => {
+        const enabled = !settings.enabled;
+        settings.enabled = enabled;
+        await store.set({ enabled });
+        if (enabled) { askedOnFor = ""; currentKey = ""; }
+        refresh();
+        if (enabled && job && chipEl && chipEl.dataset.action === "1") startTranslation(true);
+      });
+      controls.prepend(button);
+    }
+  }
+
+  function icon() {
+    const ns = "http://www.w3.org/2000/svg";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("viewBox", "0 0 36 36");
+    svg.setAttribute("width", "100%");
+    svg.setAttribute("height", "100%");
+    const box = document.createElementNS(ns, "rect");
+    Object.entries({ x: 8, y: 10, width: 20, height: 16, rx: 3, fill: "none", stroke: "currentColor", "stroke-width": 2 }).forEach(([k, v]) => box.setAttribute(k, v));
+    const l1 = document.createElementNS(ns, "path");
+    l1.setAttribute("d", "M12 16h12");
+    const l2 = document.createElementNS(ns, "path");
+    l2.setAttribute("d", "M12 21h8");
+    for (const l of [l1, l2]) { l.setAttribute("stroke", "currentColor"); l.setAttribute("stroke-width", "2"); l.setAttribute("stroke-linecap", "round"); }
+    l2.setAttribute("class", "twinsub-icon-second");
+    svg.append(box, l1, l2);
+    return svg;
+  }
+
+  function applyStyle() {
+    const player = document.getElementById("movie_player");
+    if (!player) return;
+    player.style.setProperty("--twinsub-scale", String(settings.size));
+    player.style.setProperty("--twinsub-bottom", settings.bottom + "%");
+    shownIndex = -2;
+  }
+
+  function chip(text, opts = {}) {
+    if (!chipEl) return;
+    clearTimeout(chipTimer);
+    if (!text || (opts.once && shownOnce.has(opts.once))) { if (!text) { chipEl.hidden = true; chipEl.onclick = null; delete chipEl.dataset.action; } return; }
+    if (opts.once) shownOnce.add(opts.once);
+    chipEl.textContent = text;
+    chipEl.hidden = false;
+    chipEl.classList.toggle("twinsub-chip-action", !!opts.action);
+    if (opts.action) { chipEl.dataset.action = "1"; chipEl.onclick = () => { chipEl.onclick = null; opts.action(); }; }
+    else { delete chipEl.dataset.action; chipEl.onclick = null; }
+    if (opts.timeout) chipTimer = setTimeout(() => { chipEl.hidden = true; }, opts.timeout);
+  }
+
+  function hide() { if (overlay) overlay.hidden = true; }
+
+  function render() {
+    if (!overlay) return;
+    const video = document.querySelector("#movie_player video");
+    document.documentElement.classList.toggle("twinsub-on", !!(settings.enabled && track.on && !track.ad && cues.length));
+    if (!settings.enabled || !track.on || track.ad || !cues.length || !video) { overlay.hidden = true; return; }
+    const i = C.cueAt(cues, video.currentTime * 1000);
+    if (i === shownIndex) return;
+    shownIndex = i;
+    if (i < 0) { overlay.hidden = true; return; }
+    const orig = settings.showOriginal ? cues[i].text : "";
+    const tr = settings.showTranslation && job && job.key === currentKey ? (translations[i] || "") : "";
+    const [first, second] = settings.order === "translation-first" ? [tr, orig] : [orig, tr];
+    lineA.textContent = first; lineA.hidden = !first;
+    lineB.textContent = second; lineB.hidden = !second;
+    lineA.classList.toggle("twinsub-translation", settings.order === "translation-first");
+    lineB.classList.toggle("twinsub-translation", settings.order !== "translation-first");
+    lineA.lang = settings.order === "translation-first" ? targetLang() : (track.tlang || track.lang);
+    lineB.lang = settings.order === "translation-first" ? (track.tlang || track.lang) : targetLang();
+    overlay.hidden = !first && !second;
+  }
+
+  setInterval(render, 100);
+  // YouTube is a single-page app: the player and its controls get rebuilt on navigation.
+  document.addEventListener("yt-navigate-finish", () => { askedOnFor = ""; refresh(); });
+  setInterval(() => { if (settings.enabled) ensureUi(); }, 2000);
+
+  if (hasChrome) {
+    chrome.storage.onChanged.addListener((changes, area) => {
+      if (area !== "sync") return;
+      const before = targetLang();
+      for (const [k, v] of Object.entries(changes)) settings[k] = v.newValue;
+      applyStyle();
+      if (targetLang() !== before && cues.length) { translations = new Array(cues.length); startTranslation(); }
+      refresh();
+    });
+  }
+
+  store.get().then(v => {
+    settings = { ...DEFAULTS, ...v };
+    applyStyle();
+    window.postMessage({ source: FROM_CONTENT, type: "replay" }, location.origin);
+    refresh();
+  });
+})();

@@ -1,0 +1,117 @@
+{
+ "font": "-apple-system, \"SF Pro Display\", \"Helvetica Neue\", Arial, sans-serif",
+ "messages": {
+  "extName": "Twinsub: Subtitle Ganda untuk YouTube™",
+  "extDescription": "Subtitle ganda di YouTube: setiap kalimat dalam bahasa aslinya dan bahasamu tepat di bawahnya. Gratis, tanpa batas, tanpa login.",
+  "buttonOn": "Subtitle ganda Twinsub: aktif (klik untuk mematikan)",
+  "buttonOff": "Subtitle ganda Twinsub: mati (klik untuk menyalakan)",
+  "noApi": "Twinsub menerjemahkan di komputermu, jadi perlu Chrome 138 atau yang lebih baru di desktop atau laptop.",
+  "unsupported": "Chrome belum bisa menerjemahkan dari $1 ke $2 di perangkat. Subtitle asli tetap ditampilkan.",
+  "needsDownload": "Klik untuk mengunduh paket terjemahan $1 → $2 (sekali saja, beberapa detik)",
+  "downloading": "Mengunduh paket terjemahan $1 → $2… $3%",
+  "noCaptions": "Video ini tidak punya subtitle, jadi tidak ada yang bisa diterjemahkan Twinsub.",
+  "failed": "Terjemahan berhenti: $1",
+  "popupEnabled": "Subtitle ganda di YouTube",
+  "popupTarget": "Terjemahkan ke",
+  "popupTargetAuto": "Bahasa browser ($1)",
+  "popupOrder": "Urutan baris",
+  "popupOrderOriginal": "Asli di atas",
+  "popupOrderTranslation": "Terjemahan di atas",
+  "popupShowOriginal": "Tampilkan asli",
+  "popupShowTranslation": "Tampilkan terjemahan",
+  "popupSize": "Ukuran teks",
+  "popupPosition": "Tinggi dari bawah",
+  "popupHow": "Buka video YouTube apa pun yang punya subtitle. Twinsub menyalakan subtitle dan menambahkan terjemahannya; tombol dua garis di bilah pemutar untuk mematikannya.",
+  "popupPrivacy": "Terjemahan berjalan di komputermu dengan penerjemah bawaan Chrome. Tanpa akun, tanpa server; apa yang kamu tonton tidak keluar dari browser.",
+  "popupPrivacyLink": "Privasi"
+ },
+ "shots": [
+  {
+   "scene": "city",
+   "eyebrow": "Twinsub untuk YouTube",
+   "title": "Pahami setiap kalimat.",
+   "sub": "Subtitle asli, dan bahasamu tepat di bawahnya.",
+   "orig": "The best time to start was yesterday. The next best time is now.",
+   "trans": "Waktu terbaik untuk memulai adalah kemarin. Waktu terbaik berikutnya adalah sekarang.",
+   "chips": [
+    "Gratis & tanpa batas",
+    "Tanpa login",
+    "Diterjemahkan di komputermu"
+   ]
+  },
+  {
+   "scene": "sunset",
+   "eyebrow": "Untuk belajar bahasa",
+   "title": "Belajar dari video yang sudah kamu suka.",
+   "sub": "Dengar suara aslinya, baca teks aslinya, cek artinya. Semua sekaligus.",
+   "orig": "今日はちょっと寄り道してみようか。",
+   "trans": "Bagaimana kalau hari ini kita mampir sebentar?",
+   "callouts": [
+    "Dengar",
+    "Baca",
+    "Paham"
+   ]
+  },
+  {
+   "scene": "studio",
+   "eyebrow": "Terjemahan di perangkat",
+   "title": "Tanpa jeda. Tanpa batas.",
+   "sub": "Setiap baris diterjemahkan di komputermu dalam hitungan milidetik, sebelum kalimatnya selesai diucapkan.",
+   "orig": "이 장면은 꼭 다시 보고 싶어요.",
+   "trans": "Aku ingin menonton adegan ini sekali lagi.",
+   "stat": [
+    "Instan",
+    "per baris, tanpa server di tengah"
+   ]
+  },
+  {
+   "scene": "forest",
+   "eyebrow": "Pengaturan",
+   "title": "Subtitle, sesuai seleramu.",
+   "sub": "Tukar urutan, perbesar teks, naikkan posisinya, atau sembunyikan salah satu baris.",
+   "orig": "On ne voit bien qu'avec le cœur.",
+   "trans": "Hanya dengan hati kita bisa melihat dengan jelas.",
+   "bullets": [
+    "39 bahasa",
+    "Asli atau terjemahan di atas",
+    "Ukuran dan tinggi teks",
+    "Satu tombol di pemutar"
+   ],
+   "popup": true
+  },
+  {
+   "scene": "night",
+   "eyebrow": "Privasi",
+   "title": "Apa yang kamu tonton tetap di komputermu.",
+   "sub": "Tanpa akun, tanpa server, tanpa pelacakan. Twinsub hanya membaca subtitle yang sudah dimuat pemutar.",
+   "orig": "Wir sehen uns morgen am Bahnhof.",
+   "trans": "Sampai ketemu besok di stasiun.",
+   "privacy": [
+    [
+     "Tanpa akun",
+     "Tidak perlu daftar"
+    ],
+    [
+     "Tanpa server",
+     "Terjemahan berjalan di Chrome"
+    ],
+    [
+     "Tanpa pelacakan",
+     "Tanpa statistik, tanpa riwayat"
+    ]
+   ]
+  }
+ ],
+ "promo": {
+  "title": "Twinsub",
+  "sub": "Subtitle ganda YouTube",
+  "tag": "Gratis · Tanpa login"
+ },
+ "marquee": {
+  "title": "Pahami setiap kalimat.",
+  "sub": "Subtitle ganda untuk YouTube. Gratis, tanpa batas, diterjemahkan di komputermu.",
+  "orig": "The best time to start was yesterday. The next best time is now.",
+  "trans": "Waktu terbaik untuk memulai adalah kemarin. Waktu terbaik berikutnya adalah sekarang."
+ },
+ "description": "Tonton video YouTube apa pun dan pahami setiap kalimatnya.\n\nTwinsub menampilkan dua subtitle sekaligus: kalimat aslinya, dan kalimat yang sama dalam bahasamu tepat di bawahnya. Kamu mendengar suara aslinya, membaca kata-kata aslinya, dan tidak ada yang terlewat.\n\nGRATIS, TANPA BATAS, TANPA LOGIN\nTanpa akun, tanpa API key, dan tidak ada layar \"masa uji coba habis\" setelah 15 menit. Pasang, buka video, selesai.\n\nDITERJEMAHKAN DI KOMPUTERMU\nTwinsub memakai penerjemah bawaan Chrome, jadi setiap baris diterjemahkan di perangkatmu dalam hitungan milidetik. Tidak ada yang menunggu server, dan apa yang kamu tonton tidak dikirim ke mana pun.\n\nCOCOK UNTUK BELAJAR BAHASA\nTeks asli di atas, terjemahan di bawah, atau sebaliknya. Kuliah berbahasa Inggris, klip anime Jepang, acara Korea, vlog berbahasa Spanyol: belajar bahasa dari video yang memang kamu suka.\n\nBEKERJA DENGAN SUBTITLE YANG SUDAH ADA\nSubtitle buatan manusia maupun subtitle otomatis YouTube sama-sama didukung. Twinsub menyalakan subtitle, mengikuti bahasa yang kamu pilih di menu CC YouTube, dan tetap berjalan saat kamu pindah dari satu video ke video lain.\n\nSESUAI SELERAMU\n• Terjemahkan ke 39 bahasa, termasuk Indonesia, Inggris, Jepang, Korea, Mandarin, Spanyol, dan Arab\n• Teks asli atau terjemahan di atas\n• Ukuran teks dan tinggi di layar\n• Tampilkan terjemahan saja, atau teks asli saja\n• Satu tombol di bilah pemutar untuk menyalakan atau mematikan\n\nCARA PAKAI\n1. Pasang Twinsub.\n2. Buka video YouTube yang punya subtitle.\n3. Saat pertama kali memakai sebuah pasangan bahasa, klik sekali pada pesan kuning. Chrome mengunduh paket terjemahannya dalam beberapa detik.\n4. Selamat menonton.\n\nButuh Chrome 138 atau yang lebih baru di komputer (Windows, Mac, Linux, atau ChromeOS). Twinsub tidak berafiliasi dengan maupun didukung oleh YouTube atau Google."
+}

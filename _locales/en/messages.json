@@ -1,0 +1,71 @@
+{
+ "extName": {
+  "message": "Twinsub: Dual Subtitles for YouTube™"
+ },
+ "extDescription": {
+  "message": "Dual subtitles for YouTube: every line in the original and in your language. Free, unlimited, no sign-in. Translated on your device."
+ },
+ "buttonOn": {
+  "message": "Twinsub dual subtitles: on (click to turn off)"
+ },
+ "buttonOff": {
+  "message": "Twinsub dual subtitles: off (click to turn on)"
+ },
+ "noApi": {
+  "message": "Twinsub translates on your computer, which needs Chrome 138 or newer on a desktop or laptop."
+ },
+ "unsupported": {
+  "message": "On-device translation from $1 to $2 isn't available in Chrome yet. Showing the original subtitles."
+ },
+ "needsDownload": {
+  "message": "Click to download the $1 → $2 translation pack (one time, a few seconds)"
+ },
+ "downloading": {
+  "message": "Downloading the $1 → $2 translation pack… $3%"
+ },
+ "noCaptions": {
+  "message": "This video has no subtitles, so Twinsub has nothing to translate."
+ },
+ "failed": {
+  "message": "Translation stopped: $1"
+ },
+ "popupEnabled": {
+  "message": "Dual subtitles on YouTube"
+ },
+ "popupTarget": {
+  "message": "Translate into"
+ },
+ "popupTargetAuto": {
+  "message": "My browser language ($1)"
+ },
+ "popupOrder": {
+  "message": "Line order"
+ },
+ "popupOrderOriginal": {
+  "message": "Original on top"
+ },
+ "popupOrderTranslation": {
+  "message": "Translation on top"
+ },
+ "popupShowOriginal": {
+  "message": "Show original"
+ },
+ "popupShowTranslation": {
+  "message": "Show translation"
+ },
+ "popupSize": {
+  "message": "Text size"
+ },
+ "popupPosition": {
+  "message": "Height above the bottom"
+ },
+ "popupHow": {
+  "message": "Open any YouTube video with subtitles. Twinsub turns them on and adds the translation; the button with two lines in the player bar switches it off."
+ },
+ "popupPrivacy": {
+  "message": "Translation runs on your computer with Chrome's built-in translator. No account, no server, nothing about what you watch leaves your browser."
+ },
+ "popupPrivacyLink": {
+  "message": "Privacy"
+ }
+}

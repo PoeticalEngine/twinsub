@@ -1,0 +1,71 @@
+{
+ "extName": {
+  "message": "Twinsub: Subtitle Ganda untuk YouTube™"
+ },
+ "extDescription": {
+  "message": "Subtitle ganda di YouTube: setiap kalimat dalam bahasa aslinya dan bahasamu tepat di bawahnya. Gratis, tanpa batas, tanpa login."
+ },
+ "buttonOn": {
+  "message": "Subtitle ganda Twinsub: aktif (klik untuk mematikan)"
+ },
+ "buttonOff": {
+  "message": "Subtitle ganda Twinsub: mati (klik untuk menyalakan)"
+ },
+ "noApi": {
+  "message": "Twinsub menerjemahkan di komputermu, jadi perlu Chrome 138 atau yang lebih baru di desktop atau laptop."
+ },
+ "unsupported": {
+  "message": "Chrome belum bisa menerjemahkan dari $1 ke $2 di perangkat. Subtitle asli tetap ditampilkan."
+ },
+ "needsDownload": {
+  "message": "Klik untuk mengunduh paket terjemahan $1 → $2 (sekali saja, beberapa detik)"
+ },
+ "downloading": {
+  "message": "Mengunduh paket terjemahan $1 → $2… $3%"
+ },
+ "noCaptions": {
+  "message": "Video ini tidak punya subtitle, jadi tidak ada yang bisa diterjemahkan Twinsub."
+ },
+ "failed": {
+  "message": "Terjemahan berhenti: $1"
+ },
+ "popupEnabled": {
+  "message": "Subtitle ganda di YouTube"
+ },
+ "popupTarget": {
+  "message": "Terjemahkan ke"
+ },
+ "popupTargetAuto": {
+  "message": "Bahasa browser ($1)"
+ },
+ "popupOrder": {
+  "message": "Urutan baris"
+ },
+ "popupOrderOriginal": {
+  "message": "Asli di atas"
+ },
+ "popupOrderTranslation": {
+  "message": "Terjemahan di atas"
+ },
+ "popupShowOriginal": {
+  "message": "Tampilkan asli"
+ },
+ "popupShowTranslation": {
+  "message": "Tampilkan terjemahan"
+ },
+ "popupSize": {
+  "message": "Ukuran teks"
+ },
+ "popupPosition": {
+  "message": "Tinggi dari bawah"
+ },
+ "popupHow": {
+  "message": "Buka video YouTube apa pun yang punya subtitle. Twinsub menyalakan subtitle dan menambahkan terjemahannya; tombol dua garis di bilah pemutar untuk mematikannya."
+ },
+ "popupPrivacy": {
+  "message": "Terjemahan berjalan di komputermu dengan penerjemah bawaan Chrome. Tanpa akun, tanpa server; apa yang kamu tonton tidak keluar dari browser."
+ },
+ "popupPrivacyLink": {
+  "message": "Privasi"
+ }
+}
