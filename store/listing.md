@@ -84,4 +84,4 @@ Twinsub 用的是 Chrome 自带的翻译，每一句都在你的电脑上翻译�
 - Host permissions (content scripts on https://www.youtube.com/*): `Twinsub's only job happens inside YouTube's video player: it reads the captions the player has already downloaded, translates them on the device, and draws the second subtitle line over the video. It runs on no other site and makes no network requests of its own.`
 - Remote code: No.
 - Data usage: nothing collected; tick all three certifications.
-- Privacy policy URL: PRIVACY.md, once published at a public URL (the popup links to github.com/poeticalengine/twinsub/blob/main/PRIVACY.md).
+- Privacy policy URL: https://github.com/poeticalengine/twinsub/blob/main/PRIVACY.md
