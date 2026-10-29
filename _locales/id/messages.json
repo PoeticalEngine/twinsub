@@ -130,5 +130,59 @@
  },
  "close": {
   "message": "Tutup"
+ },
+ "remainingPro": {
+  "message": "Sisa $1 penjelasan bulan ini"
+ },
+ "quotaTitlePro": {
+  "message": "Jatah $1 penjelasan bulan ini sudah habis"
+ },
+ "quotaBodyPro": {
+  "message": "Kembali tanggal 1 bulan depan."
+ },
+ "quotaUpgrade": {
+  "message": "Ambil Pro: 1.000 per bulan, $$4,99"
+ },
+ "quotaRestoreHint": {
+  "message": "Sudah Pro? Masukkan kodemu di menu Twinsub (ikon ekstensi)."
+ },
+ "proPitch": {
+  "message": "1.000 penjelasan per bulan, bukan 5 per hari. $$4,99 per bulan, bisa berhenti kapan saja."
+ },
+ "proUpgrade": {
+  "message": "Ambil Pro"
+ },
+ "proHave": {
+  "message": "Sudah Pro? Masukkan kode"
+ },
+ "proApply": {
+  "message": "Pakai"
+ },
+ "proBadCode": {
+  "message": "Kode itu tidak aktif. Periksa lagi, atau kirim email ke hello@poeticalengine.com."
+ },
+ "proTooMany": {
+  "message": "Kode ini sudah dipakai di 5 komputer."
+ },
+ "proActive": {
+  "message": "Sisa $1 penjelasan bulan ini"
+ },
+ "proCodeLabel": {
+  "message": "Kode Pro-mu, untuk komputermu yang lain:"
+ },
+ "proCopy": {
+  "message": "Salin"
+ },
+ "proCopied": {
+  "message": "Tersalin"
+ },
+ "proManage": {
+  "message": "Kelola langganan"
+ },
+ "proEnds": {
+  "message": "Pro berakhir pada $1 dan tidak diperpanjang."
+ },
+ "proThanks": {
+  "message": "Pro aktif. Terima kasih!"
  }
 }

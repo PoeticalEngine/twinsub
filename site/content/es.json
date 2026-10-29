@@ -24,7 +24,7 @@
   "mark": "el Uber de pasear perros",
   "gist": "Una app que conecta al momento a dueños de perros con paseadores, como Uber conecta pasajeros y conductores. Dicho con algo de autoironía.",
   "background": "«El Uber de X» fue la frase de manual de las startups en los 2010. Se usó tanto que hoy suena a burla de uno mismo.",
-  "quota": "5 explicaciones gratis al día. Los subtítulos bilingües siempre son gratis.",
+  "quota": "5 explicaciones gratis al día. Pro: 1.000 al mes por 4,99 $. Los subtítulos bilingües siempre son gratis.",
   "labels": {
    "gist": "Qué dice",
    "background": "Contexto"
@@ -45,6 +45,10 @@
    [
     "¿Twinsub es gratis?",
     "Sí. Los subtítulos bilingües son gratis e ilimitados, sin cuenta ni periodo de prueba. Las explicaciones son gratis 5 veces al día."
+   ],
+   [
+    "¿Hay un plan de pago?",
+    "Twinsub Pro te da 1.000 explicaciones al mes en vez de 5 al día, por 4,99 $ al mes. Cancela cuando quieras desde el menú de Twinsub. Los subtítulos bilingües siguen siendo gratis e ilimitados en cualquier caso."
    ],
    [
     "¿Cómo se traduce?",
@@ -74,5 +78,12 @@
   "disclaimer": "YouTube es una marca de Google LLC. Twinsub no está afiliado ni respaldado por YouTube ni Google.",
   "terms": "Términos"
  },
- "langName": "Español"
+ "langName": "Español",
+ "pro": {
+  "title": "Gracias por hacerte Pro",
+  "ok": "Twinsub Pro se activa en unos segundos. Vuelve a YouTube y sigue viendo.",
+  "code": "Tu código Pro está en el menú de Twinsub (el icono de la extensión). Introdúcelo en tus otros ordenadores, hasta 5.",
+  "fail": "El pago no se completó y no se cobró nada. Puedes volver a intentarlo desde el menú de Twinsub.",
+  "back": "Volver a YouTube"
+ }
 }

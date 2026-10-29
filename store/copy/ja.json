@@ -44,7 +44,25 @@
   "errBusy": "いま混み合っています。1分ほどしてからもう一度お試しください。",
   "retry": "もう一度",
   "thinking": "考え中…",
-  "close": "閉じる"
+  "close": "閉じる",
+  "remainingPro": "今月の残り $1 回",
+  "quotaTitlePro": "今月の $1 回を使い切りました",
+  "quotaBodyPro": "来月 1 日に戻ります。",
+  "quotaUpgrade": "Pro にする：月 1,000 回 $$4.99",
+  "quotaRestoreHint": "Pro をお持ちなら、Twinsub メニュー（拡張機能アイコン）でコードを入力してください。",
+  "proPitch": "1 日 5 回ではなく、月 1,000 回の解説。月 $$4.99、いつでも解約できます。",
+  "proUpgrade": "Pro にする",
+  "proHave": "Pro をお持ちの方はコードを入力",
+  "proApply": "使う",
+  "proBadCode": "このコードは有効ではありません。確認するか hello@poeticalengine.com までご連絡ください。",
+  "proTooMany": "このコードはすでに 5 台のパソコンで使われています。",
+  "proActive": "今月の残り $1 回",
+  "proCodeLabel": "Pro コード（ほかのパソコンで使えます）：",
+  "proCopy": "コピー",
+  "proCopied": "コピーしました",
+  "proManage": "サブスクリプションの管理",
+  "proEnds": "Pro は $1 に終了し、更新されません。",
+  "proThanks": "Pro が有効になりました。ありがとうございます！"
  },
  "shots": [
   {

@@ -24,7 +24,7 @@
   "mark": "das Uber fürs Gassigehen",
   "gist": "Eine App, die Hundebesitzer und Gassigeher auf Abruf zusammenbringt, so wie Uber Fahrgäste und Fahrer. Mit etwas Selbstironie gesagt.",
   "background": "„Das Uber für X“ war in den 2010ern der Standard-Pitch von Start-ups. So abgenutzt, dass es heute wie ein Witz über sich selbst klingt.",
-  "quota": "5 kostenlose Erklärungen pro Tag. Zweisprachige Untertitel sind immer kostenlos.",
+  "quota": "5 kostenlose Erklärungen pro Tag. Pro: 1.000 im Monat für 4,99 $. Zweisprachige Untertitel sind immer kostenlos.",
   "labels": {
    "gist": "Was gemeint ist",
    "background": "Hintergrund"
@@ -45,6 +45,10 @@
    [
     "Ist Twinsub kostenlos?",
     "Ja. Zweisprachige Untertitel sind kostenlos und unbegrenzt, ohne Konto und ohne Testphase. Erklärungen sind 5-mal am Tag kostenlos."
+   ],
+   [
+    "Gibt es ein Bezahlangebot?",
+    "Twinsub Pro bietet 1.000 Erklärungen im Monat statt 5 am Tag, für 4,99 $ im Monat. Jederzeit im Twinsub-Menü kündbar. Zweisprachige Untertitel bleiben in jedem Fall kostenlos und unbegrenzt."
    ],
    [
     "Wie wird übersetzt?",
@@ -74,5 +78,12 @@
   "disclaimer": "YouTube ist eine Marke der Google LLC. Twinsub steht in keiner Verbindung zu YouTube oder Google und wird von ihnen nicht unterstützt.",
   "terms": "Nutzungsbedingungen"
  },
- "langName": "Deutsch"
+ "langName": "Deutsch",
+ "pro": {
+  "title": "Danke für dein Pro-Upgrade",
+  "ok": "Twinsub Pro ist in wenigen Sekunden aktiv. Geh zurück zu YouTube und schau weiter.",
+  "code": "Deinen Pro-Code findest du im Twinsub-Menü (Erweiterungssymbol). Gib ihn auf deinen anderen Computern ein, bis zu 5.",
+  "fail": "Die Zahlung ist nicht durchgegangen, es wurde nichts abgebucht. Du kannst es im Twinsub-Menü erneut versuchen.",
+  "back": "Zurück zu YouTube"
+ }
 }

@@ -64,7 +64,7 @@ var TwinsubExplain = (() => {
     panel.querySelector(".twinsub-panel-hint").textContent = api.t(view.lines.some(l => l.tr) ? "panelHint" : "panelHintNoTr");
     renderLines();
     setFooter(null);
-    chrome.runtime.sendMessage({ type: "quota" }).then(q => { if (q && view) setFooter(q.remaining); }, () => {});
+    chrome.runtime.sendMessage({ type: "quota" }).then(q => { if (q && view) { view.quota = q; setFooter(q.remaining); } }, () => {});
   }
 
   function close() {
@@ -105,7 +105,8 @@ var TwinsubExplain = (() => {
 
   function setFooter(remaining) {
     const q = panel.querySelector(".twinsub-panel-quota");
-    q.textContent = remaining === null || remaining === undefined ? api.t("footerHint") : api.t("remaining", String(remaining));
+    q.textContent = remaining === null || remaining === undefined ? api.t("footerHint")
+      : api.t(view?.quota?.plan === "pro" ? "remainingPro" : "remaining", String(remaining));
   }
 
   function renderLines() {
@@ -207,6 +208,7 @@ var TwinsubExplain = (() => {
         a.status = "error";
         a.error = m.status === 429 ? "quota" : m.status === 503 ? "busy" : "failed";
         a.limit = m.limit;
+        a.plan = m.plan;
         if (m.status === 429) setFooter(0);
         port.disconnect();
       }
@@ -249,7 +251,17 @@ var TwinsubExplain = (() => {
     if (a.status === "error") {
       if (a.error === "quota") {
         box.classList.add("twinsub-ans-quota");
+        if (a.plan === "pro") {
+          box.append(el("h5", "", api.t("quotaTitlePro", String(a.limit || 1000))), el("p", "", api.t("quotaBodyPro")));
+          return box;
+        }
         box.append(el("h5", "", api.t("quotaTitle", String(a.limit || 5))), el("p", "", api.t("quotaBody")));
+        // Pro is offered only once the server can sell it.
+        if (view.quota?.proReady) {
+          const up = el("button", "twinsub-btn", api.t("quotaUpgrade")); up.type = "button";
+          up.addEventListener("click", () => chrome.runtime.sendMessage({ type: "checkout" }).catch(() => {}));
+          box.append(up, el("p", "twinsub-ans-note", api.t("quotaRestoreHint")));
+        }
         return box;
       }
       const sections = parse(a.raw);

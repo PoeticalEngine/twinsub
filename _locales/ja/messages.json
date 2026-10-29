@@ -130,5 +130,59 @@
  },
  "close": {
   "message": "閉じる"
+ },
+ "remainingPro": {
+  "message": "今月の残り $1 回"
+ },
+ "quotaTitlePro": {
+  "message": "今月の $1 回を使い切りました"
+ },
+ "quotaBodyPro": {
+  "message": "来月 1 日に戻ります。"
+ },
+ "quotaUpgrade": {
+  "message": "Pro にする：月 1,000 回 $$4.99"
+ },
+ "quotaRestoreHint": {
+  "message": "Pro をお持ちなら、Twinsub メニュー（拡張機能アイコン）でコードを入力してください。"
+ },
+ "proPitch": {
+  "message": "1 日 5 回ではなく、月 1,000 回の解説。月 $$4.99、いつでも解約できます。"
+ },
+ "proUpgrade": {
+  "message": "Pro にする"
+ },
+ "proHave": {
+  "message": "Pro をお持ちの方はコードを入力"
+ },
+ "proApply": {
+  "message": "使う"
+ },
+ "proBadCode": {
+  "message": "このコードは有効ではありません。確認するか hello@poeticalengine.com までご連絡ください。"
+ },
+ "proTooMany": {
+  "message": "このコードはすでに 5 台のパソコンで使われています。"
+ },
+ "proActive": {
+  "message": "今月の残り $1 回"
+ },
+ "proCodeLabel": {
+  "message": "Pro コード（ほかのパソコンで使えます）："
+ },
+ "proCopy": {
+  "message": "コピー"
+ },
+ "proCopied": {
+  "message": "コピーしました"
+ },
+ "proManage": {
+  "message": "サブスクリプションの管理"
+ },
+ "proEnds": {
+  "message": "Pro は $1 に終了し、更新されません。"
+ },
+ "proThanks": {
+  "message": "Pro が有効になりました。ありがとうございます！"
  }
 }

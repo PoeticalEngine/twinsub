@@ -44,7 +44,25 @@
   "errBusy": "지금 요청이 많아요. 1분 뒤에 다시 시도해 주세요.",
   "retry": "다시 시도",
   "thinking": "생각 중…",
-  "close": "닫기"
+  "close": "닫기",
+  "remainingPro": "이번 달 $1번 남음",
+  "quotaTitlePro": "이번 달 $1번을 다 썼어요",
+  "quotaBodyPro": "다음 달 1일에 다시 채워져요.",
+  "quotaUpgrade": "Pro로 업그레이드: 월 1,000번, $$4.99",
+  "quotaRestoreHint": "이미 Pro인가요? Twinsub 메뉴(확장 프로그램 아이콘)에서 코드를 입력하세요.",
+  "proPitch": "하루 5번 대신 한 달에 1,000번 설명. 월 $$4.99, 언제든 해지할 수 있어요.",
+  "proUpgrade": "Pro 시작하기",
+  "proHave": "이미 Pro인가요? 코드 입력",
+  "proApply": "사용",
+  "proBadCode": "유효하지 않은 코드예요. 확인하거나 hello@poeticalengine.com으로 문의하세요.",
+  "proTooMany": "이 코드는 이미 컴퓨터 5대에서 쓰고 있어요.",
+  "proActive": "이번 달 $1번 남음",
+  "proCodeLabel": "내 Pro 코드 (다른 컴퓨터에서 사용):",
+  "proCopy": "복사",
+  "proCopied": "복사됨",
+  "proManage": "구독 관리",
+  "proEnds": "Pro는 $1에 끝나고 갱신되지 않아요.",
+  "proThanks": "Pro가 켜졌어요. 고마워요!"
  },
  "shots": [
   {

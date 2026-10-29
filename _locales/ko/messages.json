@@ -130,5 +130,59 @@
  },
  "close": {
   "message": "닫기"
+ },
+ "remainingPro": {
+  "message": "이번 달 $1번 남음"
+ },
+ "quotaTitlePro": {
+  "message": "이번 달 $1번을 다 썼어요"
+ },
+ "quotaBodyPro": {
+  "message": "다음 달 1일에 다시 채워져요."
+ },
+ "quotaUpgrade": {
+  "message": "Pro로 업그레이드: 월 1,000번, $$4.99"
+ },
+ "quotaRestoreHint": {
+  "message": "이미 Pro인가요? Twinsub 메뉴(확장 프로그램 아이콘)에서 코드를 입력하세요."
+ },
+ "proPitch": {
+  "message": "하루 5번 대신 한 달에 1,000번 설명. 월 $$4.99, 언제든 해지할 수 있어요."
+ },
+ "proUpgrade": {
+  "message": "Pro 시작하기"
+ },
+ "proHave": {
+  "message": "이미 Pro인가요? 코드 입력"
+ },
+ "proApply": {
+  "message": "사용"
+ },
+ "proBadCode": {
+  "message": "유효하지 않은 코드예요. 확인하거나 hello@poeticalengine.com으로 문의하세요."
+ },
+ "proTooMany": {
+  "message": "이 코드는 이미 컴퓨터 5대에서 쓰고 있어요."
+ },
+ "proActive": {
+  "message": "이번 달 $1번 남음"
+ },
+ "proCodeLabel": {
+  "message": "내 Pro 코드 (다른 컴퓨터에서 사용):"
+ },
+ "proCopy": {
+  "message": "복사"
+ },
+ "proCopied": {
+  "message": "복사됨"
+ },
+ "proManage": {
+  "message": "구독 관리"
+ },
+ "proEnds": {
+  "message": "Pro는 $1에 끝나고 갱신되지 않아요."
+ },
+ "proThanks": {
+  "message": "Pro가 켜졌어요. 고마워요!"
  }
 }

@@ -117,6 +117,7 @@ html.twinsub-on #movie_player .ytp-caption-window-container { display: none !imp
 #movie_player .twinsub-mark-on { background: #ffe27a; color: #111; }
 #movie_player .twinsub-btn { border: 0; border-radius: 9px; padding: 8px 12px; background: #ffe27a; color: #111; font: 600 14px/1 Roboto, "PingFang SC", Arial, sans-serif; cursor: pointer; }
 #movie_player .twinsub-btn:hover { background: #ffd54a; }
+#movie_player .twinsub-ans-quota .twinsub-btn { margin-top: 10px; }
 #movie_player .twinsub-btn-ghost { background: rgba(255, 255, 255, 0.08); color: #ddd; }
 #movie_player .twinsub-btn-ghost:hover { background: rgba(255, 255, 255, 0.14); }
 #movie_player .twinsub-explain-btn { margin-top: 10px; }

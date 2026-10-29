@@ -6,7 +6,8 @@
   "account_id": "a8a946d0976509a9dc2be14db6964c50",
   "routes": [{ "pattern": "api.poeticalengine.com", "custom_domain": true }],
   "d1_databases": [{ "binding": "DB", "database_name": "twinsub", "database_id": "d9b57978-4c87-467d-9afc-c6d35fd7eb75", "migrations_dir": "migrations" }],
-  "vars": { "MODEL": "claude-haiku-5-5", "EFFORT": "low", "FREE_PER_DAY": "5", "INSTALLS_PER_IP": "4", "GLOBAL_PER_DAY": "3000" },
+  "vars": { "MODEL": "claude-haiku-5-5", "EFFORT": "low", "FREE_PER_DAY": "5", "INSTALLS_PER_IP": "4", "GLOBAL_PER_DAY": "3000",
+    "PRO_PER_MONTH": "1000", "DODO_MODE": "live", "DODO_PRODUCT_TEST": "pdt_0NqlIEryNBybmf6x77xt1", "DODO_PRODUCT_LIVE": "pdt_0NqlYC0tx6wHyBUII4FEK", "SITE": "https://twinsub.poeticalengine.com" },
   "observability": { "enabled": true }
-  // Secret: ANTHROPIC_API_KEY
+  // Secrets: ANTHROPIC_API_KEY; DODO_API_KEY + DODO_WEBHOOK_SECRET (test mode), DODO_LIVE_API_KEY + DODO_LIVE_WEBHOOK_SECRET (live)
 }

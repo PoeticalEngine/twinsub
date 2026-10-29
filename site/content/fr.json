@@ -24,7 +24,7 @@
   "mark": "l'Uber de la promenade de chiens",
   "gist": "Une appli qui met en relation, à la demande, propriétaires de chiens et promeneurs, comme Uber avec passagers et chauffeurs. Dit avec un brin d'autodérision.",
   "background": "« L'Uber de X » était le pitch tout fait des start-up des années 2010. Tellement rabâché qu'aujourd'hui, le dire sonne comme une moquerie envers soi-même.",
-  "quota": "5 explications gratuites par jour. Les doubles sous-titres restent toujours gratuits.",
+  "quota": "5 explications gratuites par jour. Pro : 1 000 par mois pour 4,99 $. Les doubles sous-titres restent gratuits.",
   "labels": {
    "gist": "Ce que ça veut dire",
    "background": "Contexte"
@@ -45,6 +45,10 @@
    [
     "Twinsub est-il gratuit ?",
     "Oui. Les doubles sous-titres sont gratuits et illimités, sans compte ni période d'essai. Les explications sont gratuites 5 fois par jour."
+   ],
+   [
+    "Y a-t-il une offre payante ?",
+    "Twinsub Pro donne 1 000 explications par mois au lieu de 5 par jour, pour 4,99 $ par mois. Résiliable à tout moment depuis le menu Twinsub. Les doubles sous-titres restent gratuits et illimités dans tous les cas."
    ],
    [
     "Comment se fait la traduction ?",
@@ -74,5 +78,12 @@
   "disclaimer": "YouTube est une marque de Google LLC. Twinsub n'est ni affilié à YouTube ou Google, ni approuvé par eux.",
   "terms": "Conditions"
  },
- "langName": "Français"
+ "langName": "Français",
+ "pro": {
+  "title": "Merci d'être passé à Pro",
+  "ok": "Twinsub Pro s'active en quelques secondes. Retournez sur YouTube et reprenez votre vidéo.",
+  "code": "Votre code Pro est dans le menu Twinsub (l'icône de l'extension). Saisissez-le sur vos autres ordinateurs, jusqu'à 5.",
+  "fail": "Le paiement n'a pas abouti, rien n'a été débité. Vous pouvez réessayer depuis le menu Twinsub.",
+  "back": "Retour sur YouTube"
+ }
 }

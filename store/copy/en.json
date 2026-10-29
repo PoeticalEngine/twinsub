@@ -44,7 +44,25 @@
   "errBusy": "Lots of people are asking right now. Try again in a minute.",
   "retry": "Try again",
   "thinking": "Thinking…",
-  "close": "Close"
+  "close": "Close",
+  "remainingPro": "$1 explanations left this month",
+  "quotaTitlePro": "That's this month's $1 explanations",
+  "quotaBodyPro": "They come back on the 1st of next month.",
+  "quotaUpgrade": "Get Pro: 1,000 a month for $$4.99",
+  "quotaRestoreHint": "Already have Pro? Enter your code in the Twinsub menu (the extension icon).",
+  "proPitch": "1,000 explanations a month instead of 5 a day. $$4.99 a month, cancel anytime.",
+  "proUpgrade": "Get Pro",
+  "proHave": "Already have Pro? Enter your code",
+  "proApply": "Use code",
+  "proBadCode": "That code isn't active. Check it, or write to hello@poeticalengine.com.",
+  "proTooMany": "This code is already used on 5 computers.",
+  "proActive": "$1 explanations left this month",
+  "proCodeLabel": "Your Pro code, for your other computers:",
+  "proCopy": "Copy",
+  "proCopied": "Copied",
+  "proManage": "Manage subscription",
+  "proEnds": "Pro ends on $1 and won't renew.",
+  "proThanks": "Pro is on. Thank you!"
  },
  "shots": [
   {

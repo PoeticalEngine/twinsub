@@ -44,7 +44,25 @@
   "errBusy": "Hay mucha gente preguntando ahora. Prueba otra vez en un minuto.",
   "retry": "Reintentar",
   "thinking": "Pensando…",
-  "close": "Cerrar"
+  "close": "Cerrar",
+  "remainingPro": "Te quedan $1 explicaciones este mes",
+  "quotaTitlePro": "Ya usaste las $1 explicaciones de este mes",
+  "quotaBodyPro": "Vuelven el día 1 del mes que viene.",
+  "quotaUpgrade": "Hazte Pro: 1.000 al mes por 4,99 $",
+  "quotaRestoreHint": "¿Ya eres Pro? Introduce tu código en el menú de Twinsub (el icono de la extensión).",
+  "proPitch": "1.000 explicaciones al mes en vez de 5 al día. 4,99 $ al mes, cancela cuando quieras.",
+  "proUpgrade": "Hazte Pro",
+  "proHave": "¿Ya eres Pro? Introduce tu código",
+  "proApply": "Usar",
+  "proBadCode": "Ese código no está activo. Revísalo o escribe a hello@poeticalengine.com.",
+  "proTooMany": "Este código ya se usa en 5 ordenadores.",
+  "proActive": "Te quedan $1 explicaciones este mes",
+  "proCodeLabel": "Tu código Pro, para tus otros ordenadores:",
+  "proCopy": "Copiar",
+  "proCopied": "Copiado",
+  "proManage": "Gestionar suscripción",
+  "proEnds": "Pro termina el $1 y no se renovará.",
+  "proThanks": "Pro activado. ¡Gracias!"
  },
  "shots": [
   {

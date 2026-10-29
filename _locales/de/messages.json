@@ -130,5 +130,59 @@
  },
  "close": {
   "message": "Schließen"
+ },
+ "remainingPro": {
+  "message": "Noch $1 Erklärungen diesen Monat"
+ },
+ "quotaTitlePro": {
+  "message": "Die $1 Erklärungen für diesen Monat sind aufgebraucht"
+ },
+ "quotaBodyPro": {
+  "message": "Am 1. des nächsten Monats gibt es neue."
+ },
+ "quotaUpgrade": {
+  "message": "Pro holen: 1.000 im Monat für 4,99 $"
+ },
+ "quotaRestoreHint": {
+  "message": "Schon Pro? Gib deinen Code im Twinsub-Menü ein (Erweiterungssymbol)."
+ },
+ "proPitch": {
+  "message": "1.000 Erklärungen im Monat statt 5 am Tag. 4,99 $ im Monat, jederzeit kündbar."
+ },
+ "proUpgrade": {
+  "message": "Pro holen"
+ },
+ "proHave": {
+  "message": "Schon Pro? Code eingeben"
+ },
+ "proApply": {
+  "message": "Einlösen"
+ },
+ "proBadCode": {
+  "message": "Dieser Code ist nicht aktiv. Prüf ihn oder schreib an hello@poeticalengine.com."
+ },
+ "proTooMany": {
+  "message": "Dieser Code wird schon auf 5 Computern genutzt."
+ },
+ "proActive": {
+  "message": "Noch $1 Erklärungen diesen Monat"
+ },
+ "proCodeLabel": {
+  "message": "Dein Pro-Code für deine anderen Computer:"
+ },
+ "proCopy": {
+  "message": "Kopieren"
+ },
+ "proCopied": {
+  "message": "Kopiert"
+ },
+ "proManage": {
+  "message": "Abo verwalten"
+ },
+ "proEnds": {
+  "message": "Pro endet am $1 und verlängert sich nicht."
+ },
+ "proThanks": {
+  "message": "Pro ist aktiv. Danke!"
  }
 }

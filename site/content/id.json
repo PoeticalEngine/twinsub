@@ -24,7 +24,7 @@
   "mark": "Uber-nya jasa ajak jalan anjing",
   "gist": "Aplikasi yang langsung mempertemukan pemilik anjing dengan pengajak jalan, seperti Uber mempertemukan penumpang dan sopir. Diucapkan dengan sedikit menertawakan diri sendiri.",
   "background": "\"Uber-nya X\" adalah jargon wajib startup era 2010-an. Saking seringnya dipakai, sekarang terdengar seperti mengejek diri sendiri.",
-  "quota": "5 penjelasan gratis per hari. Subtitle ganda selalu gratis.",
+  "quota": "5 penjelasan gratis per hari. Pro: 1.000 per bulan seharga $4,99. Subtitle ganda selalu gratis.",
   "labels": {
    "gist": "Maksudnya",
    "background": "Latar belakang"
@@ -45,6 +45,10 @@
    [
     "Apakah Twinsub gratis?",
     "Ya. Subtitle ganda gratis dan tanpa batas, tanpa akun dan tanpa masa uji coba. Penjelasan gratis 5 kali sehari."
+   ],
+   [
+    "Apakah ada paket berbayar?",
+    "Twinsub Pro memberi 1.000 penjelasan per bulan, bukan 5 per hari, seharga $4,99 per bulan. Bisa berhenti kapan saja dari menu Twinsub. Subtitle ganda tetap gratis dan tanpa batas."
    ],
    [
     "Bagaimana terjemahannya dibuat?",
@@ -74,5 +78,12 @@
   "disclaimer": "YouTube adalah merek dagang Google LLC. Twinsub tidak berafiliasi dengan atau didukung oleh YouTube maupun Google.",
   "terms": "Ketentuan"
  },
- "langName": "Bahasa Indonesia"
+ "langName": "Bahasa Indonesia",
+ "pro": {
+  "title": "Terima kasih sudah upgrade ke Pro",
+  "ok": "Twinsub Pro aktif dalam beberapa detik. Kembali ke YouTube dan lanjutkan menonton.",
+  "code": "Kode Pro-mu ada di menu Twinsub (ikon ekstensi). Masukkan di komputermu yang lain, sampai 5.",
+  "fail": "Pembayaran tidak berhasil, tidak ada yang ditagih. Kamu bisa mencoba lagi dari menu Twinsub.",
+  "back": "Kembali ke YouTube"
+ }
 }

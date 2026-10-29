@@ -243,6 +243,17 @@ function terms() {
     + chrome(l, l) + `<main class="wrap doc">${markdown(termsMd)}</main>` + footer(l);
 }
 
+// Where Dodo sends the subscriber after checkout (it adds ?status=); not indexed.
+function proPage(l) {
+  const p = l.c.pro;
+  return head({ l, title: `${p.title} · Twinsub`, description: p.ok, url: `${l.url}pro/`, og: `${ORIGIN}/img/${l.key}/og.jpg` })
+    .replace("<head>", '<head>\n<meta name="robots" content="noindex">')
+    + chrome(l, l) + `<main class="wrap hero"><h1 id="t">${esc(p.title)}</h1><p class="sub" id="m">${esc(p.ok)}</p><p class="sub" id="c">${esc(p.code)}</p>
+<a class="cta" href="https://www.youtube.com/">${esc(p.back)}</a></main>
+<script>if(/^(failed|cancelled)$/.test(new URLSearchParams(location.search).get("status")||"")){document.getElementById("t").textContent="Twinsub Pro";document.getElementById("m").textContent=${JSON.stringify(p.fail).replace(/</g, "\\u003c")};document.getElementById("c").remove();}</script>`
+    + footer(l);
+}
+
 function notFound() {
   const l = LOCALES[0];
   return head({ l, title: "Not found · Twinsub", description: "This page doesn't exist.", url: `${ORIGIN}/`, og: `${ORIGIN}/img/en/og.jpg` })
@@ -269,7 +280,7 @@ function llms() {
 > Twinsub is a free Chrome extension that shows dual subtitles on YouTube: the original subtitle line and a translation into the viewer's language right under it. Translation runs on the viewer's own computer with Chrome's built-in Translator (Chrome 138+), so it is free and unlimited, with no account. A "Didn't catch that?" panel lets the viewer mark part of a translated line and get an AI explanation of the original words: meaning, idioms, field terms, cultural background and memes.
 
 Key facts:
-- Price: free. Dual subtitles are unlimited. AI explanations: 5 free per day.
+- Price: free. Dual subtitles are unlimited. AI explanations: 5 free per day; Twinsub Pro gives 1,000 a month for US$4.99/month, no account needed.
 - Works on: youtube.com in Chrome 138 or newer on Windows, macOS, Linux and ChromeOS.
 - Subtitles: hand-made and auto-generated tracks; auto-generated captions are regrouped into whole sentences before translating.
 - Target languages: 39, including English, Chinese (Simplified and Traditional), Japanese, Korean, Spanish, French, German, Portuguese, Russian, Arabic, Hindi, Indonesian and Vietnamese.
@@ -327,7 +338,10 @@ ${privacyMd.replace(/^# /m, "## ")}
 fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 images();
-for (const l of LOCALES) write(path.join(l.dir, "index.html"), page(l));
+for (const l of LOCALES) {
+  write(path.join(l.dir, "index.html"), page(l));
+  write(path.join(l.dir, "pro", "index.html"), proPage(l));
+}
 write("privacy/index.html", privacy());
 write("terms/index.html", terms());
 write("404.html", notFound());

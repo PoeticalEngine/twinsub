@@ -1,5 +1,5 @@
 // Twinsub service worker: the only place that talks to api.poeticalengine.com, and only when the viewer clicks
-// Explain. Answers stream back to the content script over a port as they arrive.
+// Explain or opens the Pro part of the menu. Answers stream back to the content script over a port as they arrive.
 const API = "https://api.poeticalengine.com";
 
 async function installId() {
@@ -10,12 +10,24 @@ async function installId() {
   return id;
 }
 
+const post = (path, body) => fetch(API + path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+
+// quota: the plan and what is left. checkout / portal: open Dodo's page in a new tab. restore: link this install to a Pro code.
 chrome.runtime.onMessage.addListener((msg, _sender, reply) => {
-  if (msg?.type !== "quota") return;
-  installId()
-    .then(id => fetch(`${API}/v1/quota?install=${id}`))
-    .then(r => r.ok ? r.json() : null)
-    .then(reply, () => reply(null));
+  const run = {
+    quota: id => fetch(`${API}/v1/quota?install=${id}`).then(r => r.ok ? r.json() : null),
+    checkout: id => post("/v1/checkout", { install: id, lang: chrome.i18n.getUILanguage() }).then(r => r.json()).then(b => {
+      if (b.url) chrome.tabs.create({ url: b.url });
+      return { ok: !!b.url };
+    }),
+    portal: id => fetch(`${API}/v1/portal?install=${id}`).then(r => r.json()).then(b => {
+      if (b.url) chrome.tabs.create({ url: b.url });
+      return { ok: !!b.url };
+    }),
+    restore: id => post("/v1/restore", { install: id, code: msg.code }).then(r => r.json()),
+  }[msg?.type];
+  if (!run) return;
+  installId().then(run).then(reply, () => reply(null));
   return true;
 });
 
@@ -35,7 +47,7 @@ chrome.runtime.onConnect.addListener(port => {
       const remaining = res.headers.get("X-Twinsub-Remaining"), limit = res.headers.get("X-Twinsub-Limit");
       if (!res.ok) {
         const body = await res.json().catch(() => ({}));
-        send({ type: "error", status: res.status, error: body.error, limit: body.limit });
+        send({ type: "error", status: res.status, error: body.error, limit: body.limit, plan: body.plan });
         return;
       }
       send({ type: "head", remaining: remaining === null ? null : Number(remaining), limit: limit === null ? null : Number(limit) });

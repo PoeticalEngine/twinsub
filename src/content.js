@@ -34,6 +34,11 @@
     secAsr: "Maybe misheard",
     quotaTitle: "That's today's $1 free explanations",
     quotaBody: "They come back tomorrow. Your marks stay where they are.",
+    remainingPro: "$1 explanations left this month",
+    quotaTitlePro: "That's this month's $1 explanations",
+    quotaBodyPro: "They come back on the 1st of next month.",
+    quotaUpgrade: "Get Pro: 1,000 a month for $$4.99",
+    quotaRestoreHint: "Already have Pro? Enter your code in the Twinsub menu (the extension icon).",
     errFailed: "Couldn't get an explanation.",
     errBusy: "Lots of people are asking right now. Try again in a minute.",
     retry: "Try again",
@@ -43,7 +48,7 @@
   function t(key, ...subs) {
     let s = "";
     try { s = hasChrome && chrome.i18n ? chrome.i18n.getMessage(key, subs) : ""; } catch {}
-    if (!s) s = (EN[key] || key).replace(/\$(\d)/g, (_, n) => subs[n - 1] ?? "");
+    if (!s) s = (EN[key] || key).replace(/\$(\$|\d)/g, (_, n) => n === "$" ? "$" : subs[n - 1] ?? "");
     return s;
   }
   const langName = code => {

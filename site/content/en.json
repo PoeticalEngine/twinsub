@@ -24,7 +24,7 @@
   "mark": "the Uber for dog walking",
   "gist": "An app that matches dog owners with walkers on demand, the way Uber matches riders with drivers. Said with a bit of self-mockery.",
   "background": "\"The Uber for X\" was a stock startup pitch in the 2010s. It got used so much that saying it now sounds like a joke about yourself.",
-  "quota": "5 free explanations a day. Dual subtitles are always free.",
+  "quota": "5 free explanations a day. Pro: 1,000 a month for $4.99. Dual subtitles are always free.",
   "labels": {
    "gist": "What it says",
    "background": "Background"
@@ -45,6 +45,10 @@
    [
     "Is Twinsub free?",
     "Yes. Dual subtitles are free and unlimited, with no account and no trial. Explanations are free 5 times a day."
+   ],
+   [
+    "Is there a paid plan?",
+    "Twinsub Pro gives you 1,000 explanations a month instead of 5 a day, for $4.99 a month. Cancel anytime from the Twinsub menu. Dual subtitles stay free and unlimited either way."
    ],
    [
     "How is the translation done?",
@@ -74,5 +78,12 @@
   "disclaimer": "YouTube is a trademark of Google LLC. Twinsub is not affiliated with or endorsed by YouTube or Google.",
   "terms": "Terms"
  },
- "langName": "English"
+ "langName": "English",
+ "pro": {
+  "title": "Thanks for going Pro",
+  "ok": "Twinsub Pro turns on within a few seconds. Go back to YouTube and keep watching.",
+  "code": "Your Pro code is in the Twinsub menu (click the extension icon). Enter it on your other computers, up to 5.",
+  "fail": "The payment didn't go through, so nothing was charged. You can try again from the Twinsub menu.",
+  "back": "Back to YouTube"
+ }
 }

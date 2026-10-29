@@ -130,5 +130,59 @@
  },
  "close": {
   "message": "बंद करें"
+ },
+ "remainingPro": {
+  "message": "इस महीने $1 व्याख्याएँ बाकी"
+ },
+ "quotaTitlePro": {
+  "message": "इस महीने की $1 व्याख्याएँ खत्म"
+ },
+ "quotaBodyPro": {
+  "message": "अगले महीने की 1 तारीख को फिर मिलेंगी।"
+ },
+ "quotaUpgrade": {
+  "message": "Pro लें: हर महीने 1,000, $$4.99 में"
+ },
+ "quotaRestoreHint": {
+  "message": "पहले से Pro हैं? Twinsub मेनू (एक्सटेंशन आइकन) में अपना कोड डालें।"
+ },
+ "proPitch": {
+  "message": "रोज़ 5 की जगह हर महीने 1,000 व्याख्याएँ। $$4.99 प्रति माह, कभी भी रद्द करें।"
+ },
+ "proUpgrade": {
+  "message": "Pro लें"
+ },
+ "proHave": {
+  "message": "पहले से Pro हैं? कोड डालें"
+ },
+ "proApply": {
+  "message": "इस्तेमाल करें"
+ },
+ "proBadCode": {
+  "message": "यह कोड सक्रिय नहीं है। जाँचें, या hello@poeticalengine.com पर लिखें।"
+ },
+ "proTooMany": {
+  "message": "यह कोड पहले ही 5 कंप्यूटरों पर इस्तेमाल हो रहा है।"
+ },
+ "proActive": {
+  "message": "इस महीने $1 व्याख्याएँ बाकी"
+ },
+ "proCodeLabel": {
+  "message": "आपका Pro कोड, अपने दूसरे कंप्यूटरों के लिए:"
+ },
+ "proCopy": {
+  "message": "कॉपी करें"
+ },
+ "proCopied": {
+  "message": "कॉपी हो गया"
+ },
+ "proManage": {
+  "message": "सदस्यता प्रबंधित करें"
+ },
+ "proEnds": {
+  "message": "Pro $1 को खत्म होगा और नवीनीकृत नहीं होगा।"
+ },
+ "proThanks": {
+  "message": "Pro चालू है। धन्यवाद!"
  }
 }

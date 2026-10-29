@@ -44,7 +44,25 @@
   "errBusy": "Lagi banyak yang bertanya. Coba lagi dalam semenit.",
   "retry": "Coba lagi",
   "thinking": "Sedang berpikir…",
-  "close": "Tutup"
+  "close": "Tutup",
+  "remainingPro": "Sisa $1 penjelasan bulan ini",
+  "quotaTitlePro": "Jatah $1 penjelasan bulan ini sudah habis",
+  "quotaBodyPro": "Kembali tanggal 1 bulan depan.",
+  "quotaUpgrade": "Ambil Pro: 1.000 per bulan, $$4,99",
+  "quotaRestoreHint": "Sudah Pro? Masukkan kodemu di menu Twinsub (ikon ekstensi).",
+  "proPitch": "1.000 penjelasan per bulan, bukan 5 per hari. $$4,99 per bulan, bisa berhenti kapan saja.",
+  "proUpgrade": "Ambil Pro",
+  "proHave": "Sudah Pro? Masukkan kode",
+  "proApply": "Pakai",
+  "proBadCode": "Kode itu tidak aktif. Periksa lagi, atau kirim email ke hello@poeticalengine.com.",
+  "proTooMany": "Kode ini sudah dipakai di 5 komputer.",
+  "proActive": "Sisa $1 penjelasan bulan ini",
+  "proCodeLabel": "Kode Pro-mu, untuk komputermu yang lain:",
+  "proCopy": "Salin",
+  "proCopied": "Tersalin",
+  "proManage": "Kelola langganan",
+  "proEnds": "Pro berakhir pada $1 dan tidak diperpanjang.",
+  "proThanks": "Pro aktif. Terima kasih!"
  },
  "shots": [
   {

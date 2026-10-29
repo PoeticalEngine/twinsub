@@ -130,5 +130,59 @@
  },
  "close": {
   "message": "关闭"
+ },
+ "remainingPro": {
+  "message": "本月还剩 $1 次解释"
+ },
+ "quotaTitlePro": {
+  "message": "本月的 $1 次解释已用完"
+ },
+ "quotaBodyPro": {
+  "message": "下个月 1 号恢复。"
+ },
+ "quotaUpgrade": {
+  "message": "升级 Pro：每月 1000 次，$$4.99"
+ },
+ "quotaRestoreHint": {
+  "message": "已经是 Pro？在 Twinsub 菜单（扩展图标）里输入你的 Pro 码。"
+ },
+ "proPitch": {
+  "message": "每月 1000 次解释，不再是每天 5 次。$$4.99 一个月，随时取消。"
+ },
+ "proUpgrade": {
+  "message": "升级 Pro"
+ },
+ "proHave": {
+  "message": "已有 Pro？输入 Pro 码"
+ },
+ "proApply": {
+  "message": "使用"
+ },
+ "proBadCode": {
+  "message": "这个 Pro 码无效或已过期。请检查，或写信到 hello@poeticalengine.com。"
+ },
+ "proTooMany": {
+  "message": "这个 Pro 码已经在 5 台电脑上使用。"
+ },
+ "proActive": {
+  "message": "本月还剩 $1 次解释"
+ },
+ "proCodeLabel": {
+  "message": "你的 Pro 码，可在其他电脑上使用："
+ },
+ "proCopy": {
+  "message": "复制"
+ },
+ "proCopied": {
+  "message": "已复制"
+ },
+ "proManage": {
+  "message": "管理订阅"
+ },
+ "proEnds": {
+  "message": "Pro 将在 $1 到期，不再续费。"
+ },
+ "proThanks": {
+  "message": "Pro 已开通，谢谢支持！"
  }
 }

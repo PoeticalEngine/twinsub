@@ -130,5 +130,59 @@
  },
  "close": {
   "message": "Fermer"
+ },
+ "remainingPro": {
+  "message": "Encore $1 explications ce mois-ci"
+ },
+ "quotaTitlePro": {
+  "message": "Les $1 explications du mois sont épuisées"
+ },
+ "quotaBodyPro": {
+  "message": "Elles reviennent le 1er du mois prochain."
+ },
+ "quotaUpgrade": {
+  "message": "Passer à Pro : 1 000 par mois pour 4,99 $"
+ },
+ "quotaRestoreHint": {
+  "message": "Déjà Pro ? Saisissez votre code dans le menu Twinsub (l'icône de l'extension)."
+ },
+ "proPitch": {
+  "message": "1 000 explications par mois au lieu de 5 par jour. 4,99 $ par mois, résiliable à tout moment."
+ },
+ "proUpgrade": {
+  "message": "Passer à Pro"
+ },
+ "proHave": {
+  "message": "Déjà Pro ? Saisissez votre code"
+ },
+ "proApply": {
+  "message": "Utiliser"
+ },
+ "proBadCode": {
+  "message": "Ce code n'est pas actif. Vérifiez-le ou écrivez à hello@poeticalengine.com."
+ },
+ "proTooMany": {
+  "message": "Ce code est déjà utilisé sur 5 ordinateurs."
+ },
+ "proActive": {
+  "message": "Encore $1 explications ce mois-ci"
+ },
+ "proCodeLabel": {
+  "message": "Votre code Pro, pour vos autres ordinateurs :"
+ },
+ "proCopy": {
+  "message": "Copier"
+ },
+ "proCopied": {
+  "message": "Copié"
+ },
+ "proManage": {
+  "message": "Gérer l'abonnement"
+ },
+ "proEnds": {
+  "message": "Pro prend fin le $1 et ne sera pas renouvelé."
+ },
+ "proThanks": {
+  "message": "Pro est activé. Merci !"
  }
 }

@@ -44,7 +44,25 @@
   "errBusy": "现在问的人太多了，过一分钟再试试。",
   "retry": "再试一次",
   "thinking": "正在想…",
-  "close": "关闭"
+  "close": "关闭",
+  "remainingPro": "本月还剩 $1 次解释",
+  "quotaTitlePro": "本月的 $1 次解释已用完",
+  "quotaBodyPro": "下个月 1 号恢复。",
+  "quotaUpgrade": "升级 Pro：每月 1000 次，$$4.99",
+  "quotaRestoreHint": "已经是 Pro？在 Twinsub 菜单（扩展图标）里输入你的 Pro 码。",
+  "proPitch": "每月 1000 次解释，不再是每天 5 次。$$4.99 一个月，随时取消。",
+  "proUpgrade": "升级 Pro",
+  "proHave": "已有 Pro？输入 Pro 码",
+  "proApply": "使用",
+  "proBadCode": "这个 Pro 码无效或已过期。请检查，或写信到 hello@poeticalengine.com。",
+  "proTooMany": "这个 Pro 码已经在 5 台电脑上使用。",
+  "proActive": "本月还剩 $1 次解释",
+  "proCodeLabel": "你的 Pro 码，可在其他电脑上使用：",
+  "proCopy": "复制",
+  "proCopied": "已复制",
+  "proManage": "管理订阅",
+  "proEnds": "Pro 将在 $1 到期，不再续费。",
+  "proThanks": "Pro 已开通，谢谢支持！"
  },
  "shots": [
   {
