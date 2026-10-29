@@ -1,0 +1,35 @@
+Regardez n'importe quelle vidéo YouTube et comprenez chaque réplique.
+
+Twinsub affiche deux sous-titres à la fois : la phrase d'origine, et la même phrase dans votre langue juste en dessous. Vous entendez la vraie voix, vous lisez les vrais mots, et vous ne ratez rien.
+
+GRATUIT, ILLIMITÉ, SANS COMPTE
+Pas d'inscription, pas de clé API, pas d'écran « essai terminé » au bout de 15 minutes. Installez, ouvrez une vidéo, c'est tout.
+
+TRADUIT SUR VOTRE ORDINATEUR
+Twinsub utilise le traducteur intégré à Chrome : chaque ligne est traduite sur votre appareil en quelques millisecondes. Rien n'attend un serveur, et les sous-titres ne quittent jamais votre ordinateur.
+
+IDÉAL POUR APPRENDRE UNE LANGUE
+L'original en haut, la traduction en dessous, ou l'inverse. Vlogs en espagnol, extraits d'anime japonais, émissions coréennes, cours en anglais : apprenez avec les vidéos que vous aimez déjà.
+
+AVEC LES SOUS-TITRES QUE VOUS AVEZ DÉJÀ
+Les sous-titres faits à la main comme ceux générés automatiquement par YouTube fonctionnent. Twinsub active les sous-titres, suit la piste choisie dans le menu CC de YouTube et continue de vidéo en vidéo.
+
+PAS COMPRIS ? DEMANDEZ.
+Mettez en pause, surlignez le passage obscur et touchez Expliquer. Une IA l'explique à partir de la ligne originale : expressions, argot, noms, contexte culturel, jeux de mots. 5 explications gratuites par jour. Seuls le passage surligné et quelques lignes autour sont envoyés, et seulement quand vous touchez Expliquer.
+• Twinsub Pro : 1 000 explications par mois, 4,99 $/mois
+• Twinsub Lifetime : 14,90 $ une fois. Utilisez votre propre clé API (OpenAI, Claude, Gemini, DeepSeek et d'autres, ou tout point d'accès compatible). Les explications vont directement de Chrome à votre fournisseur, sans jamais passer par notre serveur. Votre clé est chiffrée et reste sur votre ordinateur.
+
+À VOTRE FAÇON
+• Traduction vers 39 langues, dont le français, l'anglais, l'espagnol, l'allemand, le japonais, le coréen et le chinois
+• Original ou traduction en haut
+• Taille du texte et hauteur à l'écran
+• Afficher seulement la traduction, ou seulement l'original
+• Un bouton dans la barre du lecteur pour activer ou désactiver
+
+MODE D'EMPLOI
+1. Installez Twinsub.
+2. Ouvrez une vidéo YouTube qui a des sous-titres.
+3. La première fois que vous utilisez une paire de langues, cliquez une fois sur le bandeau jaune : Chrome télécharge le pack de traduction en quelques secondes.
+4. Regardez.
+
+Nécessite Chrome 138 ou plus récent sur ordinateur (Windows, Mac, Linux ou ChromeOS). Twinsub n'est ni affilié à YouTube ou Google, ni approuvé par eux.

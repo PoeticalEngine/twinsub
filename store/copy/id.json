@@ -173,8 +173,8 @@
   {
    "scene": "night",
    "eyebrow": "Privasi",
-   "title": "Apa yang kamu tonton tetap di komputermu.",
-   "sub": "Tanpa akun, tanpa server, tanpa pelacakan. Twinsub hanya membaca subtitle yang sudah dimuat pemutar.",
+   "title": "Subtitle tetap di komputermu.",
+   "sub": "Tanpa akun, tanpa pelacakan. Terjemahan berjalan di Chrome; hanya baris yang kamu minta dijelaskan yang dikirim, dan dengan kunci sendiri langsung ke penyedia AI-mu.",
    "orig": "Wir sehen uns morgen am Bahnhof.",
    "trans": "Sampai ketemu besok di stasiun.",
    "privacy": [
@@ -183,8 +183,8 @@
      "Tidak perlu daftar"
     ],
     [
-     "Tanpa server",
-     "Terjemahan berjalan di Chrome"
+     "Di perangkat",
+     "Subtitle tidak keluar dari Chrome"
     ],
     [
      "Tanpa pelacakan",
@@ -204,5 +204,5 @@
   "orig": "The best time to start was yesterday. The next best time is now.",
   "trans": "Waktu terbaik untuk memulai adalah kemarin. Waktu terbaik berikutnya adalah sekarang."
  },
- "description": "Tonton video YouTube apa pun dan pahami setiap kalimatnya.\n\nTwinsub menampilkan dua subtitle sekaligus: kalimat aslinya, dan kalimat yang sama dalam bahasamu tepat di bawahnya. Kamu mendengar suara aslinya, membaca kata-kata aslinya, dan tidak ada yang terlewat.\n\nGRATIS, TANPA BATAS, TANPA LOGIN\nTanpa akun, tanpa API key, dan tidak ada layar \"masa uji coba habis\" setelah 15 menit. Pasang, buka video, selesai.\n\nDITERJEMAHKAN DI KOMPUTERMU\nTwinsub memakai penerjemah bawaan Chrome, jadi setiap baris diterjemahkan di perangkatmu dalam hitungan milidetik. Tidak ada yang menunggu server, dan apa yang kamu tonton tidak dikirim ke mana pun.\n\nCOCOK UNTUK BELAJAR BAHASA\nTeks asli di atas, terjemahan di bawah, atau sebaliknya. Kuliah berbahasa Inggris, klip anime Jepang, acara Korea, vlog berbahasa Spanyol: belajar bahasa dari video yang memang kamu suka.\n\nBEKERJA DENGAN SUBTITLE YANG SUDAH ADA\nSubtitle buatan manusia maupun subtitle otomatis YouTube sama-sama didukung. Twinsub menyalakan subtitle, mengikuti bahasa yang kamu pilih di menu CC YouTube, dan tetap berjalan saat kamu pindah dari satu video ke video lain.\n\nSESUAI SELERAMU\n• Terjemahkan ke 39 bahasa, termasuk Indonesia, Inggris, Jepang, Korea, Mandarin, Spanyol, dan Arab\n• Teks asli atau terjemahan di atas\n• Ukuran teks dan tinggi di layar\n• Tampilkan terjemahan saja, atau teks asli saja\n• Satu tombol di bilah pemutar untuk menyalakan atau mematikan\n\nCARA PAKAI\n1. Pasang Twinsub.\n2. Buka video YouTube yang punya subtitle.\n3. Saat pertama kali memakai sebuah pasangan bahasa, klik sekali pada pesan kuning. Chrome mengunduh paket terjemahannya dalam beberapa detik.\n4. Selamat menonton.\n\nButuh Chrome 138 atau yang lebih baru di komputer (Windows, Mac, Linux, atau ChromeOS). Twinsub tidak berafiliasi dengan maupun didukung oleh YouTube atau Google."
+ "description": "Tonton video YouTube apa pun dan pahami setiap kalimatnya.\n\nTwinsub menampilkan dua subtitle sekaligus: kalimat aslinya, dan kalimat yang sama dalam bahasamu tepat di bawahnya. Kamu mendengar suara aslinya, membaca kata-kata aslinya, dan tidak ada yang terlewat.\n\nGRATIS, TANPA BATAS, TANPA LOGIN\nTanpa akun, tanpa API key, dan tidak ada layar \"masa uji coba habis\" setelah 15 menit. Pasang, buka video, selesai.\n\nDITERJEMAHKAN DI KOMPUTERMU\nTwinsub memakai penerjemah bawaan Chrome, jadi setiap baris diterjemahkan di perangkatmu dalam hitungan milidetik. Tidak ada yang menunggu server, dan subtitle tidak pernah keluar dari komputermu.\n\nCOCOK UNTUK BELAJAR BAHASA\nTeks asli di atas, terjemahan di bawah, atau sebaliknya. Kuliah berbahasa Inggris, klip anime Jepang, acara Korea, vlog berbahasa Spanyol: belajar bahasa dari video yang memang kamu suka.\n\nBEKERJA DENGAN SUBTITLE YANG SUDAH ADA\nSubtitle buatan manusia maupun subtitle otomatis YouTube sama-sama didukung. Twinsub menyalakan subtitle, mengikuti bahasa yang kamu pilih di menu CC YouTube, dan tetap berjalan saat kamu pindah dari satu video ke video lain.\n\nTIDAK PAHAM? TANYA SAJA.\nJeda, tandai bagian yang tidak kamu pahami, lalu ketuk Jelaskan. AI menjelaskannya dari baris aslinya: idiom, slang, nama, latar budaya, lelucon. 5 penjelasan gratis per hari. Hanya bagian yang kamu tandai dan beberapa baris di sekitarnya yang dikirim, dan hanya saat kamu mengetuk Jelaskan.\n• Twinsub Pro: 1.000 penjelasan per bulan, $4,99/bulan\n• Twinsub Lifetime: sekali bayar $14,90. Pakai kunci API milikmu (OpenAI, Claude, Gemini, DeepSeek, dan lainnya, atau endpoint apa pun yang kompatibel). Penjelasan dikirim langsung dari Chrome ke penyediamu dan tidak pernah lewat server kami. Kuncimu dienkripsi dan hanya tersimpan di komputermu.\n\nSESUAI SELERAMU\n• Terjemahkan ke 39 bahasa, termasuk Indonesia, Inggris, Jepang, Korea, Mandarin, Spanyol, dan Arab\n• Teks asli atau terjemahan di atas\n• Ukuran teks dan tinggi di layar\n• Tampilkan terjemahan saja, atau teks asli saja\n• Satu tombol di bilah pemutar untuk menyalakan atau mematikan\n\nCARA PAKAI\n1. Pasang Twinsub.\n2. Buka video YouTube yang punya subtitle.\n3. Saat pertama kali memakai sebuah pasangan bahasa, klik sekali pada pesan kuning. Chrome mengunduh paket terjemahannya dalam beberapa detik.\n4. Selamat menonton.\n\nButuh Chrome 138 atau yang lebih baru di komputer (Windows, Mac, Linux, atau ChromeOS). Twinsub tidak berafiliasi dengan maupun didukung oleh YouTube atau Google."
 }

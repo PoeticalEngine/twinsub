@@ -1,0 +1,35 @@
+Tonton video YouTube apa pun dan pahami setiap kalimatnya.
+
+Twinsub menampilkan dua subtitle sekaligus: kalimat aslinya, dan kalimat yang sama dalam bahasamu tepat di bawahnya. Kamu mendengar suara aslinya, membaca kata-kata aslinya, dan tidak ada yang terlewat.
+
+GRATIS, TANPA BATAS, TANPA LOGIN
+Tanpa akun, tanpa API key, dan tidak ada layar "masa uji coba habis" setelah 15 menit. Pasang, buka video, selesai.
+
+DITERJEMAHKAN DI KOMPUTERMU
+Twinsub memakai penerjemah bawaan Chrome, jadi setiap baris diterjemahkan di perangkatmu dalam hitungan milidetik. Tidak ada yang menunggu server, dan subtitle tidak pernah keluar dari komputermu.
+
+COCOK UNTUK BELAJAR BAHASA
+Teks asli di atas, terjemahan di bawah, atau sebaliknya. Kuliah berbahasa Inggris, klip anime Jepang, acara Korea, vlog berbahasa Spanyol: belajar bahasa dari video yang memang kamu suka.
+
+BEKERJA DENGAN SUBTITLE YANG SUDAH ADA
+Subtitle buatan manusia maupun subtitle otomatis YouTube sama-sama didukung. Twinsub menyalakan subtitle, mengikuti bahasa yang kamu pilih di menu CC YouTube, dan tetap berjalan saat kamu pindah dari satu video ke video lain.
+
+TIDAK PAHAM? TANYA SAJA.
+Jeda, tandai bagian yang tidak kamu pahami, lalu ketuk Jelaskan. AI menjelaskannya dari baris aslinya: idiom, slang, nama, latar budaya, lelucon. 5 penjelasan gratis per hari. Hanya bagian yang kamu tandai dan beberapa baris di sekitarnya yang dikirim, dan hanya saat kamu mengetuk Jelaskan.
+• Twinsub Pro: 1.000 penjelasan per bulan, $4,99/bulan
+• Twinsub Lifetime: sekali bayar $14,90. Pakai kunci API milikmu (OpenAI, Claude, Gemini, DeepSeek, dan lainnya, atau endpoint apa pun yang kompatibel). Penjelasan dikirim langsung dari Chrome ke penyediamu dan tidak pernah lewat server kami. Kuncimu dienkripsi dan hanya tersimpan di komputermu.
+
+SESUAI SELERAMU
+• Terjemahkan ke 39 bahasa, termasuk Indonesia, Inggris, Jepang, Korea, Mandarin, Spanyol, dan Arab
+• Teks asli atau terjemahan di atas
+• Ukuran teks dan tinggi di layar
+• Tampilkan terjemahan saja, atau teks asli saja
+• Satu tombol di bilah pemutar untuk menyalakan atau mematikan
+
+CARA PAKAI
+1. Pasang Twinsub.
+2. Buka video YouTube yang punya subtitle.
+3. Saat pertama kali memakai sebuah pasangan bahasa, klik sekali pada pesan kuning. Chrome mengunduh paket terjemahannya dalam beberapa detik.
+4. Selamat menonton.
+
+Butuh Chrome 138 atau yang lebih baru di komputer (Windows, Mac, Linux, atau ChromeOS). Twinsub tidak berafiliasi dengan maupun didukung oleh YouTube atau Google.

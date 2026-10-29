@@ -173,8 +173,8 @@
   {
    "scene": "night",
    "eyebrow": "Privacidad",
-   "title": "Lo que ves se queda en tu computadora.",
-   "sub": "Sin cuenta, sin servidor, sin rastreo. Twinsub solo lee los subtítulos que el reproductor ya descargó.",
+   "title": "Los subtítulos se quedan en tu computadora.",
+   "sub": "Sin cuenta ni rastreo. La traducción ocurre en Chrome; solo se envían las líneas que pides explicar, y con tu propia clave van directo a tu proveedor de IA.",
    "orig": "Wir sehen uns morgen am Bahnhof.",
    "trans": "Nos vemos mañana en la estación.",
    "privacy": [
@@ -183,8 +183,8 @@
      "Nada que registrar"
     ],
     [
-     "Sin servidor",
-     "La traducción ocurre en Chrome"
+     "En tu dispositivo",
+     "Los subtítulos no salen de Chrome"
     ],
     [
      "Sin rastreo",
@@ -204,5 +204,5 @@
   "orig": "The best time to start was yesterday. The next best time is now.",
   "trans": "El mejor momento para empezar fue ayer. El segundo mejor es ahora."
  },
- "description": "Mira cualquier video de YouTube y entiende cada frase.\n\nTwinsub muestra dos subtítulos a la vez: la frase original y, justo debajo, la misma frase en tu idioma. Oyes la voz real, lees las palabras reales y no te pierdes nada.\n\nGRATIS, SIN LÍMITES, SIN REGISTRO\nSin cuenta, sin clave de API y sin la pantalla de «prueba terminada» a los 15 minutos. Instálalo, abre un video y listo.\n\nTRADUCIDO EN TU COMPUTADORA\nTwinsub usa el traductor integrado de Chrome: cada línea se traduce en tu dispositivo en milisegundos. Nada espera a un servidor y nada de lo que ves se envía a ninguna parte.\n\nPERFECTO PARA APRENDER IDIOMAS\nEl original arriba y la traducción abajo, o al revés. Vlogs en inglés, anime japonés, programas coreanos, clases en francés: aprende el idioma con los videos que ya te gustan.\n\nFUNCIONA CON LOS SUBTÍTULOS QUE YA EXISTEN\nFunciona con subtítulos hechos a mano y con los generados automáticamente por YouTube. Twinsub activa los subtítulos, sigue la pista que elijas en el menú CC de YouTube y sigue funcionando de video en video.\n\nA TU MANERA\n• Traduce a 39 idiomas, entre ellos español, inglés, portugués, francés, alemán, japonés, coreano y chino\n• Original o traducción arriba\n• Tamaño del texto y altura en pantalla\n• Mostrar solo la traducción o solo el original\n• Un botón en la barra del reproductor para activarlo o desactivarlo\n\nCÓMO SE USA\n1. Instala Twinsub.\n2. Abre un video de YouTube que tenga subtítulos.\n3. La primera vez que uses una combinación de idiomas, haz clic una vez en el aviso amarillo. Chrome descarga el paquete de traducción en unos segundos.\n4. Disfruta.\n\nRequiere Chrome 138 o posterior en una computadora (Windows, Mac, Linux o ChromeOS). Twinsub no está afiliado a YouTube ni a Google, ni cuenta con su aprobación."
+ "description": "Mira cualquier video de YouTube y entiende cada frase.\n\nTwinsub muestra dos subtítulos a la vez: la frase original y, justo debajo, la misma frase en tu idioma. Oyes la voz real, lees las palabras reales y no te pierdes nada.\n\nGRATIS, SIN LÍMITES, SIN REGISTRO\nSin cuenta, sin clave de API y sin la pantalla de «prueba terminada» a los 15 minutos. Instálalo, abre un video y listo.\n\nTRADUCIDO EN TU COMPUTADORA\nTwinsub usa el traductor integrado de Chrome: cada línea se traduce en tu dispositivo en milisegundos. Nada espera a un servidor y los subtítulos nunca salen de tu computadora.\n\nPERFECTO PARA APRENDER IDIOMAS\nEl original arriba y la traducción abajo, o al revés. Vlogs en inglés, anime japonés, programas coreanos, clases en francés: aprende el idioma con los videos que ya te gustan.\n\nFUNCIONA CON LOS SUBTÍTULOS QUE YA EXISTEN\nFunciona con subtítulos hechos a mano y con los generados automáticamente por YouTube. Twinsub activa los subtítulos, sigue la pista que elijas en el menú CC de YouTube y sigue funcionando de video en video.\n\n¿NO LO ENTENDISTE? PREGUNTA.\nPausa, marca la parte que no entendiste y toca Explicar. Una IA la explica a partir de la línea original: modismos, jerga, nombres, contexto cultural, chistes. 5 explicaciones gratis al día. Solo se envía lo que marcaste y unas líneas alrededor, y solo cuando tocas Explicar.\n• Twinsub Pro: 1,000 explicaciones al mes, US$4.99 al mes\n• Twinsub Lifetime: un solo pago de US$14.90. Usa tu propia clave de API (OpenAI, Claude, Gemini, DeepSeek y más, o cualquier endpoint compatible). Las explicaciones van directo de Chrome a tu proveedor y nunca pasan por nuestro servidor. Tu clave se guarda cifrada y solo en tu computadora.\n\nA TU MANERA\n• Traduce a 39 idiomas, entre ellos español, inglés, portugués, francés, alemán, japonés, coreano y chino\n• Original o traducción arriba\n• Tamaño del texto y altura en pantalla\n• Mostrar solo la traducción o solo el original\n• Un botón en la barra del reproductor para activarlo o desactivarlo\n\nCÓMO SE USA\n1. Instala Twinsub.\n2. Abre un video de YouTube que tenga subtítulos.\n3. La primera vez que uses una combinación de idiomas, haz clic una vez en el aviso amarillo. Chrome descarga el paquete de traducción en unos segundos.\n4. Disfruta.\n\nRequiere Chrome 138 o posterior en una computadora (Windows, Mac, Linux o ChromeOS). Twinsub no está afiliado a YouTube ni a Google, ni cuenta con su aprobación."
 }
