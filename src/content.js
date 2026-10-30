@@ -132,12 +132,12 @@
     if (!file) { if (currentKey) clearCues(); return; }  // the file arrives with the next "captions" message
     currentKey = key;
     cues = C.parse(file.body, track.kind);
-    translations = new Array(cues.length);
+    resetTranslations();
     shownIndex = -2;
     startTranslation();
   }
 
-  function clearCues() { currentKey = ""; cues = []; translations = []; job = null; shownIndex = -2; render(); }
+  function clearCues() { currentKey = ""; cues = []; job = null; shownIndex = -2; resetTranslations(); render(); }
 
   // ---- translation -----------------------------------------------------------------------------------------
   async function startTranslation(withGesture = false) {
@@ -158,28 +158,53 @@
       if (avail !== "available") chip(t("downloading", langName(src), langName(tgt), "0"));
       await rpc("prepare", { src, tgt });  // sent inside the click, while the page still has user activation
       chip("");
-      await translateFrom(my);
+      await translateAll(my);
     } catch (e) {
       if (job === my) chip(t("failed", e.message), { timeout: 8000 });
     }
   }
 
-  // Translate outward from where the viewer is, in small batches, so the current line is ready first.
-  async function translateFrom(my) {
+  function resetTranslations() { translations = new Array(cues.length); }
+  const range = (a, b) => Array.from({ length: b - a }, (_, i) => a + i);
+  const anchor = () => {
     const video = document.querySelector("#movie_player video");
-    const here = Math.max(0, C.cueAt(cues, (video ? video.currentTime : 0) * 1000));
-    const order = [];
-    for (let i = here; i < cues.length; i++) order.push(i);
-    for (let i = here - 1; i >= 0; i--) order.push(i);
-    for (let i = 0; i < order.length; i += 20) {
+    return Math.max(0, C.anchorAt(cues, (video ? video.currentTime : 0) * 1000));
+  };
+
+  // The whole transcript is translated as numbered text (see captions.js), 200 lines at a time, so each line is
+  // translated with the conversation around it. The chunk the viewer is in goes first, including after a seek.
+  // Lines whose number didn't come back cleanly (Japanese likes to merge half-sentences) are translated again
+  // with 3 lines either side, and whatever is still broken after that, one line at a time.
+  async function translateAll(my) {
+    const todo = C.chunks(cues.length, anchor());
+    while (todo.length) {
+      const here = anchor();
+      const r = todo.splice(Math.max(0, todo.findIndex(c => c.start <= here && here < c.end)), 1)[0];
+      const idx = range(r.start, r.end);
+      const lines = await translateNumbered(my, idx);
       if (job !== my) return;
-      const batch = order.slice(i, i + 20).filter(k => translations[k] === undefined);
-      if (!batch.length) continue;
-      const out = await rpc("translate", { src: my.src, tgt: my.tgt, texts: batch.map(k => cues[k].text) });
+      idx.forEach((k, j) => { if (lines[j] !== null) translations[k] = lines[j]; });
+
+      await Promise.all(C.runs(idx.filter((k, j) => lines[j] === null)).map(async run => {
+        const w = range(Math.max(0, run[0] - 3), Math.min(cues.length, run[run.length - 1] + 4));
+        const got = await translateNumbered(my, w);
+        if (job === my) w.forEach((k, j) => { if (run.includes(k) && got[j] !== null) translations[k] = got[j]; });
+      }));
       if (job !== my) return;
-      batch.forEach((k, j) => { translations[k] = out[j] || ""; });
-      if (batch.includes(shownIndex)) shownIndex = -2;
+
+      const left = idx.filter(k => translations[k] === undefined);
+      if (left.length) {
+        const each = await rpc("translate", { src: my.src, tgt: my.tgt, texts: left.map(k => cues[k].text) });
+        if (job !== my) return;
+        left.forEach((k, j) => { translations[k] = each[j] || ""; });
+      }
+      shownIndex = -2;
     }
+  }
+
+  async function translateNumbered(my, idx) {
+    const [text] = await rpc("translate", { src: my.src, tgt: my.tgt, texts: [C.joinNumbered(idx.map(k => cues[k].text))] });
+    return C.splitNumbered(text, idx.length);
   }
 
   // ---- UI ----------------------------------------------------------------------------------------------------
@@ -264,10 +289,23 @@
 
   function hide() { if (overlay) overlay.hidden = true; }
 
+  // YouTube's own captions have to stay on (that's how the caption file gets downloaded), so hide them while
+  // Twinsub shows its lines. A stylesheet of our own, switched on and off, rather than a class on <html>, which
+  // the page or other extensions can overwrite.
+  let nativeStyle = null;
+  function hideNative(on) {
+    if (!nativeStyle || !nativeStyle.isConnected) {
+      nativeStyle = document.createElement("style");
+      nativeStyle.textContent = ".html5-video-player .ytp-caption-window-container, .html5-video-player .caption-window { display: none !important; }";
+      (document.head || document.documentElement).append(nativeStyle);
+    }
+    nativeStyle.disabled = !on;
+  }
+
   function render() {
     if (!overlay) return;
     const video = document.querySelector("#movie_player video");
-    document.documentElement.classList.toggle("twinsub-on", !!(settings.enabled && track.on && !track.ad && cues.length));
+    hideNative(!!(settings.enabled && track.on && !track.ad && cues.length));
     if (!settings.enabled || !track.on || track.ad || !cues.length || !video) { overlay.hidden = true; return; }
     const i = C.cueAt(cues, video.currentTime * 1000);
     if (i === shownIndex) return;
@@ -307,7 +345,7 @@
       const before = targetLang();
       for (const [k, v] of Object.entries(changes)) settings[k] = v.newValue;
       applyStyle();
-      if (targetLang() !== before && cues.length) { translations = new Array(cues.length); startTranslation(); }
+      if (targetLang() !== before && cues.length) { resetTranslations(); startTranslation(); }
       refresh();
     });
   }

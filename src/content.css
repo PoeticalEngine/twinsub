@@ -1,5 +1,5 @@
-/* Twinsub overlay inside YouTube's player. Sizes follow the player height (--twinsub-base, set from JS). */
-html.twinsub-on #movie_player .ytp-caption-window-container { display: none !important; }
+/* Twinsub overlay inside YouTube's player. Sizes follow the player height (--twinsub-base, set from JS).
+   YouTube's own caption window is hidden from content.js (hideNative). */
 
 #movie_player .twinsub-overlay {
   position: absolute;

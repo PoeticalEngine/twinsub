@@ -5,7 +5,7 @@ root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 class H(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
         css = open(os.path.join(root, "src/content.css")).read()
-        js = "".join(open(os.path.join(root, f)).read() + "\n" for f in ["src/page.js", "src/captions.js", "src/content.js"])
+        js = "".join(open(os.path.join(root, f)).read() + "\n" for f in ["src/page.js", "src/captions.js", "src/explain.js", "src/content.js"])
         body = ("(()=>{const s=document.createElement('style');s.textContent=%r;document.head.append(s);})();\n" % css) + js
         b = body.encode()
         self.send_response(200); self.send_header("Content-Type", "text/plain; charset=utf-8")

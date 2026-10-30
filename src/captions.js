@@ -99,6 +99,67 @@ var TwinsubCaptions = (() => {
     return -1;
   }
 
-  return { SUPPORTED, translatorLang, parse, cueAt };
+  // Index of the cue showing at time t, or else the next one to come (the last one after the end).
+  function anchorAt(cues, t) {
+    const i = cueAt(cues, t);
+    if (i >= 0 || !cues.length) return i;
+    const next = cues.findIndex(c => c.start > t);
+    return next >= 0 ? next : cues.length - 1;
+  }
+
+  // Lines are translated many at a time as one text, so the Translator sees the conversation around each line
+  // ("speakers" becomes 演讲者 rather than 扬声器). Each line is numbered "[1] … [2] …" and split back on the
+  // numbers. A 7-minute talk (275 lines) takes about a second; into Chinese every number came back, into
+  // Japanese 24 went missing where it merged half-sentences, so lines are accepted one by one, not all or none.
+
+  // Ranges of up to `size` lines covering 0..n, the first one starting just before line `from`, then onward,
+  // then back towards the start.
+  function chunks(n, from, size = 200) {
+    const first = Math.max(0, Math.min(from - 10, n - size));
+    const out = [];
+    for (let s = first; s < n; s += size) out.push({ start: s, end: Math.min(n, s + size) });
+    for (let e = first; e > 0; e -= size) out.push({ start: Math.max(0, e - size), end: e });
+    return out;
+  }
+
+  // Indices -> runs of consecutive indices.
+  function runs(indices) {
+    const out = [];
+    for (const k of [...indices].sort((a, b) => a - b)) {
+      const r = out[out.length - 1];
+      if (r && k === r[r.length - 1] + 1) r.push(k); else out.push([k]);
+    }
+    return out;
+  }
+
+  const joinNumbered = lines => lines.length === 1 ? lines[0] : lines.map((s, i) => `[${i + 1}] ${s}`).join(" ");
+
+  // A translated numbered text -> its n lines, with null for each line that didn't come back cleanly: its number
+  // missing, out of order or repeated, or nothing but punctuation left after it ("安全 [271]。" means 271 was
+  // merged into 270). A line next to a broken one may hold part of its text, so it counts as broken too.
+  function splitNumbered(text, n) {
+    const s = String(text || "");
+    if (n === 1) return [/[\p{L}\p{N}]/u.test(s) ? s.trim() : null];
+    const parts = s.split(/\s*\[(\d+)\]\s*/);
+    const found = [];
+    for (let i = 1; i < parts.length; i += 2) found.push({ k: +parts[i], body: parts[i + 1] });
+    const out = new Array(n).fill(null), count = new Array(n).fill(0), junk = new Array(n).fill(false);
+    found.forEach(({ k }) => { if (k >= 1 && k <= n) count[k - 1]++; });
+    found.forEach(({ k, body }, j) => {
+      if (!(k >= 1 && k <= n)) return;
+      if (count[k - 1] > 1) { junk[k - 1] = true; return; }
+      const prev = found[j - 1], next = found[j + 1];
+      const inPlace = (prev ? prev.k === k - 1 : k === 1 && !parts[0].trim()) && (next ? next.k === k + 1 : k === n);
+      // The Translator sometimes moves the comma ending a line past the next number: "[2]、そして…".
+      const line = body.replace(/^[、，,]/, "").trim();
+      if (!inPlace) return;
+      if (/[\p{L}\p{N}]/u.test(line)) out[k - 1] = line; else junk[k - 1] = true;
+    });
+    // Lines around a missing or misplaced number already fail the order check; a number that came back twice or
+    // with only punctuation after it takes its neighbours with it.
+    return out.map((v, i) => junk[i - 1] || junk[i + 1] ? null : v);
+  }
+
+  return { SUPPORTED, translatorLang, parse, cueAt, anchorAt, chunks, runs, joinNumbered, splitNumbered };
 })();
 if (typeof module !== "undefined") module.exports = TwinsubCaptions;

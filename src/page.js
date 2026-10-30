@@ -2,7 +2,7 @@
 // It does three things and nothing else:
 //   1. copies the caption files YouTube's player downloads for itself (/api/timedtext), so Twinsub never makes
 //      its own caption requests (extra requests are what get other extensions' users rate-limited with 429s);
-//   2. reports which caption track the player is showing, and turns captions on when asked;
+//   2. reports which caption track the player is showing, and turns captions on (in the spoken language) when asked;
 //   3. runs Chrome's on-device Translator for the content script.
 // Messages go both ways over window.postMessage, tagged with a source string.
 (() => {
@@ -74,6 +74,26 @@
     };
   }
 
+  // The track to turn on: the one in the language being spoken. YouTube's own toggle picks the viewer's last-used
+  // language, or else the first track in the list, which is often someone's upload in another language (Arabic on
+  // an English TEDx talk). The auto-generated track tells us the spoken language, even when the player's list
+  // leaves it out because a hand-made track exists.
+  function bestTrack(p) {
+    let list = [], all = [];
+    try { list = p.getOption("captions", "tracklist") || []; } catch {}
+    try { all = p.getPlayerResponse().captions.playerCaptionsTracklistRenderer.captionTracks || []; } catch {}
+    const base = l => (l || "").split("-")[0];
+    const asr = all.find(t => t.kind === "asr") || list.find(t => t.kind === "asr");
+    if (asr) {
+      const spoken = asr.languageCode;
+      return list.find(t => t.kind !== "asr" && t.languageCode === spoken)
+        || list.find(t => t.kind !== "asr" && base(t.languageCode) === base(spoken))
+        || list.find(t => t.kind === "asr")
+        || { languageCode: spoken, kind: "asr" };
+    }
+    return list.find(t => t.is_default) || list.find(t => base(t.languageCode) === "en") || list[0] || null;
+  }
+
   // Report track changes, including switches back to a track whose file was already downloaded
   // (the player reuses it without a new request).
   let last = "";
@@ -103,12 +123,17 @@
         for (const f of files.values()) if (!d.videoId || f.meta.videoId === d.videoId) post({ type: "captions", ...f });
         post({ type: "track", state: trackState() });
       } else if (d.type === "captionsOn") {
-        const p = player();
-        if (p && typeof p.loadModule === "function") {
-          try { p.loadModule("captions"); } catch {}
-          if (!trackState().on && typeof p.toggleSubtitlesOn === "function") p.toggleSubtitlesOn();
+        // Right after a page load the captions module may not be ready, and setting a track then does nothing,
+        // so keep trying for a few seconds.
+        for (let i = 0; i < 8 && !trackState().on; i++) {
+          const p = player(), best = p && bestTrack(p);
+          if (best) {
+            try { p.loadModule("captions"); } catch {}
+            try { p.setOption("captions", "track", best); } catch {}
+          }
+          await new Promise(r => setTimeout(r, 500));
         }
-        reply({ type: "result", ok: true });
+        reply({ type: "result", ok: trackState().on });
       } else if (d.type === "availability") {
         if (typeof Translator === "undefined") return reply({ type: "result", value: "no-api" });
         reply({ type: "result", value: await Translator.availability({ sourceLanguage: d.src, targetLanguage: d.tgt }) });
